@@ -47,3 +47,42 @@ select,
 textarea {
   font-size: 1rem;
 }
+
+
+/* 5. Set :focus for form elements.
+      Sighted keyboard users rely on focus to determine where keyboard events go in the page.
+      Make focus for form elements stand out and consistent then a browser's default implementation.
+ */
+a,
+button,
+input,
+textarea {
+  &:focus {
+    box-shadow: none;
+    outline: #000000 dotted 2px;
+    outline-offset: 0.05em;
+  }
+}
+
+
+/* 6. Style broken images.
+      Broken images happen for a number of reasons and are either unsightly or lead to confusion (just and empty element).
+ */
+img {
+  display: block;
+  height: auto;
+  position: relative;
+  width: 100%;
+
+  &:before {
+    content: "We're sorry, the image is missing.";
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &:after {
+    content: "(url: 'attr(src)')";
+    display: block;
+    font-size: 0.25rem;
+  }
+}
