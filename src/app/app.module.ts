@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FreecodecampComponent } from './projects/freecodecamp/freecodecamp.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { PluralsightComponent } from './projects/pluralsight/pluralsight.component';
 import { NngroupComponent } from './projects/nngroup/nngroup.component';
@@ -12,7 +13,8 @@ import { NngroupComponent } from './projects/nngroup/nngroup.component';
     AppComponent,
     ProjectsComponent,
     PluralsightComponent,
-    NngroupComponent
+    NngroupComponent,
+    FreecodecampComponent
   ],
   imports: [
     BrowserModule,
