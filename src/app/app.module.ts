@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ToptalComponent } from './projects/toptal/toptal.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ToptalComponent
   ],
   imports: [
     BrowserModule,
