@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FreecodecampComponent } from './projects/freecodecamp/freecodecamp.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FreecodecampComponent
   ],
   imports: [
     BrowserModule,
