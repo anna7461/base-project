@@ -1,0 +1,49 @@
+// CSS Pro Tips 02.01.2021 Notes
+
+/* 1. Use :root for flexible type.
+      The type font size in a responsive layout should be able to adjust with each viewport. You can calculate the
+      font-size based on the viewport height and width using :root.
+*/
+:root {
+  font-size: calc(0.5vw + 0.5vh + 0.5vmin);
+}
+
+
+/* 2. Inherit box-sizing.
+      Let box-sizing be inherited from html.
+      This make it easier to change it when code is introduced through 3rd party plugins or applications that use
+      different behavior.
+ */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/* 3. Add line-height to body.
+      The one thing that leads to inefficient stylesheets is repeating declarations over and over again.
+      Line-height is one property you can set for your entire project, not only to minimize lines of code, but to
+      enforce a standard look to your site's typography.
+      Rather than add line-height to each <p>, <h*> and so on, add it to body.
+*/
+body {
+  // Utilize the root em unit based on the value calculated by :root.
+  font: 1rem / 1.5 sans-serif;
+}
+
+
+/* 4. Set font-size on form elements for a better mobile experience.
+      To avoid mobile browsers (iOS Safari, et al.) from zooming in on html elements when a <select> dropdown is tapped,
+      add font-size to the selector rule.
+*/
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  font-size: 1rem;
+}
