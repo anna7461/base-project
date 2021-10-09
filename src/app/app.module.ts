@@ -8,6 +8,10 @@ import { FreecodecampComponent } from './projects/freecodecamp/freecodecamp.comp
 import { ProjectsComponent } from './projects/projects.component';
 import { PluralsightComponent } from './projects/pluralsight/pluralsight.component';
 import { NngroupComponent } from './projects/nngroup/nngroup.component';
+import { GuidesComponent } from './guides/guides.component';
+import { CssGuidesComponent } from './guides/css-guides/css-guides.component';
+import { CssGridComponent } from './guides/css-guides/css-grid/css-grid.component';
+import { GridContainerRelatedPropertiesComponent } from './guides/css-guides/css-grid/grid-container-related-properties/grid-container-related-properties.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { NngroupComponent } from './projects/nngroup/nngroup.component';
     ProjectsComponent,
     PluralsightComponent,
     NngroupComponent,
-    FreecodecampComponent
+    FreecodecampComponent,
+    GuidesComponent,
+    CssGuidesComponent,
+    CssGridComponent,
+    GridContainerRelatedPropertiesComponent
   ],
   imports: [
     BrowserModule,
