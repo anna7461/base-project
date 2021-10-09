@@ -25,6 +25,10 @@ import { FooterContactInfoComponent } from './projects/nngroup/shared-components
 import { CopyrightComponent } from './projects/nngroup/shared-components/footer/copyright/copyright.component';
 import { SidebarComponent } from './projects/nngroup/shared-components/body/sidebar/sidebar.component';
 import { SidebarNavigationMenuComponent } from './projects/nngroup/shared-components/body/sidebar/sidebar-navigation-menu/sidebar-navigation-menu.component';
+import { GuidesComponent } from './guides/guides.component';
+import { CssGuidesComponent } from './guides/css-guides/css-guides.component';
+import { CssGridComponent } from './guides/css-guides/css-grid/css-grid.component';
+import { GridContainerRelatedPropertiesComponent } from './guides/css-guides/css-grid/grid-container-related-properties/grid-container-related-properties.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +54,11 @@ import { SidebarNavigationMenuComponent } from './projects/nngroup/shared-compon
     FooterContactInfoComponent,
     CopyrightComponent,
     SidebarComponent,
-    SidebarNavigationMenuComponent
+    SidebarNavigationMenuComponent,
+    GuidesComponent,
+    CssGuidesComponent,
+    CssGridComponent,
+    GridContainerRelatedPropertiesComponent,
   ],
   imports: [
     BrowserModule,

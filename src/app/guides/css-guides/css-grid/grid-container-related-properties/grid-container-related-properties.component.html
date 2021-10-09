@@ -1,0 +1,277 @@
+<h2>Properties Related to the Grid Container</h2>
+
+<ol>
+  <li>
+    <h3>The <code>grid-template-columns</code> and <code>grid-template-rows</code> properties.</h3>
+
+    <div>
+      <p>These 2 properties specify the size of the grid tracks and line names. The property value is expressed as a
+        space-separated list, known as track list.</p>
+
+      <p>The <code>grid-template-columns</code> property defines the track list for all the columns in the grid, while
+        the <code>grid-template-rows</code> property defines the track list for all the rows in the grid. Line names are
+        optional.
+      </p>
+
+      <p>Because grid was made to be very flexible in terms of how developers can define very customized grids, there
+        are many different options available to define the values of these properties.</p>
+
+      <ul>
+        <li>
+          <h4><code>none</code></h4>
+
+          <p>This is the initial value. No explicit grid-tracks are created.</p>
+        </li>
+
+        <li>
+          <h4><code>< track-list ></code></h4>
+
+          <p>A list of values that specify the size of each grid track, and grid line names, which are optional.</p>
+        </li>
+
+        <li>
+          <h4><code>< track-size ></code></h4>
+
+          <p>There are 3 ways you can define < track-size >.</p>
+
+          <ol>
+            <li>
+              <h5>< track-breadth ></h5>
+
+              <ul>
+                <li>
+                  <p>Can be a CSS length or percentage, like 250px or 20%.</p>
+                </li>
+
+                <li>
+                  <p>Can be a flexible length, declared using the <code>fr</code> unit, which takes up a share of the
+                    remaining free space in proportion to its flex factor.</p>
+
+                  <p><u>For example:</u> Given a grid container of 750px with 3 columns of 150px, 1 fr and 2fr
+                    respectively. The flexibility sized columns will take up the remaining 600px in the ration of 1:2,
+                    so the second column takes up 200px and the third column takes up 400px.</p>
+                </li>
+
+                <li>
+                  <p>Can be the keyword <code>min-content</code>, which is the smallest size possible what does not lead
+                    to overflow.</p>
+                </li>
+
+                <li>
+                  <p>Can be the keyword <code>max-content</code>, which is the minimum size required to fit around the
+                    contents.</p>
+                </li>
+
+                <li>
+                  <p>Can be the keyword <code>auto</code>, which will fill up the remaining space available.</p>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <h5><code>minmax</code> ( < inflexible-breadth >, < track-breadth > )</h5>
+              <ul>
+                <li>
+                  <p>Can be a range as defined by the <code>minmax()</code> function, where the first value is the
+                    minimum and the second value is the maximum. For this case, the minimum value cannot be a flexible
+                    length, so you can use all the types of values as < track-breadth > except flexible units.</p>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <h5><code>fit-content</code> ( < length-percentage > )</h5>
+            </li>
+          </ol>
+        </li>
+
+        <li>
+          <h4><code>< track-repeat ></code></h4>
+
+          <p>As for < track-repeat >, it means we can have repeating < track-size >. We can do that with the <code>repeat()</code>
+            function that lets us specify a large number of columns or rows that follow a similar pattern.</p>
+        </li>
+
+        <li>
+          <h4><code>< line-names ></code></h4>
+
+          <p>If you're creating a more complicated grid, for example, to layout the entire website, it might be useful
+            to name the grid lines, to make the grid code easier to understand.</p>
+
+          <p>Line names can be any string except "span", which is a keyword.</p>
+
+          <mark>Grid lines can have more than one name.</mark>
+        </li>
+
+        <li>
+          <h4><code>< auto-track-list ></code></h4>
+
+          <p>A list of values that specify the size of each grid track, and grid line names, which are optional.</p>
+
+          <ul>
+            <li>
+              <h5><code>< fixed-size ></code></h5>
+
+              <p>There are three ways you can define < fixed-size >.</p>
+
+              <ol>
+                <li>
+                  <h6>< fixed-breadth ></h6>
+
+                  <p>Can be any CSS length or percentage value.</p>
+                </li>
+
+                <li>
+                  <h6>minmax < fixed-breadth >, < track-breadth ></h6>
+
+                  <p>Can be a range as defined by the <code>minmax()</code> function, where the first value is the
+                    minimum and the second value is the maximum. For this case, the minimum value must be a <
+                    fixed-breadth >, while the maximum value can be any values allowed for < track-breadth >.</p>
+                </li>
+
+                <li>
+                  <h6>minmax ( < inflexible-breadth >, < fixed-breadth > )</h6>
+
+                  <p>Can be a range as defined by the <code>minmax()</code> function, where the first value is the
+                    minimum and the second value is the maximum. For this case, the minimum value cannot be a flexible
+                    unit, while the maximum value must be a < fixed-breadth >.</p>
+                </li>
+              </ol>
+            </li>
+
+            <li>
+              <h5><code>< fixed-repeat ></code></h5>
+
+              <p>By using the repeat() notation, we can create a grid where we can specify how many times a fixed-size
+                grid column or row should be repeated.</p>
+            </li>
+
+            <li>
+              <h5><code>< auto-repeat ></code></h5>
+
+              <p>By using the repeat() notation, we can create a grid, where a fixed-size grid column or row can be
+                repeated to fill up the available space.</p>
+
+              <p>The <u>auto-fill</u> keyword will generate as many columns as will fit the available space without
+                causing the grid to overflow.</p>
+
+              <p>The <u>auto-fil</u> keyword behaves similarly. The difference is that <u>auto-fit</u> will collapse any
+                empty repeated tracks(which means their size is 0px).</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </li>
+
+  <li>
+    <h3>The <code>grid-template-area</code> property.</h3>
+
+    <div>
+      <p>This property defines named grid areas and provides a visualization of the grid structure, which may help make
+        underlying code easier to understand. The possible values have the following meanings:</p>
+
+      <ul>
+        <li>
+          <h4>none</h4>
+
+          <p>This is the initial value. No explicit grid tracks are created, and hence no named grid areas are
+            defined.</p>
+        </li>
+
+        <li>
+          <h4>< string ></h4>
+
+          <p>Each separate string creates a row while each word in the string creates a column. All strings must have
+            the same number of words, otherwise the declaration is invalid. Using a sequence of one or more '.' (U+200E
+            FULL STOP) represents a null call token, which is a unnamed area in the grid.</p>
+        </li>
+      </ul>
+    </div>
+  </li>
+
+  <li>
+    <h3>The <code>grid-template</code> property.</h3>
+
+    <div>
+      <p>This is a shorthand for setting <code>< grid-template-columns ></code>, <code>< grid-template-rows ></code> and
+        <code>< grid-template-areas ></code> in the single declaration.</p>
+
+      <p>The possible values and syntax forms have the following meanings:</p>
+
+      <ul>
+        <li>
+          <h4>none</h4>
+
+          <p>This sets all 3 properties to their initial values (which is none).</p>
+        </li>
+
+        <li>
+          <h4>< grid-template-row's > / < grid-template-columns' ></h4>
+
+          <p>This sets the < grid-template-rows' > and < grid-template-columns' > to specified values, while <
+            grid-template-areas' > is set to none.</p>
+
+          <p>Note, that the order of the syntax is important, where the first value is form < grid-template-rows' > and
+            the second value is for < grid-template-columns' >.</p>
+        </li>
+
+        <li>
+          <h4>[< line-names > ? < string > < track-size > ? < line-names > ?] + [/explicit-track-list>]?</h4>
+
+          <p>This sets the < grid-template-areas' > to the listed strings.</p>
+
+          <p>The <'grid-template-rows'> will be set to the < track-size >s that come after each string. The grid lines
+            will also be named based on the line names sandwiching each string.</p>
+
+          <p>The <'grid-template-columns'> will be set to the track listing specified after the slash. If nothing is
+            specified after the slash, it will be set to none.</p>
+        </li>
+      </ul>
+    </div>
+  </li>
+
+  <li>
+    <h3>The <code>grid-column-gap</code> and <code>grid-row-gap</code> properties.</h3>
+
+    <div>
+      <p>These properties specify the gutter size between grid columns and grid rows respectively. Gutters do not appear
+        on the edges of the grid which means there is not gutter before the first and last tracks.</p>
+
+      <ul>
+        <li>
+          <h4>< length-percentage ></h4>
+
+          <p>Can be any CSS length or a percentage of the parent's container width.</p>
+        </li>
+      </ul>
+    </div>
+  </li>
+
+  <li>
+    <h3>The <code>grid-gap</code> property.</h3>
+
+    <div>
+      <p>This is a shorthand for setting <'grid-row-gap'> and <'grid-column-gap'> in a single declaration. The first
+        value sets the <'grid-row-gap'> and the second value sets <'grid-column-gap'>.</p>
+
+      <p>If the <'grid-column-gap'> is not present, it will take the same value as <'grid-row-gap'>.</p>
+
+      <p>The possible values have the following meanings:</p>
+
+      <ul>
+        <li>
+          <h4><'grid-row-gap'></h4>
+
+          <p>Can be any CSS length or a percentage of the parent's container width.</p>
+        </li>
+
+        <li>
+          <h4><'grid-column-gap'></h4>
+
+          <p>Can be any CSS length or a percentage of the parent's container width.</p>
+        </li>
+      </ul>
+    </div>
+  </li>
+</ol>
