@@ -29,6 +29,14 @@ import { GuidesComponent } from './guides/guides.component';
 import { CssGuidesComponent } from './guides/css-guides/css-guides.component';
 import { CssGridComponent } from './guides/css-guides/css-grid/css-grid.component';
 import { GridContainerRelatedPropertiesComponent } from './guides/css-guides/css-grid/grid-container-related-properties/grid-container-related-properties.component';
+import { WebDesignComponent } from './web-design/web-design.component';
+import { DesignPrinciplesComponent } from './web-design/design-principles/design-principles.component';
+import { HierarchyComponent } from './web-design/design-principles/hierarchy/hierarchy.component';
+import { HierarchyTipsComponent } from './web-design/design-principles/hierarchy/hierarchy-tips/hierarchy-tips.component';
+import { ContrastComponent } from './web-design/design-principles/contrast/contrast.component';
+import { ContrastTipsComponent } from './web-design/design-principles/contrast/contrast-tips/contrast-tips.component';
+import { ProximityComponent } from './web-design/design-principles/proximity/proximity.component';
+import { ProximityTipsComponent } from './web-design/design-principles/proximity/proximity-tips/proximity-tips.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +67,14 @@ import { GridContainerRelatedPropertiesComponent } from './guides/css-guides/css
     CssGuidesComponent,
     CssGridComponent,
     GridContainerRelatedPropertiesComponent,
+    WebDesignComponent,
+    DesignPrinciplesComponent,
+    HierarchyComponent,
+    HierarchyTipsComponent,
+    ContrastComponent,
+    ContrastTipsComponent,
+    ProximityComponent,
+    ProximityTipsComponent,
   ],
   imports: [
     BrowserModule,
