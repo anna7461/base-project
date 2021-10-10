@@ -37,6 +37,11 @@ import { ContrastComponent } from './web-design/design-principles/contrast/contr
 import { ContrastTipsComponent } from './web-design/design-principles/contrast/contrast-tips/contrast-tips.component';
 import { ProximityComponent } from './web-design/design-principles/proximity/proximity.component';
 import { ProximityTipsComponent } from './web-design/design-principles/proximity/proximity-tips/proximity-tips.component';
+import { DesignSystemComponent } from './web-design/design-system/design-system.component';
+import { FigmaAndDesignThinkingComponent } from './web-design/design-system/figma-and-design-thinking/figma-and-design-thinking.component';
+import { StepOneComponent } from './web-design/design-system/figma-and-design-thinking/step-one/step-one.component';
+import { StepTwoComponent } from './web-design/design-system/figma-and-design-thinking/step-two/step-two.component';
+import { StepThreeComponent } from './web-design/design-system/figma-and-design-thinking/step-three/step-three.component';
 
 @NgModule({
   declarations: [
@@ -75,6 +80,11 @@ import { ProximityTipsComponent } from './web-design/design-principles/proximity
     ContrastTipsComponent,
     ProximityComponent,
     ProximityTipsComponent,
+    DesignSystemComponent,
+    FigmaAndDesignThinkingComponent,
+    StepOneComponent,
+    StepTwoComponent,
+    StepThreeComponent,
   ],
   imports: [
     BrowserModule,
