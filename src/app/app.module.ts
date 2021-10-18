@@ -29,6 +29,18 @@ import { GuidesComponent } from './guides/guides.component';
 import { CssGuidesComponent } from './guides/css-guides/css-guides.component';
 import { CssGridComponent } from './guides/css-guides/css-grid/css-grid.component';
 import { GridContainerRelatedPropertiesComponent } from './guides/css-guides/css-grid/grid-container-related-properties/grid-container-related-properties.component';
+import { JustinmindComponent } from './projects/justinmind/justinmind.component';
+import { JsmHeaderComponent } from './projects/justinmind/shared-components/jsm-header/jsm-header.component';
+import { ComponentsComponent } from './projects/justinmind/shared-components/components/components.component';
+import { JsmButtonComponent } from './projects/justinmind/shared-components/components/jsm-button/jsm-button.component';
+import { JsmLinkButtonComponent } from './projects/justinmind/shared-components/components/jsm-link-button/jsm-link-button.component';
+import { JsmFooterComponent } from './projects/justinmind/shared-components/jsm-footer/jsm-footer.component';
+import { JsmBannerComponent } from './projects/justinmind/shared-components/jsm-banner/jsm-banner.component';
+import { JsmRecommendedReadingComponent } from './projects/justinmind/shared-components/jsm-recommended-reading/jsm-recommended-reading.component';
+import { JsmSuccessStoriesComponent } from './projects/justinmind/shared-components/jsm-success-stories/jsm-success-stories.component';
+import { JsmSpecificationsComponent } from './projects/justinmind/shared-components/jsm-specifications/jsm-specifications.component';
+import { JsmHeroComponent } from './projects/justinmind/shared-components/jsm-hero/jsm-hero.component';
+import { JsmPopularCustomersComponent } from './projects/justinmind/shared-components/jsm-popular-customers/jsm-popular-customers.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +71,18 @@ import { GridContainerRelatedPropertiesComponent } from './guides/css-guides/css
     CssGuidesComponent,
     CssGridComponent,
     GridContainerRelatedPropertiesComponent,
+    JustinmindComponent,
+    JsmHeaderComponent,
+    ComponentsComponent,
+    JsmButtonComponent,
+    JsmLinkButtonComponent,
+    JsmFooterComponent,
+    JsmBannerComponent,
+    JsmRecommendedReadingComponent,
+    JsmSuccessStoriesComponent,
+    JsmSpecificationsComponent,
+    JsmHeroComponent,
+    JsmPopularCustomersComponent,
   ],
   imports: [
     BrowserModule,

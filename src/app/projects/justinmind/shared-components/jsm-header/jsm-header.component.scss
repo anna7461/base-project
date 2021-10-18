@@ -1,0 +1,36 @@
+.jsm-header-nav {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+
+  .jsm-header-nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .nav-menu-item {
+      margin: 3px 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .label:not(:last-child) {
+        margin-right: 9px;
+      }
+    }
+  }
+
+  .nav-dropdown {
+    display: none;
+  }
+}
+
+.layout-inner-container {
+  max-width: 1366px;
+  width: 100%;
+  margin: auto;
+  padding: 15px 30px;
+}

@@ -1,0 +1,36 @@
+.footer-nav-grid {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: self-start;
+  grid-auto-columns: 1fr;
+}
+
+.footer-nav-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.layout-inner-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 15px 30px;
+}
+
+.grid-column-flow {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 3rem;
+}
+
+.grid-row-flow {
+  display: grid;
+  grid-auto-flow: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}

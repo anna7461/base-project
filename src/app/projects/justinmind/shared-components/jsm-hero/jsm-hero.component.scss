@@ -1,0 +1,48 @@
+.grid-row-flow {
+  display: grid;
+  grid-auto-flow: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  grid-row-gap: 24px;
+}
+
+.flex-column-flow-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .flex-item {
+    margin: 6px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      margin: 6px;
+    }
+
+    span {
+      font-size: 0.85em;
+    }
+  }
+}
+
+.layout-inner-container {
+  max-width: 920px;
+  width: 100%;
+  margin: auto;
+  padding: 15px 30px;
+  color: #ffffff;
+}
+
+.heading-1 {
+  font-size: 3.25em;
+  line-height: 1.3;
+}
+
+.heading-3 {
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-weight: 300;
+}

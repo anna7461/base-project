@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
 // CSS Pro Tips 02.01.2021 Notes
 
 /* 1. Use :root for flexible type.
@@ -34,6 +36,11 @@ html {
 body {
   // Utilize the root em unit based on the value calculated by :root.
   font: 1rem / 1.5 sans-serif;
+  margin: 0;
+
+  app-justinmind {
+    font-family: 'Montserrat', sans-serif;
+  }
 }
 
 
@@ -85,4 +92,9 @@ img {
     display: block;
     font-size: 0.25rem;
   }
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
 }

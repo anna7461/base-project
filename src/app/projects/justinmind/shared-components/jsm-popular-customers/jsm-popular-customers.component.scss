@@ -1,0 +1,21 @@
+.grid-column-flow {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 3rem;
+}
+
+.grid-row-flow {
+  display: grid;
+  grid-auto-flow: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.layout-inner-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 15px 30px;
+}

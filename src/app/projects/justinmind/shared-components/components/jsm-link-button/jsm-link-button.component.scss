@@ -1,0 +1,44 @@
+:host(app-jsm-link-button) {
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    .link {
+      opacity: 0.5;
+    }
+  }
+
+  :host-context(.jsm-header-nav) & {
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  :host-context(.jsm-footer-nav) {
+    font-size: 0.85rem;
+    font-weight: 400;
+  }
+}
+
+.link-button-small {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 0.5em;
+  display: inline-block;
+
+  :host-context(.jsm-footer-nav) & {
+    color: #55585a;
+  }
+}
+
+.link-button-underlined {
+  color: #2b2b2b;
+  font-size: 15px;
+  border-bottom: 1px solid #abb0b3;
+  line-height: 2;
+  display: inline;
+  padding-bottom: 5px;
+
+  &:hover {
+    border-color: transparent;
+  }
+}
