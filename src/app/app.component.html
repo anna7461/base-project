@@ -1,3 +1,9 @@
-<app-projects></app-projects>
+<ul>
+  <li (click)="openProjects()">Projects</li>
 
-<app-guides></app-guides>
+  <li (click)="openGuides()">Guides</li>
+</ul>
+
+<app-projects *ngIf="showProjects"></app-projects>
+
+<app-guides *ngIf="showGuides"></app-guides>

@@ -1,3 +1,15 @@
 <p>projects works!</p>
 
-<app-nngroup></app-nngroup>
+<ul>
+  <li (click)="openFreeCodeCamp()">FreeCodeCamp</li>
+  <li (click)="openNnGroup()">NNGroup</li>
+  <li (click)="openJustInMind()">Justinmind</li>
+  <li (click)="openPluralsight()">Pluralsight</li>
+  <li (click)="openToptal()">Toptal</li>
+</ul>
+
+<app-freecodecamp *ngIf="showFreeCodeCamp"></app-freecodecamp>
+<app-nngroup *ngIf="showNnGroup"></app-nngroup>
+<app-justinmind *ngIf="showJustInMind"></app-justinmind>
+<app-pluralsight *ngIf="showPluralsight"></app-pluralsight>
+<app-toptal *ngIf="showToptal"></app-toptal>

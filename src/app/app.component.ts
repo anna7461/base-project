@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'base-project';
+
+  public showProjects: boolean;
+  public showGuides: boolean;
+
+  public openProjects(): boolean {
+    return (this.showProjects = true) && (this.showGuides = false);
+  }
+
+  public openGuides(): boolean {
+    return (this.showGuides = true) && (this.showProjects = false);
+  }
 }
