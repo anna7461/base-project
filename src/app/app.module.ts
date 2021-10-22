@@ -29,6 +29,9 @@ import { GuidesComponent } from './guides/guides.component';
 import { CssGuidesComponent } from './guides/css-guides/css-guides.component';
 import { CssGridComponent } from './guides/css-guides/css-grid/css-grid.component';
 import { GridContainerRelatedPropertiesComponent } from './guides/css-guides/css-grid/grid-container-related-properties/grid-container-related-properties.component';
+import { MicrobizComponent } from './projects/microbiz/microbiz.component';
+import { MicrobizCustomerOrderComponent } from './projects/microbiz/microbiz-customer-order/microbiz-customer-order.component';
+import { MicrobizCustomerOrderFullWidthModalComponent } from './projects/microbiz/microbiz-customer-order/microbiz-customer-order-full-width-modal/microbiz-customer-order-full-width-modal.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +62,9 @@ import { GridContainerRelatedPropertiesComponent } from './guides/css-guides/css
     CssGuidesComponent,
     CssGridComponent,
     GridContainerRelatedPropertiesComponent,
+    MicrobizComponent,
+    MicrobizCustomerOrderComponent,
+    MicrobizCustomerOrderFullWidthModalComponent,
   ],
   imports: [
     BrowserModule,
