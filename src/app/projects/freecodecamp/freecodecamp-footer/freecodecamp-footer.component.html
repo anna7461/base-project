@@ -1,0 +1,39 @@
+<footer class="freecodecamp-footer">
+  <div class="footer-content-row">
+    <div class="footer-about">
+      <p>freeCodeCamp is a donor-supported tax-exempt 501(c)(3) nonprofit organization (United States Federal Tax
+        Identification Number: 82- 0779546)</p>
+
+      <p>Our mission: to help people learn to code for free. We accomplish this by creating thousands of videos, and
+        interactive coding lessons - all freely available to the public. We also have thousands of freeCodeCamp study
+        groups around the word.</p>
+
+      <p>Donations to freeCodeCamp go toward our education initiatives, and help pay for servers, services, and
+        staff.</p>
+
+      <p>You can <a>make a tax-deductive donation here.</a></p>
+    </div>
+
+    <div class="trending-guides">
+      <h6>Trending Guides</h6>
+
+      <div class="trending-guides-list">
+        <ng-container *ngFor="let item of trendingGuidesList">
+          <a href="{{item.link}}">{{item.label}}</a>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-content-row">
+    <div class="nonprofit">
+      <h6>Our Nonprofit</h6>
+
+      <div class="nonprofit-list">
+        <ng-container *ngFor="let item of nonProfitList">
+          <a href="{{item.link}}">{{item.label}}</a>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</footer>

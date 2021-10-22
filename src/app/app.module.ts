@@ -29,6 +29,7 @@ import { GuidesComponent } from './guides/guides.component';
 import { CssGuidesComponent } from './guides/css-guides/css-guides.component';
 import { CssGridComponent } from './guides/css-guides/css-grid/css-grid.component';
 import { GridContainerRelatedPropertiesComponent } from './guides/css-guides/css-grid/grid-container-related-properties/grid-container-related-properties.component';
+import { FreecodecampFooterComponent } from './projects/freecodecamp/freecodecamp-footer/freecodecamp-footer.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { GridContainerRelatedPropertiesComponent } from './guides/css-guides/css
     CssGuidesComponent,
     CssGridComponent,
     GridContainerRelatedPropertiesComponent,
+    FreecodecampFooterComponent,
   ],
   imports: [
     BrowserModule,
