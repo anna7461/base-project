@@ -32,6 +32,11 @@ import { GridContainerRelatedPropertiesComponent } from './guides/css-guides/css
 import { MicrobizComponent } from './projects/microbiz/microbiz.component';
 import { MicrobizCustomerOrderComponent } from './projects/microbiz/microbiz-customer-order/microbiz-customer-order.component';
 import { MicrobizCustomerOrderFullWidthModalComponent } from './projects/microbiz/microbiz-customer-order/microbiz-customer-order-full-width-modal/microbiz-customer-order-full-width-modal.component';
+import { CoModalHeaderComponent } from './projects/microbiz/microbiz-customer-order/microbiz-customer-order-full-width-modal/co-modal-header/co-modal-header.component';
+import { CoModalBodyComponent } from './projects/microbiz/microbiz-customer-order/microbiz-customer-order-full-width-modal/co-modal-body/co-modal-body.component';
+import { CoModalSidebarComponent } from './projects/microbiz/microbiz-customer-order/microbiz-customer-order-full-width-modal/co-modal-sidebar/co-modal-sidebar.component';
+import { CoModalFooterComponent } from './projects/microbiz/microbiz-customer-order/microbiz-customer-order-full-width-modal/co-modal-footer/co-modal-footer.component';
+import { CoModalMainInfoComponent } from './projects/microbiz/microbiz-customer-order/microbiz-customer-order-full-width-modal/co-modal-body/co-modal-main-info/co-modal-main-info.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +70,11 @@ import { MicrobizCustomerOrderFullWidthModalComponent } from './projects/microbi
     MicrobizComponent,
     MicrobizCustomerOrderComponent,
     MicrobizCustomerOrderFullWidthModalComponent,
+    CoModalHeaderComponent,
+    CoModalBodyComponent,
+    CoModalSidebarComponent,
+    CoModalFooterComponent,
+    CoModalMainInfoComponent,
   ],
   imports: [
     BrowserModule,

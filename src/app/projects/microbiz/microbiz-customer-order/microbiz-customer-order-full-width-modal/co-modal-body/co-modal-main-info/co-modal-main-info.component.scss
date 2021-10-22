@@ -1,0 +1,66 @@
+.co-modal-main-grid-info-block {
+  background-color: #EBEBEB;
+  display: grid;
+  padding: 15px;
+
+  @media (max-width: 480px) {
+    grid-row-gap: 15px;
+  }
+
+  @media (min-width: 481px) {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+  }
+
+  @media (min-width: 1025px) {
+    grid-auto-flow: column;
+    grid-auto-columns: 0.5fr;
+
+    .co-main-grid-notes {
+      grid-column: 1 / span 2;
+    }
+
+    .co-main-grid-info {
+      grid-column: 4 / span 5;
+    }
+  }
+}
+
+.co-main-grid-notes {
+  display: grid;
+  grid-template-rows: auto 1fr;
+
+  label {
+    color: #656565;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  textarea {
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    padding: 10px 12px;
+    font-family: inherit;
+  }
+}
+
+.co-main-grid-info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  grid-column-gap: 15px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  color: #656565;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 12px 12px;
+  text-align: right;
+
+  .total {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}

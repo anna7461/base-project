@@ -1,85 +1,77 @@
 <div class="microbiz-customer-order-full-width-modal-inner-container">
-  <header class="co-modal-header">
-    <span>Work Order: Mesrop Mashtoc 1</span>
-    <span>(WO-T-S-11)</span>
-    <span>Order Status</span>
-    <span>Open</span>
-  </header>
-
-  <main class="co-modal-main">
-    <span>Customer</span>
-    <span>Mesrop Mashtoc1</span>
-    <span>Handling Type</span>
-    <span>Ship</span>
-    <span>Service Request</span>
-    <span>Mesrop Mashtox1</span>
-    <span>Billing</span>
-    <span>Mesrop Mashtoc</span>
-    <span>GM Group</span>
-    <span>Komitas str</span>
-    <span>Yerevan, AK 0018</span>
-    <span>Phone</span>
-    <span>444</span>
-    <span>Email</span>
-    <span>mesrop@gmail.com</span>
-    <span>Shipping</span>
-    <span>Mesrop Mashtoc</span>
-    <span>0018</span>
-    <span>Date Due</span>
-    <span>09/27/2021</span>
-    <span>Service Item (1 of 2)</span>
-    <span>lorem ipsum dolor sit amet</span>
-    <span>Order Date</span>
-    <span>2021-09-27 01:59:03</span>
-    <span>Store</span>
-    <span>T S</span>
-    <span>Assigned To</span>
-    <span>Please Select</span>
-
-    <section class="co-modal-main-grid-info-block">
-      <div class="co-main-grid-notes">
-        <label for="notes-textarea">Notes</label>
-        <textarea id="notes-textarea" name="notes" placeholder="Notes here..." rows="6"></textarea>
-      </div>
-
-      <div class="co-main-grid-info">
-        <span>Discounts</span>
-        <span>0.00</span>
-        <span>Subtotal</span>
-        <span>440.00</span>
-        <span>Taxes</span>
-        <span>0.00</span>
-        <span>Total</span>
-        <span>450.00</span>
-        <span>Deposit</span>
-        <span>0.00</span>
-        <span class="total">Balance Due</span>
-        <span class="total">440.00</span>
-      </div>
-    </section>
-  </main>
-
-  <aside class="co-modal-sidebar">
-    <span>Balance Due</span>
-    <span>$440.00</span>
-    <span>Order</span>
-    <span>Item</span>
-    <span>Customer</span>
-    <span>Print/Email</span>
-  </aside>
-
-  <footer class="co-modal-footer">
-    <button class="mbz-cancel-button">
-      <span class="icon"></span>
-      <span class="label">Cancel</span>
-    </button>
-
-    <button class="mbz-mark-button">
-      <span class="icon"></span>
-      <span class="label">Mark Ready to Ship</span>
-    </button>
-    <button class="mbz-save-button">
-      <span class="label">Save & Continue</span>
-    </button>
-  </footer>
+    <app-co-modal-header class="co-modal-header"></app-co-modal-header>
+    <app-co-modal-body class="co-modal-main"></app-co-modal-body>
+    <app-co-modal-sidebar class="co-modal-sidebar"></app-co-modal-sidebar>
+    <app-co-modal-footer class="co-modal-footer"></app-co-modal-footer>
 </div>
+
+<!--<div class="microbiz-customer-order-full-width-modal-inner-container">-->
+<!--  <header class="co-modal-header">-->
+<!--    <span>Work Order: Mesrop Mashtoc 1</span>-->
+<!--    <span>(WO-T-S-11)</span>-->
+<!--    <span>Order Status</span>-->
+<!--    <span>Open</span>-->
+<!--  </header>-->
+
+<!--  <main class="co-modal-main">-->
+<!--    <span>Customer</span>-->
+<!--    <span>Mesrop Mashtoc1</span>-->
+<!--    <span>Handling Type</span>-->
+<!--    <span>Ship</span>-->
+<!--    <span>Service Request</span>-->
+<!--    <span>Mesrop Mashtox1</span>-->
+<!--    <span>Billing</span>-->
+<!--    <span>Mesrop Mashtoc</span>-->
+<!--    <span>GM Group</span>-->
+<!--    <span>Komitas str</span>-->
+<!--    <span>Yerevan, AK 0018</span>-->
+<!--    <span>Phone</span>-->
+<!--    <span>444</span>-->
+<!--    <span>Email</span>-->
+<!--    <span>mesrop@gmail.com</span>-->
+<!--    <span>Shipping</span>-->
+<!--    <span>Mesrop Mashtoc</span>-->
+<!--    <span>0018</span>-->
+<!--    <span>Date Due</span>-->
+<!--    <span>09/27/2021</span>-->
+<!--    <span>Service Item (1 of 2)</span>-->
+<!--    <span>lorem ipsum dolor sit amet</span>-->
+<!--    <span>Order Date</span>-->
+<!--    <span>2021-09-27 01:59:03</span>-->
+<!--    <span>Store</span>-->
+<!--    <span>T S</span>-->
+<!--    <span>Assigned To</span>-->
+<!--    <span>Please Select</span>-->
+
+<!--    <section class="co-modal-main-grid-info-block">-->
+<!--      <div class="co-main-grid-notes">-->
+<!--        <label for="notes-textarea">Notes</label>-->
+<!--        <textarea id="notes-textarea" name="notes" placeholder="Notes here..." rows="6"></textarea>-->
+<!--      </div>-->
+
+<!--      <div class="co-main-grid-info">-->
+<!--        <span>Discounts</span>-->
+<!--        <span>0.00</span>-->
+<!--        <span>Subtotal</span>-->
+<!--        <span>440.00</span>-->
+<!--        <span>Taxes</span>-->
+<!--        <span>0.00</span>-->
+<!--        <span>Total</span>-->
+<!--        <span>450.00</span>-->
+<!--        <span>Deposit</span>-->
+<!--        <span>0.00</span>-->
+<!--        <span class="total">Balance Due</span>-->
+<!--        <span class="total">440.00</span>-->
+<!--      </div>-->
+<!--    </section>-->
+<!--  </main>-->
+
+<!--  <aside class="co-modal-sidebar">-->
+<!--    <span>Balance Due</span>-->
+<!--    <span>$440.00</span>-->
+<!--    <span>Order</span>-->
+<!--    <span>Item</span>-->
+<!--    <span>Customer</span>-->
+<!--    <span>Print/Email</span>-->
+<!--  </aside>-->
+

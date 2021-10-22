@@ -5,7 +5,7 @@
       font-size based on the viewport height and width using :root.
 */
 :root {
-  font-size: calc(0.5vw + 0.5vh + 0.5vmin);
+  //font-size: calc(0.5vw + 0.5vh + 0.5vmin);
 }
 
 
@@ -16,6 +16,8 @@
  */
 html {
   box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
 *,
