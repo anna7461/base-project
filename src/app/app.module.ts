@@ -29,6 +29,11 @@ import { GuidesComponent } from './guides/guides.component';
 import { CssGuidesComponent } from './guides/css-guides/css-guides.component';
 import { CssGridComponent } from './guides/css-guides/css-grid/css-grid.component';
 import { GridContainerRelatedPropertiesComponent } from './guides/css-guides/css-grid/grid-container-related-properties/grid-container-related-properties.component';
+import { ResourcesComponent } from './resources/resources.component';
+import { LoginFormSnippetComponent } from './resources/snippets/login-form-snippet/login-form-snippet.component';
+import { NavbarSnippetComponent } from './resources/snippets/navbar-snippet/navbar-snippet.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ContactFormSnippetComponent } from './resources/snippets/contact-form-snippet/contact-form-snippet.component';
 
 @NgModule({
   declarations: [
@@ -59,10 +64,15 @@ import { GridContainerRelatedPropertiesComponent } from './guides/css-guides/css
     CssGuidesComponent,
     CssGridComponent,
     GridContainerRelatedPropertiesComponent,
+    ResourcesComponent,
+    LoginFormSnippetComponent,
+    NavbarSnippetComponent,
+    ContactFormSnippetComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

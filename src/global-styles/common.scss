@@ -5,7 +5,7 @@
       font-size based on the viewport height and width using :root.
 */
 :root {
-  font-size: calc(0.5vw + 0.5vh + 0.5vmin);
+  //font-size: calc(0.5vw + 0.5vh + 0.5vmin);
 }
 
 
@@ -33,7 +33,9 @@ html {
 */
 body {
   // Utilize the root em unit based on the value calculated by :root.
-  font: 1rem / 1.5 sans-serif;
+  font: 16px / 1.5 sans-serif;
+  margin:0;
+  padding:0;
 }
 
 
@@ -43,6 +45,7 @@ body {
 */
 input[type="text"],
 input[type="number"],
+input[type="email"],
 select,
 textarea {
   font-size: 1rem;
