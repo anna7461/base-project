@@ -1,0 +1,210 @@
+<nav class="container header-navigation">
+  <a class="brand-logo" href="#"><img src="https://uxmisfit.com/wp-content/uploads/2021/01/uxmisfit_light.png" alt=""></a>
+  <div>
+    <a class="navigation-link" href="#">Home</a>
+    <a class="navigation-link" href="#"><i class="fas fa-gem"></i> UX Tools</a>
+    <a class="navigation-link" href="#">Free Book Chapter</a>
+    <a class="navigation-link" href="#">About</a>
+    <a class="navigation-link" href="#">Contact</a>
+  </div>
+  <a class="navigation-icon-link" href="#"><i class="fas fa-bars"></i></a>
+  <a class="navigation-icon-link" href="#"><i class="fa fa-search"></i></a>
+  <div>
+    <a class="navigation-icon-link" href="#"><i class="fab fa-facebook-f"></i></a>
+    <a class="navigation-icon-link" href="#"><i class="fab fa-twitter"></i></a>
+    <a class="navigation-icon-link" href="#"><i class="fab fa-dribbble"></i></a>
+    <a class="navigation-icon-link" href="#"><i class="fab fa-instagram"></i></a>
+    <a class="navigation-icon-link" href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+</nav>
+
+<section class="article-banner">
+  <div class="container">
+    <h3 class="banner-heading">Building Design System: Part 3 Colors</h3>
+    <div class="banner-meta">
+      <span>July 12, 2021 <i class="fa fa-circle"></i></span>
+      <span>By <a href="#">Thalion</a> <i class="fa fa-circle"></i></span>
+      <span><a href="#">Design Systems</a>, <a href="#">Prime</a>, <a href="#">Ultimate Guides</a></span>
+    </div>
+  </div>
+</section>
+
+<div class="container article-layout">
+  <main>
+    <div class="content-image"><img src="https://uxmisfit.com/wp-content/uploads/2021/08/ds_part3_colors.jpg" alt=""></div>
+
+    <p class="paragraph-content">Creating Your Design System from scratch is never done overnight. You already prepared for building your UI Library by reading how others do it, seeing some samples & picking the right tool? Now you are ready to open Figma or Sketch and start to play… with Colors!</p>
+    <p class="paragraph-content">This is the series of articles helping you to create your own Design System UI Library, previous parts:</p>
+    <ul>
+      <li>
+        <p class="paragraph-content"><a class="content-link" href="#">Part 1: Before You Start</a></p>
+      </li>
+      <li>
+        <p class="paragraph-content"><a class="content-link" href="#">Part 2: Pick a Took - Figma or Sketch?  </a></p>
+      </li>
+    </ul>
+    <p class="paragraph-content">Colors are the most important (next to Typography), when it comes to creating a Design System. Your Graphical User Interface may not have icons, panels, pictures, but it surely contains some colors & text. That’s why picking the right set of tones is very important.</p>
+
+    <!--   Naming Convention-->
+    <h1 class="heading-h1">Naming Convention</h1>
+    <p class="paragraph-content">Picking the right naming convention is the first thing you should do. It should be done before defining colors and the number of tones. Why? Here is the explanation.</p>
+    <p class="paragraph-content">Color names in the Design System should reflect their purpose. That is why your colors have to be named like: Primary, Secondary or Tertiary instead of Red, Purple, Blue. This will give you more flexibility, and even if your project goes through rebranding, the color names will stay the same in the UI Library. Prepare the following names:</p>
+    <ul>
+      <li>
+        <p class="paragraph-content"><strong>Primary</strong> - usually the main brand color.</p>
+      </li>
+      <li>
+        <p class="paragraph-content"><strong>Secondary</strong> - may be optional.</p>
+      </li>
+      <li>
+        <p class="paragraph-content"><strong>Tertiary</strong> - may be optional.</p>
+      </li>
+      <li>
+        <p class="paragraph-content"><strong>Success</strong> - for the accomplished goals and other successful operations.</p>
+      </li>
+      <li>
+        <p class="paragraph-content"><strong>Warning</strong> - use it when you have to warn a user.</p>
+      </li>
+      <li>
+        <p class="paragraph-content"><strong>Error</strong> - as the name suggests, elements displaying Error should use this color.</p>
+      </li>
+      <li>
+        <p class="paragraph-content"><strong>Neutral</strong> - for all kinds of grayish elements.</p>
+      </li>
+      <li>
+        <p class="paragraph-content"><strong>White & Black</strong> - white & black are always these pure colors that never changes.</p>
+      </li>
+    </ul>
+    <p class="paragraph-content">Ok, so you have your base colors. But to ensure good flexibility and accessibility, your colors have to include more than one tone. You have to create tints & shades.</p>
+    <p class="paragraph-content">For these varitaions, I recommend following naming convention:</p>
+    <p class="paragraph-content">For base (default) color use name "500", for lighter tones use "400", "300", "200" and "100". For shades use bigger numbers like "600", "700" and so on.</p>
+    <p class="paragraph-content">You will end up with following convention:</p>
+    <p class="paragraph-content">[Color name]/[Tone]</p>
+    <p class="paragraph-content">Examples of names:</p>
+    <ul>
+      <li><p class="paragraph-content">Primary/500</p></li>
+      <li><p class="paragraph-content">Success/100</p></li>
+      <li><p class="paragraph-content">Warning/300</p></li>
+      <li><p class="paragraph-content">Secondary/600</p></li>
+      <li><p class="paragraph-content">Neutral/700</p></li>
+    </ul>
+    <p class="paragraph-content">Why should you consider picking these numbers as color tone names? Naming tones by numbers is simple, easily understandable & you may expand it in the future easily.</p>
+    <p class="paragraph-content">Imagine if you would have to name your color "Secondary light lighter lighter" - this would be hard to manage!</p>
+    <p class="paragraph-content content-image"><img src="https://uxmisfit.com/wp-content/uploads/2021/07/ds_part3_naming_convention.jpg" alt=""></p>
+    <p class="paragraph-content">When you design in Figma or Sketch, I recommend adding “/” after the color name. Thanks to this, your tones will be gathered under one group.</p>
+
+    <!--    How many tones of colors Design System need?-->
+    <h1 class="heading-h1">How many tones of colors Design System need?</h1>
+    <p class="paragraph-content">Actually, there is no straightforward answer. Some tiny projects for the landing page may need only 1 (base) tone. Some may require only 3 tones. However, to have good comfort of designing solution I recommend you to have at least 5 colors, one as a base, two as lighter tones and two for shades.</p>
+    <p class="paragraph-content">However, if you would like to have a very flexible design system strive for 8 or 9 tones for every color. Just like I did in my
+      <a class="content-link" href="#">design system</a> that I use to kick off every new project quickly.</p>
+
+    <!--    How to set the right tone for the color-->
+    <h1 class="heading-h1">How to set the right tone for the color</h1>
+    <p class="paragraph-content">Many designers struggle with this task. If you would like to know my own technique that allows me to create an attractive looking palette, here is the short answer:</p>
+    <p class="paragraph-content">I switch my design tool color picker to HSB. Then I take the base color (for example: “Primary/500”). <strong>If I want to make the lighter color, I increase B value and decrease S</strong> (which stands for Saturation).</p>
+    <p class="paragraph-content content-image"><img src="https://uxmisfit.com/wp-content/uploads/2021/07/ds_part3_tone_light.jpg" alt=""></p>
+    <p class="paragraph-content"><strong>For shades, I use the same technique, but the direction is opposite. B (Brightness) goes lower, and S is increased.</strong> More saturated dark tones look much better.</p>
+    <p class="paragraph-content content-image">https://uxmisfit.com/wp-content/uploads/2021/07/ds_part3_tone_dark.jpg</p>
+    <p class="paragraph-content">Obviously, I add some little tweaks to it, especially in H (Hue) value. For example, I want to make darker tones of purple more blueish, so the Hue goes a little in that direction with every darker tone. This technique creates nice looking gra</p>
+    <p class="paragraph-content">I added lots of tips on <a class="content-link" href="#">colors in my practical guide</a>.</p>
+
+    <!--    Do you need more colors?-->
+    <h1 class="heading-h1">Do you need more colors?</h1>
+    <p class="paragraph-content">As mentioned above, coors & tones are the absolute minimum for the Design System.</p>
+    <p class="paragraph-content">If your peoject will include badges for social media or sell products on eCommerce platforms, you may need to innclude also the color of their brands in your Design System to keep them consistent across your Library.</p>
+    <p class="paragraph-content">There are lots of modern gradients around the web in multiple designs. They also may be included in the Design System. When it comes to the naming of your gradients, yo may be more creative and choose names like "Mint Forrest" or "Warm Sunshine". Names like this will be better to remember than just 2 or 3 Hex codes that create the mood of the specific gradient.</p>
+
+    <!--   Are you in a rush?-->
+    <h1 class="heading-h1">Are you in a rush?</h1>
+    <p class="paragraph-content">If you do not have a time to play with separate tones, you may use one of the generators like
+      <a class="content-link" href="#">Tint & Shade Generator</a>. The final results are always good. However, for a truly excellent color palette, it is always good to adjust it on your own.</p>
+
+    <!--   Neutrals - the most important ones-->
+    <h1 class="heading-h1">Neutrals - the most important ones</h1>
+    <p class="paragraph-content">Your design may not include blue color, may not even include green, but it will surely include neutral colors. When it comes to black & white, I like to keep them as pure tones. However, grays are a bit different...</p>
+    <p class="paragraph-content">If you want to create gray tones, I recommend you experiment with adding some color to gray, a little bit of blue may give outstanding results. Try to avoid pure gray colors! They rarely occur in nature.</p>
+    <p class="paragraph-content content-image"><img src="https://uxmisfit.com/wp-content/uploads/2021/07/ds_part3_neutrals.jpg" alt=""></p>
+
+    <!--   To sum it up-->
+    <h1 class="heading-h1">To sum it up</h1>
+    <p class="paragraph-content">The first thing to do when you start creating Design Systems UI Library is to set proper colors that establish a foundation of shared styles. When it comes to the naming convention – think of the purpose of the specific color and plan for lots of additional tones.</p>
+    <p class="paragraph-content">You should also pay more attention to grays. These neutrals are more important than you may think!</p>
+    <p class="paragraph-content">I hope you found these tips useful!</p>
+
+    <!--   By the way…-->
+    <h1 class="heading-h1">By the way…</h1>
+    <p class="paragraph-content">If you start a new project or would like to organize your UI Library in Figma or Sketch — do not waste your time creating everything from scratch. Feel free to use the
+      <a class="content-link" href="#">Prime — Design System Kit</a>. It helps you design UI with the best Figma and Sketch techniques — <strong>Smart/Auto Layout</strong>, Variants, Symbol Overrides and more. <a class="content-link" href="#">See Prime in action.</a></p>
+    <p class="paragraph-content">To make it easier there is a gift 🎁 - Use <strong>UXMISFIT10</strong> offer code to get <strong>10% Off</strong>.</p>
+  </main>
+  <aside>
+    <!--   Categories -->
+    <h1 class="sidebar-menu-title">Categories <span class="sidebar-menu-title-line"></span></h1>
+    <ul>
+      <li class="menu-item"><a class="menu-link" href="#">Articles</a></li>
+      <li class="menu-item"><a class="menu-link" href="#">Design Resources</a></li>
+      <li class="menu-item"><a class="menu-link" href="#">Design Systems</a></li>
+      <li class="menu-item"><a class="menu-link" href="#">Figma</a></li>
+      <li class="menu-item"><a class="menu-link" href="#">Inspiration</a></li>
+      <li class="menu-item"><a class="menu-link" href="#">Motion Design</a></li>
+      <li class="menu-item"><a class="menu-link" href="#">Productive Designer</a></li>
+      <li class="menu-item"><a class="menu-link" href="#">Sketch</a></li>
+      <li class="menu-item"><a class="menu-link" href="#">SQUID</a></li>
+      <li class="menu-item"><a class="menu-link" href="#">Tips</a></li>
+      <li class="menu-item"><a class="menu-link" href="#">Ultimate Guides</a></li>
+      <li class="menu-item"><a class="menu-link" href="#">Uncategorized</a></li>
+    </ul>
+
+    <input type="search" placeholder="Enter keywords...">
+    <div class="i fa fa-search"></div>
+
+    <!--   Tags -->
+    <h1 class="sidebar-menu-title">Tags <span class="sidebar-menu-title-line"></span></h1>
+    <a class="tag" href="#">Accessibility</a>
+    <a class="tag" href="#">ADS</a>
+    <a class="tag" href="#">Analytics</a>
+    <a class="tag" href="#">Android</a>
+    <a class="tag" href="#">Android Wear</a>
+    <a class="tag" href="#">Apple</a>
+    <a class="tag" href="#">Career</a>
+    <a class="tag" href="#">Checklist</a>
+    <a class="tag" href="#">Design</a>
+    <a class="tag" href="#">Design System</a>
+    <a class="tag" href="#">Design Thinking</a>
+    <a class="tag" href="#">Essentials</a>
+    <a class="tag" href="#">Figma</a>
+    <a class="tag" href="#">Fluent Design</a>
+    <a class="tag" href="#">Glassmorphosm</a>
+    <a class="tag" href="#">Google</a>
+    <a class="tag" href="#">How to</a>
+    <a class="tag" href="#">Icon</a>
+    <a class="tag" href="#">iOS</a>
+    <a class="tag" href="#">macOS</a>
+    <a class="tag" href="#">Marketing</a>
+    <a class="tag" href="#">Material Design</a>
+    <a class="tag" href="#">Minimalistic</a>
+    <a class="tag" href="#">Mobile Market</a>
+    <a class="tag" href="#">Monetization</a>
+    <a class="tag" href="#">Motion Design</a>
+    <a class="tag" href="#">Notification</a>
+    <a class="tag" href="#">Prime</a>
+    <a class="tag" href="#">Productivity</a>
+    <a class="tag" href="#">Quote</a>
+    <a class="tag" href="#">Research</a>
+    <a class="tag" href="#">Siri</a>
+    <a class="tag" href="#">Sirikit</a>
+    <a class="tag" href="#">Sketch</a>
+    <a class="tag" href="#">Smartwatch</a>
+    <a class="tag" href="#">Template</a>
+    <a class="tag" href="#">Tips</a>
+    <a class="tag" href="#">Tvos</a>
+    <a class="tag" href="#">Typography</a>
+    <a class="tag" href="#">UI</a>
+    <a class="tag" href="#">UI Kit</a>
+    <a class="tag" href="#">User Flow</a>
+    <a class="tag" href="#">UX</a>
+    <a class="tag" href="#">Wereables</a>
+    <a class="tag" href="#">Wireframes</a>
+  </aside>
+</div>
