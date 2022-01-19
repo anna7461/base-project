@@ -1,0 +1,54 @@
+.article-banner {
+  background-color: #f7f7f7;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 95px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+.banner-heading {
+  font-size: 20px;
+  line-height: 27px;
+  font-family: Montserrat, Open Sans;
+  font-weight: 600;
+  color: #232323;
+
+  @media (max-width: 768px) {
+    margin-bottom: 12px;
+  }
+}
+
+.banner-meta {
+  > span,
+  a {
+    color: #626262;
+    font-size: 12px;
+    line-height: 21px;
+    font-family: Montserrat, Open Sans;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+
+    a {
+      margin-left: 6px;
+    }
+
+    i.fa.fa-circle {
+      font-size: 6px;
+      color: inherit;
+      opacity: 50%;
+      margin: 0 12px;
+    }
+  }
+}

@@ -9,8 +9,14 @@ import {
 import {
   UiDesignInPracticeTypographyComponent
 } from './projects/uxmisfit/blog/articles/ui/ui-design-in-practice-typography/ui-design-in-practice-typography.component';
+import {HomeComponent} from './projects/uxmisfit/main-views/home/home.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    pathMatch: 'full',
+    component: HomeComponent
+  },
   {
     path: 'building_design_system_part_three_colors',
     pathMatch: 'full',

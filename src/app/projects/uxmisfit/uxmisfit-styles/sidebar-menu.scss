@@ -1,0 +1,20 @@
+// Sidebar menu styles.
+.sidebar-menu-title {
+  font-family: Montserrat, Open sans;
+  font-size: 12px;
+  font-weight: 600;
+  color: #232323;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .sidebar-menu-title-line {
+    display: inline-block;
+    width: 100%;
+    margin-left: 24px;
+    height: 1px;
+    background: #0079f2;
+  }
+}
