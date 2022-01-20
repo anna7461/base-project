@@ -1,0 +1,13 @@
+.icon-templates-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 8px;
+
+  .ux-tool-preview {
+    width: 100%;
+  }
+
+  .preview-image {
+    max-width: 230px;
+  }
+}

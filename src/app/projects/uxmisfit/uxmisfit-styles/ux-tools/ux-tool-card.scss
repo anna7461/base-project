@@ -1,0 +1,65 @@
+.ux-tool-card {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+.ux-tool-preview {
+  padding: 45px;
+  width: 50%;
+  margin-right: 8px;
+  background: #151516;
+  border-radius: 24px;
+
+  .preview-heading {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.25px;
+    text-transform: none;
+    font-family: Inter, sans-serif;
+  }
+
+  .preview-subheading {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #74747a;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.25px;
+    text-transform: none;
+    font-family: Inter, sans-serif;
+  }
+
+  .preview-image {
+    width: 100%;
+    max-width: 400px;
+    margin: 48px auto;
+  }
+
+  .tool-caption {
+    max-width: 648px;
+    margin-top: 24px;
+    margin-bottom: 0;
+    color: #7f7f86;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+  }
+}
+
+.ux-tool-description {
+  padding: 45px;
+  width: 50%;
+  background: rgba(21, 21, 22, 0.5);
+  border-radius: 24px;
+}

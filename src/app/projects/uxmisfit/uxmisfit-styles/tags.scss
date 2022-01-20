@@ -11,3 +11,25 @@
   text-decoration: none;
   color: #232323;
 }
+
+.tools-tag {
+  margin: 4px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #151516;
+  display: inline-block;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tags-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  flex-wrap: wrap;
+}
