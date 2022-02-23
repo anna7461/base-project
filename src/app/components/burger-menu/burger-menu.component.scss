@@ -1,0 +1,165 @@
+$burger-lines-width: 32px !default;
+$burger-lines-height: 4px !default;
+
+.burger {
+  padding: 22px 12px;
+  cursor: pointer;
+
+  &.toggle-on {
+    .burger-lines {
+      background: transparent;
+
+      &:before {
+        animation: burger-top-line 0.4s linear forwards;
+      }
+
+      &:after {
+        animation: burger-bottom-line 0.4s linear forwards;
+      }
+    }
+  }
+
+  &.toggle-off {
+    .burger-lines {
+      background-color: #151728;
+
+      &:before {
+        animation: burger-top-line-reset 0.4s linear forwards;
+      }
+
+      &:after {
+        animation: burger-bottom-line-reset 0.4s linear forwards;
+      }
+    }
+  }
+}
+
+.burger-lines {
+  background-color: #151728;
+  width: $burger-lines-width;
+  height: $burger-lines-height;
+  position: relative;
+  transition: background 0.4s, font-size 0s;
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    background-color: #151728;
+    width: $burger-lines-width;
+    height: $burger-lines-height;
+    position: absolute;
+    transition: font-size 0s;
+    transform-origin: center center;
+  }
+
+  &:before {
+    margin-top: calc(-#{$burger-lines-height} * 2);
+  }
+
+  &:after {
+    margin-top: calc(#{$burger-lines-height} * 2);
+  }
+}
+
+@keyframes burger-top-line {
+  0% {
+  }
+
+  20% {
+    margin-top: 0;
+    transform: rotate(0deg);
+  }
+
+  60% {
+    margin-top: 0;
+    transform: rotate(55deg);
+  }
+
+  100% {
+    margin-top: 0;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes burger-middle-line {
+  0% {
+  }
+
+  20% {
+    margin-top: 0;
+    transform: rotate(0deg);
+  }
+
+  60% {
+    margin-top: 0;
+    transform: rotate(-55deg);
+  }
+
+  100% {
+    margin-top: 0;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes burger-bottom-line {
+  0% {
+  }
+
+  20% {
+    margin-top: 0;
+    transform: rotate(0deg);
+  }
+
+  60% {
+    margin-top: 0;
+    transform: rotate(-55deg);
+  }
+
+  100% {
+    margin-top: 0;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes burger-top-line-reset {
+  0% {
+    margin-top: 0;
+    transform: rotate(45deg);
+  }
+
+  20% {
+    transform: rotate(0deg);
+  }
+
+  60% {
+    margin-top: calc(#{$burger-lines-height} * 2);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    margin-top: calc(#{$burger-lines-height} * 2);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes burger-bottom-line-reset {
+  0% {
+    margin-top: 0;
+    transform: rotate(-45deg);
+  }
+
+  20% {
+    transform: rotate(0deg);
+  }
+
+  60% {
+    margin-top: calc(-#{$burger-lines-height} * 2);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    margin-top: calc(-#{$burger-lines-height} * 2);
+    transform: rotate(0deg);
+  }
+}
