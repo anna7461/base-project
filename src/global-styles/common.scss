@@ -22,6 +22,8 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -34,8 +36,8 @@ html {
 body {
   // Utilize the root em unit based on the value calculated by :root.
   font: 16px / 1.5 sans-serif;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -89,3 +91,45 @@ img {
     font-size: 0.25rem;
   }
 }
+
+/**
+* Margin and padding utility classes
+*/
+
+// Define increments (pixels) and directions needed.
+$increments: (0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 72, 80, 88, 102, 118, 124, 136, 148);
+$directions: (top, bottom, left, right);
+
+// Loop through the increments and directions.
+@each $increment in $increments {
+  @each $direction in $directions {
+    .m#{str-slice($direction, 0, 1)}-#{$increment} {
+      margin-#{$direction}: #{$increment}px;
+    }
+
+    .p#{str-slice($direction, 0, 1)}-#{$increment} {
+      padding-#{$direction}: #{$increment}px;
+    }
+  }
+}
+
+@mixin generate-width($unit, $step-count, $max-range) {
+  @if $unit == px {
+    @for $i from 1 through $max-range {
+      @if ($i % $step-count == 0) {
+        .width-#{$i + $unit} {
+          width: #{$i + $unit};
+        }
+      }
+    }
+  } @else if $unit == per {
+    @for $i from 1 through $max-range {
+      .width-#{$i + $unit} {
+        width: #{$i + "%"};
+      }
+    }
+  }
+}
+
+@include generate-width($unit: per, $step-count: 1, $max-range: 100);
+@include generate-width($unit: px, $step-count: 5, $max-range: 1920);
