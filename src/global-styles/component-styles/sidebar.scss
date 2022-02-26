@@ -1,0 +1,17 @@
+.sidebar-menu {
+  box-shadow: 0 1px 1px rgba(9,30,66,0.25),0 0 1px 0 rgba(9,30,66,0.31);
+  background-color: #ffffff;
+  border-radius: 4px;
+  max-width: 250px;
+  width: 100%;
+}
+
+.sidebar-menu-link {
+  padding: 8px 20px 8px 32px;
+  transition: background-color 0.15s ease-in;
+
+  &:hover {
+    background-color: #F4F5F7;
+    text-decoration: none;
+  }
+}
