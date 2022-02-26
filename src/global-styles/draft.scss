@@ -1,0 +1,66 @@
+/* Usage:
+  @include breakpoint($breakpoint: one of the breakpoint keys you want to include defined in the $breakpoints map ("null" by default),
+                      $media-feature: max-width (by default), but you can use also "min-height", "max-height",
+                                      "aspect-ratio" or "resolution" features,
+                      $breakpoint-value: custom breakpoint value ("null" by default) { some code }.
+  Note: You can write the keyword argument, like the below example:
+    @include breakpoint($breakpoint: up-to-desktop) { some code }
+    This will convert to:
+       @media (max-width: 1439px) { some code }
+
+    Or include it without any keyword arguments, like the below example:
+    @include breakpoint(up-to-desktop) { some code }
+    This will also convert to:
+       @media (max-width: 1439px) { some code }
+
+  If you want to use custom breakpoint that isn't in the $breakpoints map, give your custom breakpoint value to the
+  $breakpoint-value argument, like:
+       @include breakpoint($breakpoint-value: 1380px) { some code };
+  This will convert to:
+       @media (max-width: 1379px) { some code }
+
+  Note: The breakpoint value will always subtract -1px to prevent future conflicts in code at the specific screen
+        resolutions when the $media-feature is "max-width" like in the above examples.
+
+  If you want to use min-width $media-feature, just give a "min-width" value to the $media-feature argument, like:
+      @include breakpoint($media-feature: min-width) { some code };
+*/
+
+// Map of default breakpoint keys and values.
+$breakpoints: (
+  smallest-landscape: 568px,
+  up-to-mobile: 768px,
+  up-to-tablet: 1024px,
+  up-to-tablet-landscape: 1280px,
+  up-to-laptop: 1366px,
+  up-to-desktop: 1440px,
+);
+
+@mixin breakpoint($breakpoint: null, $media-feature: max-width, $breakpoint-value: null) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    // If the breakpoint exists in the map, get the breakpoint value.
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+  }
+  // The default $media-feature is "max-width".
+  @if $media-feature == max-width {
+    @media (max-width: ($breakpoint-value - 1)) {
+      @content;
+    }
+  } @else {
+    @media ($media-feature: $breakpoint-value) {
+      @content;
+    }
+  }
+}
+
+.background-color-dark-blue {
+  background-color: #172B4D;
+}
+
+.background-color-light-grey {
+  background-color: #FAFBFC;
+}
+
+.background-color-neutral-grey {
+  background-color: #F4F5F7;
+}

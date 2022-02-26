@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +6,5 @@ import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
- faArrowRight = faArrowRight;
+
 }
