@@ -13,6 +13,7 @@ import { BrandComponent } from './brand/brand.component';
 import { FoundationsComponent } from './foundations/foundations.component';
 import { ContentComponent } from './content/content.component';
 import { PatternsComponent } from './patterns/patterns.component';
+import { ResourcesComponent } from './resources/resources.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { PatternsComponent } from './patterns/patterns.component';
     FoundationsComponent,
     ContentComponent,
     PatternsComponent,
+    ResourcesComponent,
   ],
   imports: [
     BrowserModule,

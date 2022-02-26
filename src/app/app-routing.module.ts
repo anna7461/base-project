@@ -7,6 +7,7 @@ import {BrandComponent} from './brand/brand.component';
 import {FoundationsComponent} from './foundations/foundations.component';
 import {ContentComponent} from './content/content.component';
 import {PatternsComponent} from './patterns/patterns.component';
+import {ResourcesComponent} from './resources/resources.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,9 @@ const routes: Routes = [
   },
   {
     path: 'patterns', component: PatternsComponent
+  },
+  {
+    path: 'resources', component: ResourcesComponent
   }
 ];
 
