@@ -1,0 +1,15 @@
+.card-surface {
+  .media-wrapper {
+    img {
+      width: 200px;
+    }
+  }
+}
+
+.media-wrapper img {
+  max-width: 320px;
+}
+
+.card-surface {
+  min-height: initial;
+}
