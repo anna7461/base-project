@@ -5,6 +5,7 @@ import {ComponentsComponent} from './components/components.component';
 import {HomeComponent} from './home/home.component';
 import {BrandComponent} from './brand/brand.component';
 import {FoundationsComponent} from './foundations/foundations.component';
+import {ContentComponent} from './content/content.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,9 @@ const routes: Routes = [
   },
   {
     path: 'foundations', component: FoundationsComponent
+  },
+  {
+    path: 'content', component: ContentComponent
   }
 ];
 

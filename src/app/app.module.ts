@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrandComponent } from './brand/brand.component';
 import { FoundationsComponent } from './foundations/foundations.component';
+import { ContentComponent } from './content/content.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { FoundationsComponent } from './foundations/foundations.component';
     FooterComponent,
     BrandComponent,
     FoundationsComponent,
+    ContentComponent,
   ],
   imports: [
     BrowserModule,
