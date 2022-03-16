@@ -1,5 +1,15 @@
 // CSS Pro Tips 02.01.2021 Notes
+@font-face {
+  font-family: "Charlie-Display-Regular";
+  src: url("../assets/fonts/charlie-display/CharlieDisplay-Regular.woff2");
+  font-weight: 400;
+}
 
+@font-face {
+  font-family: "Charlie-Display-Semibold";
+  src: url("../assets/fonts/charlie-display/CharlieDisplay-Semibold.woff2");
+  font-weight: 600;
+}
 /* 1. Use :root for flexible type.
       The type font size in a responsive layout should be able to adjust with each viewport. You can calculate the
       font-size based on the viewport height and width using :root.
