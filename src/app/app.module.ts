@@ -23,6 +23,7 @@ import { GridComponent } from './foundations/grid/grid.component';
 import { IconographyComponent } from './foundations/iconography/iconography.component';
 import { IllustrationsComponent } from './foundations/illustrations/illustrations.component';
 import { LogosComponent } from './foundations/logos/logos.component';
+import { TypographyComponent } from './foundations/typography/typography.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { LogosComponent } from './foundations/logos/logos.component';
     IconographyComponent,
     IllustrationsComponent,
     LogosComponent,
+    TypographyComponent,
   ],
   imports: [
     BrowserModule,

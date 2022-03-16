@@ -15,6 +15,7 @@ import {GridComponent} from './foundations/grid/grid.component';
 import {IconographyComponent} from './foundations/iconography/iconography.component';
 import {IllustrationsComponent} from './foundations/illustrations/illustrations.component';
 import {LogosComponent} from './foundations/logos/logos.component';
+import {TypographyComponent} from './foundations/typography/typography.component';
 
 const routes: Routes = [
   {
@@ -64,6 +65,11 @@ const routes: Routes = [
         path: 'logos',
         pathMatch: 'full',
         component: LogosComponent
+      },
+      {
+        path: 'typography',
+        pathMatch: 'full',
+        component: TypographyComponent
       }
     ]
   },
