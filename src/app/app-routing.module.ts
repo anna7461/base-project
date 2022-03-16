@@ -12,6 +12,7 @@ import {AccessibilityComponent} from './foundations/accessibility/accessibility.
 import {FoundationsLayoutComponent} from './foundations/foundations-layout/foundations-layout.component';
 import {ColorComponent} from './foundations/color/color.component';
 import {GridComponent} from './foundations/grid/grid.component';
+import {IconographyComponent} from './foundations/iconography/iconography.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,11 @@ const routes: Routes = [
         path: 'grid',
         pathMatch: 'full',
         component: GridComponent
+      },
+      {
+        path: 'iconography',
+        pathMatch: 'full',
+        component: IconographyComponent
       }
     ]
   },

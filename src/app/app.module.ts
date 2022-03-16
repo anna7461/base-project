@@ -20,6 +20,7 @@ import { DoDontComponent } from './app-shared/shared-components/do-dont/do-dont.
 import { ColorComponent } from './foundations/color/color.component';
 import { PageBannerComponent } from './app-shared/shared-components/page-banner/page-banner.component';
 import { GridComponent } from './foundations/grid/grid.component';
+import { IconographyComponent } from './foundations/iconography/iconography.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { GridComponent } from './foundations/grid/grid.component';
     ColorComponent,
     PageBannerComponent,
     GridComponent,
+    IconographyComponent,
   ],
   imports: [
     BrowserModule,

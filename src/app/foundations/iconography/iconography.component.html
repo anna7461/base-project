@@ -1,0 +1,153 @@
+<app-page-banner
+  [bannerTitle]="'Iconography'"
+  [bannerDescription]="'Icons are visual representations of commands, devices, directories, or common actions.'">
+</app-page-banner>
+
+<div class="page-content">
+  <p class="paragraph-text mb-16">Icons should be used in a purposeful manner to maximize comprehension and reduce
+    cognitive load when you need to call attention to a particular action, command, or section. Use them infrequently -
+    if you're questioning an icon's use, it probably doesn't need to be used at all.</p>
+
+  <p class="paragraph-text mb-16">Our icons are designed with our brand personality baked in, aiming to balance our
+    human side with function.</p>
+
+  <p class="paragraph-text mb-16">As a general rule, icons should be used in combination with meaningful text to support
+    users progressing through the product in an accessible manner. However, avoid aria-labels if you are rendering the
+    icon with visible text to prevent accessibility label duplication.</p>
+
+  <p class="paragraph-text mb-16">There are few widely recognized icons, so whenever possible, use a label or supporting
+    text to ensure its meaning is understood. In this case, an aria-label will be used for the icon.</p>
+
+  <p class="paragraph-text mb-16">Find out more about writing meaningful text in our <a href="#">accessibility
+    guidelines.</a></p>
+
+  <p class="paragraph-text mb-16">Combining unfamiliar icons with text could confuse users depending on how they
+    recognize the supporting icon, so make sure the icon and text label are coupled. To help enhance usability further,
+    ensure the icon color has at least a
+    <a href="https://www.w3.org/TR/WCAG/" target="_blank">Web Content Accessibility Guidelines (WCAG) 2.1 AA standard
+      color contrast ratio.</a></p>
+
+  <app-do-dont
+    [media]="true"
+    [doMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/7d1VZHYPBMq8X1daShPgTM/b7747eb30ed056ff57bed49d6f8304f7/iconography-01-do.png'"
+    [doText]="'Use icons with meaningful text labels.'"
+    [dontMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/56yP3Cdj3FIaeBdatEgsfM/a6f03490e65508169d4b03483815da16/iconography-01-dont.png'"
+    [dontText]="'Icons without labels can be unclear.'"
+  ></app-do-dont>
+
+  <p class="paragraph-text mb-16">Avoid using icons solely for decoration or visual interest as it detracts from their
+    intention elsewhere. Consider the surrounding context of icons too; if icons are cluttered and not spaced well, it
+    can lead to more visual noise and confusion.</p>
+
+  <app-do-dont
+    [media]="true"
+    [doMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/3JcHxZJwCi0ocUoutVGvwI/035e5c254ffa0f4a1661c606dc432b9b/iconography-02-do.png'"
+    [doText]="'Use a single icon for clarity.'"
+    [dontMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/1KIwJQ9VVNYDNXlMEtS20W/76c885003580f7aa90c28f85fb45d53d/iconography-02-dont.png'"
+    [dontText]="'Too many icons in UI create visual noise.'"
+  ></app-do-dont>
+
+  <p class="paragraph-text mb-16">Icons can represent a single concept such as + which always represents ‘add’, or be
+    thematic in concept such as ☆ which might represent "favorite", "like", "star" etc. Using an icon appropriately
+    allows our users to create a connection to a concept, so don’t over-extend what an icon represents.</p>
+
+  <app-do-dont
+    [media]="true"
+    [doMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/6Wrd2d22618CqisGrCbtsu/61cc4830838ec1881b2f72fe6f3b14ed/iconography-03-do.png'"
+    [doText]="'Use a single icon per concept.'"
+    [dontMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/6XobGvRyAJgUxXTRScHxGh/026927bba7ffdf83b61132a5f953ee17/iconography-03-dont.png'"
+    [dontText]="'Multiple icon variations should not be used for the same concept.'"
+  ></app-do-dont>
+
+  <h4 class="heading-4 mb-20 pt-48">Internationalization</h4>
+
+  <p class="paragraph-text mb-16">Always consider icons from a global perspective. Whenever possible, use an
+    internationally recognized icon in place of a locally recognized icon that may only apply to a specific background
+    or culture such as a local currency symbol, <€ ¥ £, rather than always using $.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Platform specifics</h4>
+
+  <p class="paragraph-text mb-16">Our icons can be used across web, iOS, Android, and macOS to represent similar
+    concepts. Some icons, however, are already established conventions on specific platforms. In these cases, follow the
+    conventions for the operating system using the OS-specific guidance.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Icon types</h4>
+
+  <div class="media-wrapper mb-16">
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/1gHnszRP3Oa7BzYIVuPOAb/13739009c68c00cae4b4313f3ff3c6cd/iconography-icon-types_2x.png"
+      alt="">
+  </div>
+
+  <p class="paragraph-text mb-16">You can search for icons by filename or by usage in our <a
+    href="https://atlaskit.atlassian.com/packages/design-system/icon" target="_blank">icon explorer in
+    Atlaskit</a>. There are three types of icons in our design system:</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Standard icons</h5>
+
+  <p class="paragraph-text mb-16">Standard sized icons are used as visual representations of common actions and commands
+    to provide additional context and enhance usability. These icons can be scaled up or down in size if necessary.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Object icons</h5>
+
+  <p class="paragraph-text mb-16">Object icons are specifically used to represent an object specific to an Atlassian
+    product, such as 'bug' in Jira or 'pull request' in Bitbucket. These icons are different from standard icons and
+    file type icons.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">File type icons</h5>
+
+  <p class="paragraph-text mb-16">Files type icons are often used in the same context as most other Object icons. There
+    are common file types (txt, mp3, mov, etc), and third party integrations' file types (docx, ai, sketch, etc).</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Style</h4>
+
+  <h5 class="heading-5 mb-20 pt-32">Variations</h5>
+
+  <div class="media-wrapper mb-16">
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/6wMZ1X7sADvMw8VLW0DqXO/ca4e0bf0882fad1cdee386150312cf00/iconography-style-variations_2x.png"
+      alt="">
+  </div>
+
+  <p class="paragraph-text mb-16">Our icons have variations to work within a given context. There will be a line
+    version, which can be accompanied by a filled version. Use the line version of our icon in most cases as they are
+    visually balanced, so more than one can be used when close together.</p>
+
+  <p class="paragraph-text mb-16">Often, a filled version can be used to represent an action or command that has been
+    carried out, such as using a filled start when a post has been "favorited". You can use color to further reinforce
+    this interaction and change.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Size</h5>
+
+  <p class="paragraph-text mb-16">There are three icon sizes in our design system:</p>
+
+  <h6 class="heading-6 mb-20 pt-20">16px (small)</h6>
+
+  <p class="paragraph-text mb-16">Small icons are best used when space is limited. We use small icons in our components
+    such as a chevron-down in the select component or a cross-circle filled in populated text fields.</p>
+
+  <h6 class="heading-6 mb-20 pt-20">24px (medium)</h6>
+
+  <p class="paragraph-text mb-16">Medium icons are used in the majority of our interface. These are our standard
+    size.</p>
+
+  <h6 class="heading-6 mb-20 pt-20">32px (large)</h6>
+
+  <p class="paragraph-text mb-16">Large icons are used sparingly to emphasize a concept or when space is plentiful.
+    Wherever it's used, consider the fidelity of the icon in the space it's being used. (If there's plenty of room, a
+    spot illustration might be more appropriate).</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Color</h5>
+
+  <p class="paragraph-text mb-16">Our icons are available to use as a single color. N500 is the default color and N70 is
+    used for disabled states. For components containing confirmations, alerts, information, and acknowledgements, follow
+    the guidelines associated with the component and use case.</p>
+
+  <p class="paragraph-text mb-16">Using icons with a text label and color will enhance the usability and <a
+    href="#">accessibility</a> for all users.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Server</h4>
+
+  <p class="paragraph-text mb-16">AUI icons use different sizing and certain icons may not be available. See the <a
+    href="https://aui.atlassian.com/aui/latest/docs/icons.html" target="_blank">AUI documentation on icons</a>.</p>
+</div>
