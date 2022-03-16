@@ -10,6 +10,7 @@ import {PatternsComponent} from './patterns/patterns.component';
 import {ResourcesComponent} from './resources/resources.component';
 import {AccessibilityComponent} from './foundations/accessibility/accessibility.component';
 import {FoundationsLayoutComponent} from './foundations/foundations-layout/foundations-layout.component';
+import {ColorComponent} from './foundations/color/color.component';
 
 const routes: Routes = [
   {
@@ -34,6 +35,11 @@ const routes: Routes = [
         path: 'accessibility',
         pathMatch: 'full',
         component: AccessibilityComponent
+      },
+      {
+        path: 'color',
+        pathMatch: 'full',
+        component: ColorComponent
       }
     ]
   },
