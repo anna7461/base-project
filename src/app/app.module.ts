@@ -22,6 +22,7 @@ import { PageBannerComponent } from './app-shared/shared-components/page-banner/
 import { GridComponent } from './foundations/grid/grid.component';
 import { IconographyComponent } from './foundations/iconography/iconography.component';
 import { IllustrationsComponent } from './foundations/illustrations/illustrations.component';
+import { LogosComponent } from './foundations/logos/logos.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { IllustrationsComponent } from './foundations/illustrations/illustration
     GridComponent,
     IconographyComponent,
     IllustrationsComponent,
+    LogosComponent,
   ],
   imports: [
     BrowserModule,

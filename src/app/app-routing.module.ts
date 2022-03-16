@@ -14,6 +14,7 @@ import {ColorComponent} from './foundations/color/color.component';
 import {GridComponent} from './foundations/grid/grid.component';
 import {IconographyComponent} from './foundations/iconography/iconography.component';
 import {IllustrationsComponent} from './foundations/illustrations/illustrations.component';
+import {LogosComponent} from './foundations/logos/logos.component';
 
 const routes: Routes = [
   {
@@ -58,6 +59,11 @@ const routes: Routes = [
         path: 'illustrations',
         pathMatch: 'full',
         component: IllustrationsComponent
+      },
+      {
+        path: 'logos',
+        pathMatch: 'full',
+        component: LogosComponent
       }
     ]
   },
