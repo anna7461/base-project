@@ -1,0 +1,175 @@
+<app-page-banner
+  [bannerTitle]="'Grid'"
+  [bannerDescription]="'The grid is the foundation for positioning elements onscreen. Designing to the grid helps create seamless, easy to follow experiences.'">
+</app-page-banner>
+
+<div class="page-content">
+  <p class="paragraph-text mb-16">Consistent use of a grid system provides the foundation for harmoniously and
+    consistently positioning elements onscreen. Designing to the grid helps create an experience that facilitates
+    understanding and brings order to the page.</p>
+
+  <p class="paragraph-text mb-16">The grid can be applied through the page component in the <a href="#">Atlaskit
+    library</a>.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Baseline grid and vertical rhythm</h4>
+
+  <p class="paragraph-text mb-16">The Atlassian type stack specifies 14px for the base font size, which produces an 8-px
+    x-height. The x-height is halved to produce a 4px baseline. All text flows vertically along this baseline, creating
+    a similar rhythm across all screens. This rhythm is created by the line height between each line of text and the
+    margin between elements.</p>
+
+  <div class="media-wrapper mb-16">
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/4xP3wbyHhKaNFY8GLIlWOA/0cea4ed1fb3637dcf4b6c9f9d73e1ffe/grid-baseline.png"
+      alt="">
+  </div>
+
+  <p class="paragraph-text mb-16">This baseline convention naturally flows on the rest of the grid system, which
+    includes icons, components, and layout dimensions. Always try to align objects on the 8px grid, but where necessary
+    use good judgement to fine tune your designs to 4px. The 4px baseline is there to allow more flexibility for line
+    heights and smaller adjustments.</p>
+
+  <div class="media-wrapper">
+    <img class="mb-16"
+         src="https://images.ctfassets.net/8j5aqoy0ts8s/2NCAv6uPHjwSTzifldsbxd/5e3e0d6898f5c133d66677127601d16d/grid-button-spacing.png"
+         alt="">
+
+    <img class="mb-16"
+         src="https://images.ctfassets.net/8j5aqoy0ts8s/7iYKhHru3sYSecx0wR6t4G/b395c5428723eea39353892529ccdb2e/grid-dropdown-spacing.png"
+         alt="">
+  </div>
+
+  <h5 class="heading-5 mb-20 pt-32">Best practices</h5>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Use multiples of 8px when defining measurements, spacing, and positioning
+        elements.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">When necessary use 4px to make more fine tuned adjustments.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Whenever possible, make sure that objects line up, both vertically and
+        horizontally.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Align your bounding box to the grid, not the baseline of your text.</p>
+    </li>
+  </ul>
+
+  <h4 class="heading-4 mb-20 pt-48">Layout with the horizontal grid</h4>
+
+  <p class="paragraph-text mb-16">We define a horizontal grid for content and UI elements to align to, creating a visual
+    structure with content. We prefer this over relying heavily on boxes and lines around content as it reduces the
+    amount of elements a user needs to scan in order to digest ehat they see. We believe the amount of elements a user
+    needs to scan in order to digest what they see. We believe that the user's content should be the main focus of a
+    page, so we reduce all unnecessary distractions.</p>
+
+  <div class="media wrapper mb-16">
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/6z6Q9e8DLoZjvjqCV8rrDQ/7465c2a940fd3f67e480d9d2826bb038/grid-cols-anatomy.png"
+      alt="">
+  </div>
+
+  <ol class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8"><strong>Global navigation</strong>: Minimum width of 60px.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Container navigation</strong>: Minimum width of 240px.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Content</strong>: Adaptive width.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Gutter</strong>: Fixed spacing between columns.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Column</strong>: Guides what the content aligns to.</p>
+    </li>
+  </ol>
+
+  <p class="paragraph-text mb-16">In our grid system we reserve space for the navigation on the left, and apply a
+    center-aligned 12-column adaptive layout to the content. You can apply a fixed width or a fluid grid layout. The
+    fixed-width layout has a max-width of 960px and is useful for long form content. The fluid layout full-screen works
+    better for screens that are data or interaction heavy.</p>
+
+  <p class="paragraph-text mb-16">You can combine multiple blocks of fixed and fluid layout underneath each other on a
+    single screen. This is useful when you want to combine a piece of long form text with a code block that would be the
+    full width of the screen.</p>
+
+  <p class="paragraph-text mb-16">Both layouts are adaptive. This means column widths will react to whether the
+    navigation is expanded or not, and columns will scale according to available screen real estate. When screen drops
+    below the max-width of the fixed layout, both grid types effectively look the same.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Gutter spacing</h5>
+
+  <p class="paragraph-text mb-16">The gutters in between columns have a fixed width and only scale when the text size
+    scales to maintain a distinct and legible separation of content. There are three different gutter sizes to allow for
+    different types of content spacing: compact, cozy, and comfortable.</p>
+
+  <div class="media-wrapper mb-16">
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/6RXRW2aGPHseNoV5846eEW/f89a3dc96e183f47e4e5c338c8e1ad59/grid-cols-spacing.png"
+      alt="">
+  </div>
+
+  <ol class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8"><strong>Compact</strong>: Least whitespace between columns</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Cozy</strong>: (Default) normal whitespace between columns.)</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Comfortable</strong>: Most whitespace between columns.</p>
+    </li>
+  </ol>
+
+  <h4 class="heading-4 mb-20 pt-48">Column layout and text</h4>
+
+  <p class="paragraph-text mb-16">Layouts in our products are generally in an eight or 12 column configuration. The
+    simplest layout is a centered, single block that spans eight columns. Alternatively, the layout can be extended to
+    use the remaining four columns if there is a need for primary and secondary information.</p>
+
+  <p class="paragraph-text mb-16">Using the default font size value in the Atlassian type stack, we can optimize the max
+    width of paragraphs for a comfortable reading experience. There's an overall maximum width set in the layout to
+    ensure that the line length of text does not exceed a readable measure of 100 characters per line. At 14px, the
+    recommended line length falls at eight columns. With the exception of code, text blocks should not be set across
+    more than that.</p>
+
+  <div class="media-wrapper mb-16">
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/1nSrQ0AqcydTn6b9EFILbo/dd3fb27fdf6beaafcbfd45a5e65bab78/grid-text-layout.png"
+      alt="">
+  </div>
+
+  <h5 class="heading-5 mb-20 pt-32">Best practices</h5>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Keep layouts simple. Consider a single block of eight columns or two blocks of
+        eight and four basic layout.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Maximum line length should span up to eight columns, which is the ideal size for
+        all content types. Do not go over this size for normal text.</p>
+    </li>
+  </ul>
+
+  <h4 class="heading-4 mb-20 pt-48">Server</h4>
+
+  <p class="paragraph-text mb-16">In place of the grid, use AUI's <a
+    href="https://aui.atlassian.com/aui/latest/docs/page.html" target="_blank">page layout guidelines</a>.</p>
+</div>

@@ -11,6 +11,7 @@ import {ResourcesComponent} from './resources/resources.component';
 import {AccessibilityComponent} from './foundations/accessibility/accessibility.component';
 import {FoundationsLayoutComponent} from './foundations/foundations-layout/foundations-layout.component';
 import {ColorComponent} from './foundations/color/color.component';
+import {GridComponent} from './foundations/grid/grid.component';
 
 const routes: Routes = [
   {
@@ -40,6 +41,11 @@ const routes: Routes = [
         path: 'color',
         pathMatch: 'full',
         component: ColorComponent
+      },
+      {
+        path: 'grid',
+        pathMatch: 'full',
+        component: GridComponent
       }
     ]
   },
