@@ -21,6 +21,7 @@ import { ColorComponent } from './foundations/color/color.component';
 import { PageBannerComponent } from './app-shared/shared-components/page-banner/page-banner.component';
 import { GridComponent } from './foundations/grid/grid.component';
 import { IconographyComponent } from './foundations/iconography/iconography.component';
+import { IllustrationsComponent } from './foundations/illustrations/illustrations.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { IconographyComponent } from './foundations/iconography/iconography.comp
     PageBannerComponent,
     GridComponent,
     IconographyComponent,
+    IllustrationsComponent,
   ],
   imports: [
     BrowserModule,

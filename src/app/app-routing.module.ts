@@ -13,6 +13,7 @@ import {FoundationsLayoutComponent} from './foundations/foundations-layout/found
 import {ColorComponent} from './foundations/color/color.component';
 import {GridComponent} from './foundations/grid/grid.component';
 import {IconographyComponent} from './foundations/iconography/iconography.component';
+import {IllustrationsComponent} from './foundations/illustrations/illustrations.component';
 
 const routes: Routes = [
   {
@@ -52,6 +53,11 @@ const routes: Routes = [
         path: 'iconography',
         pathMatch: 'full',
         component: IconographyComponent
+      },
+      {
+        path: 'illustrations',
+        pathMatch: 'full',
+        component: IllustrationsComponent
       }
     ]
   },
