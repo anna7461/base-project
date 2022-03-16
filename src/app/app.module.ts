@@ -14,6 +14,9 @@ import { FoundationsComponent } from './foundations/foundations.component';
 import { ContentComponent } from './content/content.component';
 import { PatternsComponent } from './patterns/patterns.component';
 import { ResourcesComponent } from './resources/resources.component';
+import { AccessibilityComponent } from './foundations/accessibility/accessibility.component';
+import { FoundationsLayoutComponent } from './foundations/foundations-layout/foundations-layout.component';
+import { DoDontComponent } from './app-shared/shared-components/do-dont/do-dont.component';
 
 
 @NgModule({
@@ -28,6 +31,9 @@ import { ResourcesComponent } from './resources/resources.component';
     ContentComponent,
     PatternsComponent,
     ResourcesComponent,
+    AccessibilityComponent,
+    FoundationsLayoutComponent,
+    DoDontComponent,
   ],
   imports: [
     BrowserModule,

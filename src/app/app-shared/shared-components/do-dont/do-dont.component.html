@@ -1,0 +1,40 @@
+<div class="do-dont-block display-grid col-2-layout">
+  <div class="do">
+    <div *ngIf="media" class="media-wrapper">
+      <img src="{{doMedia}}" alt="">
+    </div>
+    <div class="content-wrapper">
+      <div class="title">
+        <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+          <g fill-rule="evenodd">
+            <circle fill="#36B37E" cx="12" cy="12" r="10"></circle>
+            <path
+              d="M9.707 11.293a1 1 0 10-1.414 1.414l2 2a1 1 0 001.414 0l4-4a1 1 0 10-1.414-1.414L11 12.586l-1.293-1.293z"
+              fill="white"></path>
+          </g>
+        </svg>
+        DO
+      </div>
+      <p class="text">{{doText}}</p>
+    </div>
+  </div>
+
+  <div class="dont">
+    <div *ngIf="media" class="media-wrapper">
+      <img src="{{dontMedia}}" alt="">
+    </div>
+    <div class="content-wrapper">
+      <div class="title">
+        <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+          <g fill-rule="evenodd">
+            <circle fill="#DE350B" cx="12" cy="12" r="10"></circle>
+            <path d="M13.477 9.113l-4.36 4.386a1 1 0 101.418 1.41l4.36-4.386a1 1 0 00-1.418-1.41z" fill="white"></path>
+            <path d="M9.084 10.501l4.358 4.377a1 1 0 101.418-1.411L10.5 9.09a1 1 0 00-1.417 1.411z" fill="white"></path>
+          </g>
+        </svg>
+        DON'T
+      </div>
+      <p class="text">{{dontText}}</p>
+    </div>
+  </div>
+</div>

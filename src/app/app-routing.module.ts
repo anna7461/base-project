@@ -8,6 +8,8 @@ import {FoundationsComponent} from './foundations/foundations.component';
 import {ContentComponent} from './content/content.component';
 import {PatternsComponent} from './patterns/patterns.component';
 import {ResourcesComponent} from './resources/resources.component';
+import {AccessibilityComponent} from './foundations/accessibility/accessibility.component';
+import {FoundationsLayoutComponent} from './foundations/foundations-layout/foundations-layout.component';
 
 const routes: Routes = [
   {
@@ -20,7 +22,20 @@ const routes: Routes = [
     path: 'brand', component: BrandComponent
   },
   {
-    path: 'foundations', component: FoundationsComponent
+    path: 'foundations',
+    component: FoundationsComponent,
+    children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        component: FoundationsLayoutComponent
+      },
+      {
+        path: 'accessibility',
+        pathMatch: 'full',
+        component: AccessibilityComponent
+      }
+    ]
   },
   {
     path: 'content', component: ContentComponent

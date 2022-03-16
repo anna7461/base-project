@@ -1,0 +1,400 @@
+<div class="page-banner">
+  <h3 class="heading-3 display-flex align-items-center mb-20">Accessibility</h3>
+
+  <p class="content-description text-light-grey mb-20">Accessible design lets people of all abilities interact with,
+    understand, and navigate our products.</p>
+</div>
+
+<div class="page-content">
+  <p class="paragraph-text mb-16">Products and web properties need to be accessible to everyone, including those with
+    vision, hearing, cognitive, or motor impairments.</p>
+
+  <p class="paragraph-text mb-16">Accessible design is everyone's responsibility, from information and user experience
+    design, though to development, and on into help and support. It is about understanding the user's journeys and
+    proactively anticipating their needs.</p>
+
+  <p class="paragraph-text mb-16">To make sure products are accessible to everyone, follow <a
+    href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/intro.html#introduction-fourprincs-head" target="_blank">the four
+    principles of the Web Content Accessibility Guidelines</a>:</p>
+
+  <ol class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">
+        <strong>Perceivable:</strong> It can be perceived by at least one of a person's
+        senses.
+      </p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">
+        <strong>Operable:</strong> All interactions are operable through a variation of input
+        methods.
+      </p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">
+        <strong>Understandable:</strong> Information and operation of the interface must be understandable.
+      </p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">
+        <strong>Robust:</strong> Content can be interpreted by a variety of assistive
+        technologies and withstand changes in these technologies.
+      </p>
+    </li>
+  </ol>
+
+  <h4 class="heading-4 mb-20 pt-48">Structure and hierarchy</h4>
+
+  <p class="paragraph-text mb-16">Consistent, clear hierarchy helps people who navigate the page using links or headers.
+    Use headings and titles to outline the page so people can see the structure and how sections relate to each
+    other.</p>
+
+  <p class="paragraph-text mb-16">Be predictable with structure and use patterns and layouts familiar to people.</p>
+
+  <p class="paragraph-text mb-16">Content should be visible, so avoid putting important information inside
+    accordions.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">List by level of importance</h5>
+
+  <p class="paragraph-text mb-16">Place items on the page in order of their level of importance so people don't have to
+    search for them.</p>
+
+  <div class="media-wrapper mb-24">
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/1ohrvGHnKzbhxd8utk4prH/fcf640a76cc8386cad50f38c220f515d/accessibility-list-by-level.png"
+      alt="">
+  </div>
+
+  <h5 class="heading-5 mb-20 pt-32">Have a consistent hierarchy</h5>
+
+  <p class="paragraph-text mb-16">Create and maintain a consistent hierarchy so that people can use alternative input
+    methods to move through the page. Headings are in order without skipping levels.</p>
+
+  <app-do-dont
+    [doText]="'Use a consistent heading hierarchy: H1, H2, H3, H4'"
+    [dontText]="'Use headings out of order: H2, H1, H3, H3'"
+  ></app-do-dont>
+
+  <h5 class="heading-5 mb-20 pt-32">Text scaling</h5>
+
+  <p class="paragraph-text mb-16">Test the UI to ensure the layout works for different languages and assistive
+    technologies. Consider languages that reuquire longer text fields and text wrapping. Also consider how the UI looks
+    at
+    200% magnification.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Group similar items</h5>
+
+  <p class="paragraph-text mb-16">Group items under titles or headings that clearly communicate the content of the
+    group.</p>
+
+  <app-do-dont
+    [media]="true"
+    [doMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/2KbmC4Fkr7Eqg5742nPv1I/66ecd378cf88e161f89227e65de1fd16/similar-items-do.png'"
+    [doText]="'Grouped items under title \'Worked on\' clearly shows documents that you have worked on.'"
+    [dontMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/311CwlnWysxSd5jPl6KQ78/0fa9071713248a1b54695cab0d29b3dd/similar-items-dont.png'"
+    [dontText]="'Grouped items under vague title \'Pages\' shows random documents.'"
+  ></app-do-dont>
+
+  <h4 class="heading-4 mb-20 pt-48">Keyboard navigation</h4>
+
+  <p class="paragraph-text mb-16">Some people can't use a mouse and navigate through applications using tools such as a
+    keyboard, mouth wand, or eye tracking system. People should be able to navigate and use the product with a keyboard
+    or
+    screen reader. Make sure anything that can be seen by hovering with a mouse is also accessible to keyboard focus and
+    screen readers.</p>
+
+  <p class="paragraph-text mb-16">When creating an application, check if a keyboard can be used to:</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">navigate</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">perform the same tasks as people who use a mouse</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">locate where you are on the page</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">tell where the keyboard focus is</p>
+    </li>
+  </ul>
+
+  <h5 class="heading-5 mb-20 pt-32">Manage focus</h5>
+
+  <p class="paragraph-text mb-16">Keyboard focus follows the page as the eye would scan it. Focus travels top to bottom,
+    left to right, moving from most to least important item. People can navigate applications using alternative input
+    methods (D-pads, trackballs, keyboards, and navigation gestures), and the focus flows in a logical order.</p>
+
+  <div class="media-wrapper">
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/l35rmxIrBTvhfbnGFPRkc/5cec94c5ba4c05a919a9d0a615696100/accessibility-list-by-level.png"
+      alt="">
+  </div>
+
+  <p class="paragraph-text mb-16">When assessing keyboard focus:</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Be conscious of the order of elements on the page. Do they make sense the user's
+        perspective?</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Indicate where focus is.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Avoid using input focus to select, trigger events, or display messages. People
+        may need to navigate through all controls before making changes.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Keep in mind where the focus moves when the element in focus disappears. People
+        should return to wherever they were before they focused on the element.</p>
+    </li>
+  </ul>
+
+  <h5 class="heading-5 mb-20 pt-32">Use tooltips</h5>
+
+  <p class="paragraph-text mb-16"><a href="#">Tooltips</a> can be activated by keyboard. When an element gets keyboard
+    focus, a tooltip displays. When that element loses focus, the tooltip disappears.</p>
+
+  <div class="media-wrapper">
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/6IQzNLKyc9Wx9oJfBSr16Q/81416ff97676e2a04939c1eaa9640ca6/Tooltip.png"
+      alt="">
+  </div>
+
+  <h5 class="heading-5 mb-20 pt-32">Validate forms inline</h5>
+
+  <p class="paragraph-text mb-16">Validate forms inline so keyboard users don't have to navigate fat to get
+    feedback.</p>
+
+  <p class="paragraph-text mb-16">Ideally, design interactions to prevent errors happening in the first place and help
+    people fix problems as tey occur.</p>
+
+  <div class="media-wrapper">
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/40FH9UULLiFyUEc6o2DVUP/7f6e125cd3e96ea898391e5a87355424/accessibility-validation.png"
+      alt="">
+  </div>
+
+  <h4 class="heading-4 mb-20 pt-48">Meaningful text</h4>
+
+  <p class="paragraph-text mb-16">Consistent and helpful text makes the user interface accessible to people who use a
+    screen reader. Screen readers help people with visual impairments by reading both visible and non-visible
+    alternative
+    text aloud.</p>
+
+  <p class="paragraph-text mb-16">All text should support accessibility, whether it's visible (UI labels, headings,
+    buttons, forms, hyperlinks, and help text) or non-visible (alternative text for images and buttons).</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Be concise and use plain English</h5>
+
+  <p class="paragraph-text mb-16">Keep content and accessibility text concise. People using screen readers hear every
+    UI
+    element read aloud, so the shorter the text, the faster they can navigate the content.</p>
+
+  <p class="paragraph-text mb-16">Screen readers can skim more easily and skip irrelevant paragraphs if you keep
+    sentences short and frontload paragraphs with important information.</p>
+
+  <p class="paragraph-text mb-16">Plain English helps people skim and digest information faster. It also makes content
+    more accessible to those who speak English as a seconds, third or fourth language.</p>
+
+  <p class="paragraph-text mb-16">Avoid idioms and always expand acronyms when using them for the first time.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Use consistent labels</h5>
+
+  <p class="paragraph-text mb-16">Consistency label elements and components that have the same functionality. When
+    people
+    encounter these elements in different contexts, they should be able to recognize and understand the function or
+    actions of an element. For instance, a menu item that is labeled <i>All sprints</i> should open a page that is
+    titled
+    <i>All sprints</i>. A dialogue with the title <i>Copy page</i> has a button labeled <i>Copy</i>.</p>
+
+  <app-do-dont
+    [media]="true"
+    [doMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/mCv6KDudrcG92WUXhBJld/d94fbf3a810c87cebe7d370f03fb6034/accessibility-label-do.png'"
+    [doText]="'Title Copy page with a button labeled Copy.'"
+    [dontMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/53SPMHu5CAQaEnNyKFL9qD/c96bfcf2c266a9e051cfad7fa220f53b/accessibility-label-dont.png'"
+    [dontText]="'Title Copy page with a button labeled Duplicate.'"
+  ></app-do-dont>
+
+  <h5 class="heading-5 mb-20 pt-32">Describe what an element does</h5>
+
+  <p class="paragraph-text mb-16">Label elements with action verbs that indicate what happens when the element is
+    selected.</p>
+
+  <app-do-dont
+    [doText]="'Edit preferences - When read aloud, the text indicates the action.'"
+    [dontText]="'Preferences - Just labeling the element doesn\'t make it clear what will happen when it is selected.'"
+  ></app-do-dont>
+
+  <h5 class="heading-5 mb-20 pt-32">Buttons</h5>
+
+  <p class="paragraph-text mb-16">In buttons, describe what the action does and, if you can, reveal what will
+    happen.</p>
+
+  <app-do-dont
+    [doText]="'Add room'"
+    [dontText]="'Go for it!'"
+  ></app-do-dont>
+
+  <h5 class="heading-5 mb-20 pt-32">Hyperlinks and skip links</h5>
+
+  <p class="paragraph-text mb-16">Link text should indicate where the link navigates to. When linking text we use "Learn
+    more" along with a description of where we are taking the user. Link your entire message. For in-app or in-product
+    links don't use a
+    <a href="#">period (full stop)</a> at the end of the sentence.</p>
+
+  <p class="paragraph-text mb-16">E.g. <a href="#">Learn more about Jira permissions</a></p>
+
+  <p class="paragraph-text mb-16">Linking the entire message gives users context about the link destination lowering
+    their
+    cognitive load.</p>
+
+  <p class="paragraph-text mb-16">These links take a user who is visually impaired through hearing a screen reader
+    repeat
+    "Learn more" at this time while tabbing through a page. Linking the full message also helps navigation using screen
+    readers and allows the text to stand alone.</p>
+
+  <p class="paragraph-text mb-16">Add skip links or anchors to help people navigate around content pages.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Images and video</h4>
+
+  <p class="paragraph-text mb-16">For important information, use text rather than images. Only use images that usefully
+    add to the text.</p>
+
+  <p class="paragraph-text mb-16">Describe non-text elements in the UI or with alternative text so screen readers can
+    succinctly describe images and media.</p>
+
+  <p class="paragraph-text mb-16">Avoid moving or flashing images if possible.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Images that contain information</h5>
+
+  <p class="paragraph-text mb-16">If an image contains information that can only be understood bt seeing the image, then
+    you need to explain the content of the image using alternative text. Follow these guidelines when you write alt
+    text.</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">The text should be an adequate replacement for both the content and the function of
+        the image.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Determine the correct content and then deliver that message as succintly as
+        possible. Aim for no more than a few words, though sometimes a short sentence or two may be necessary.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Don't repeat information that is contained in the text found on the page around the
+        image.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Don't use phrases like "image of ..." or "a photo of ..." to describe the image.
+        This is apparent when using screen readers and the description itself should be enough to replace the meaning of
+        the image.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">If the meaning and content of an image is conveyed by surrounding text, header, or
+        captions, then you might not need as much alternative text.</p>
+    </li>
+  </ul>
+
+  <h5 class="heading-5 mb-20 pt-32">Decorative images</h5>
+
+  <p class="paragraph-text mb-16">If the image is used strictly make the page pleasant to the eye, doesn't contain a
+    link,
+    and isn't used to deliver information, then include the alt attribute, but leave it empty. For example,
+    <i>alt=""</i>
+  </p>
+
+  <h5 class="heading-5 mb-20 pt-32">Complex images</h5>
+
+  <p class="paragraph-text mb-16">A complex image could be a diagram, table or chart. Depending on the level of
+    complexity,
+    the image may need text near it explaining the contents, short alt text that complements this and possibly a link to
+    a
+    pge with a long text description.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Videos</h5>
+
+  <p class="paragraph-text mb-16">Provide transcripts and in-sync captioning. Make sure users can control when the video
+    or gif starts and stops.</p>
+
+  <p class="paragraph-text mb-16">Provide audio description for any text displayed in a video.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Colors</h4>
+
+  <p class="paragraph-text mb-16">We comply with <a href="#">AA standard contrast ratios</a>. To do this, we choose
+    primary, secondary and extended colors that support usability. This ensures sufficient color contrast between
+    elements
+    so that people with low vision can see and use our products.</p>
+
+  <h5 class="heading-5 mb-20">Include multiple visual cues</h5>
+
+  <p class="paragraph-text mb-16">Don't convey information using color alone. Use multiple visual cues, such as stroke
+    weight, patterns, shape, text, or illustrations to ensure that everyone receives the same information. This helps
+    people who are unable to, or have difficulty with, distinguishing one color from another. This includes people who
+    are
+    color blind, have low vision, or are blind.</p>
+
+  <p class="paragraph-text mb-16">For example, these inline validation messages use both color and icons to distinguish
+    severity:</p>
+
+  <app-do-dont
+    [media]="true"
+    [doMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/1ca4TtV0x1mVTO1SGh1706/8b0902958ec4628983f29245bb3dbe14/visual-cue-do.png'"
+    [dontMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/4ytqS9iIEfy0I8RnbvLbmC/2f31f6b4583cf8db6f8e6fde1e249d01/visual-cue-dont.png'"
+    [doText]="'The success message used a tick icon and is green in color. The error message uses an exclamation point and is\n'+
+'      red in color.'"
+    [dontText]="'Color is the only visual cue to distinguish severity. The success message is green in color. The error message is\n'+
+'      red in color.'">
+  </app-do-dont>
+
+  <h5 class="heading-5 mb-20 pt-32">Use high contrast</h5>
+
+  <p class="paragraph-text mb-16">High color contrast helps people who are partially or completely color blind see
+    differences between certain colors. It creates a strong visual hierarchy and improves usability for everyone. Make
+    sure that the combination of text and background color do not fall below the
+    <a href="#">WCAG recommended threshold</a> ratio of 4.5:1 for standard text and 3:1 for larger text.</p>
+
+  <p class="paragraph-text mb-16">Decorative images and disabled states don't have contrast requirements.</p>
+
+  <app-do-dont
+    [media]="true"
+    [doMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/6r8LGI1pzLHIFxAL34VTIw/7c6b2d15a8c394df4b4cfd58a9c18fd4/accessibility-contrast-do.png'"
+    [doText]="'Use high contrast color combinations that pass AA compliance.'"
+    [dontMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/2aMkwC8yxcEF283IuViIgq/965b14856e9e8657c0f52c6f8b49fa10/accessibility-contrast-dont.png'"
+    [dontText]="'Don\'t use low contrast color combinations that fail AA compliance.'"
+  ></app-do-dont>
+
+  <h4 class="heading-4 mb-20 pt-48">Testing and research</h4>
+
+  <p class="paragraph-text mb-16">These guidelines will help improve accessibility in your applications, but they don't
+    guarantee a fully accessible experience. We also recommend you:</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">test the entire application and journeys using various assistive technologies and
+        text scaling</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">include people with impairments when testing</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">ensure in doubt, refer to the <a href="#">Web Content Accessibility Guidelines
+        2.1</a>.</p>
+    </li>
+  </ul>
+</div>
+

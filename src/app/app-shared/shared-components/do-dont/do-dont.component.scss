@@ -1,0 +1,13 @@
+:host-context(app-do-dont) {
+  .do .content-wrapper {
+    background: #E3FCEF;
+    box-shadow: inset 0 4px 0 #36b37e;
+    padding: 15px;
+  }
+
+  .dont .content-wrapper {
+    background: #FFEBE6;
+    box-shadow: inset 0 4px 0 #DE350B;
+    padding: 15px;
+  }
+}
