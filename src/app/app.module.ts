@@ -18,6 +18,7 @@ import { AccessibilityComponent } from './foundations/accessibility/accessibilit
 import { FoundationsLayoutComponent } from './foundations/foundations-layout/foundations-layout.component';
 import { DoDontComponent } from './app-shared/shared-components/do-dont/do-dont.component';
 import { ColorComponent } from './foundations/color/color.component';
+import { PageBannerComponent } from './app-shared/shared-components/page-banner/page-banner.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { ColorComponent } from './foundations/color/color.component';
     FoundationsLayoutComponent,
     DoDontComponent,
     ColorComponent,
+    PageBannerComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,9 @@
+.page-banner {
+  background: #FAFBFC;
+  padding: 48px 80px 80px;
+  height: 225px;
+
+  @media (max-width: 1024px) {
+    padding: 32px 30px;
+  }
+}
