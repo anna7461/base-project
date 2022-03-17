@@ -2,94 +2,11 @@
   <!--1. components sidebar menu-->
 
   <div class="sidebar-menu display-flex flex-direction-column pt-40">
-    <a href="#" class="sidebar-menu-link text-dark-grey">Mission</a>
-    <a href="#" class="sidebar-menu-link text-dark-grey">Personality</a>
-    <a href="#" class="sidebar-menu-link text-dark-grey">Promise</a>
-    <a href="#" class="sidebar-menu-link text-dark-grey">Values</a>
+    <a routerLink="mission" class="sidebar-menu-link text-dark-grey">Mission</a>
+    <a routerLink="personality" class="sidebar-menu-link text-dark-grey">Personality</a>
+    <a routerLink="promise" class="sidebar-menu-link text-dark-grey">Promise</a>
+    <a routerLink="values" class="sidebar-menu-link text-dark-grey">Values</a>
   </div>
 
-  <div class="main-content-wrapper pt-40 pb-40 pl-48 pr-48">
-    <!--2. Content section-->
-    <div class="display-grid flow-column">
-      <div class="display-grid align-items-center flow-column justify-content-between col-2fr-1fr-layout">
-        <div class="display-flex flex-direction-column">
-          <h3 class="heading-3 display-flex align-items-center mb-20">
-            Brand
-          </h3>
-          <p class="content-description text-light-grey mb-20">Our brand reflects who we are and how we want our users
-            to feel when they use our products. It’s the unique combination of our mission and values, and principles
-            that drive our promise to unleash the potential of every team.</p>
-        </div>
-
-        <div class="media-wrapper mb-16">
-          <img style="width: initial;"
-               src="https://atlassian.design/static/8c7b254d9b484000633a66675bbd0afa/brand@2x.png" alt="">
-        </div>
-      </div>
-    </div>
-
-    <div class="display-grid col-2-layout">
-
-      <div class="card-surface display-flex flex-direction-column">
-        <h5 class="heading-5 display-flex flex-direction-column justify-content-center mb-8">
-          <div class="icon-rectangular brand medium mb-16">
-            <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
-              <path
-                d="M6 12.235v6.446c0 .537.45.977 1 .977s1-.44 1-.977v-5.778c1.17-.341 2.389-.045 3.768.29.982.238 2.036.495 3.13.495a5.73 5.73 0 002.547-.567 1 1 0 00.563-.9V5.466a.998.998 0 00-1.437-.9c-1.345.654-2.731.317-4.331-.071-1.729-.42-3.687-.895-5.678.072A1 1 0 006 5.466v6.769zm3.111-1.48c1.094 0 2.148.256 3.129.495 1.381.335 2.6.63 3.768.289V6.836c-1.488.27-2.93-.08-4.24-.398-1.379-.335-2.598-.632-3.768-.29v4.704a6.195 6.195 0 011.111-.097z"
-                fill="currentColor" fill-rule="evenodd"></path>
-            </svg>
-          </div>
-          Mission
-        </h5>
-        <p class="paragraph-text">Our mission is to unleash the potential in every team. </p>
-      </div>
-
-      <div class="card-surface display-flex flex-direction-column">
-        <h5 class="heading-5 display-flex flex-direction-column justify-content-center mb-8">
-          <div class="icon-rectangular brand medium mb-16">
-            <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
-              <path
-                d="M12 21a9 9 0 110-18 9 9 0 010 18zm0-2a7 7 0 100-14 7 7 0 000 14zm-3.95-4.803c-.167-.477.102-.991.601-1.15.5-.159 1.039.099 1.205.575.06.174.225.487.495.796.426.488.956.764 1.649.764.693 0 1.223-.276 1.65-.764.27-.31.433-.622.494-.796.166-.476.706-.734 1.205-.575.499.159.768.673.602 1.15a4.38 4.38 0 01-.839 1.385C14.348 16.458 13.306 17 12 17s-2.348-.542-3.112-1.418a4.382 4.382 0 01-.839-1.385zM9.5 11a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm5 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"
-                fill="currentColor" fill-rule="evenodd"></path>
-            </svg>
-          </div>
-          Personality
-        </h5>
-        <p class="paragraph-text">Our personality describes the tone we use for external communications. It should be
-          expressed
-          as an embodiment of our values.</p>
-      </div>
-
-      <div class="card-surface display-flex flex-direction-column">
-        <h5 class="heading-5 display-flex flex-direction-column justify-content-center mb-8">
-          <div class="icon-rectangular brand medium mb-16">
-            <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
-              <path
-                d="M12 16.373l3.98 2.193-.76-4.655 3.276-3.347-4.524-.69L12 5.687l-1.972 4.189-4.524.689L8.78 13.91l-.762 4.655L12 16.373zm0 2.283l-3.016 1.662a2 2 0 01-2.939-2.075l.599-3.656-2.57-2.624a2 2 0 011.129-3.377l3.47-.528 1.518-3.224a2 2 0 013.618 0l1.519 3.224 3.47.528a2 2 0 011.127 3.377l-2.569 2.624.599 3.656a2 2 0 01-2.94 2.075L12 18.656z"
-                fill="currentColor"></path>
-            </svg>
-          </div>
-          Promise
-        </h5>
-        <p class="paragraph-text">Our promise is that our tools and practices will help teams work better together in an
-          agile,
-          open, and scalable way.</p>
-      </div>
-
-      <div class="card-surface display-flex flex-direction-column">
-        <h5 class="heading-5 display-flex flex-direction-column justify-content-center mb-8">
-          <div class="icon-rectangular brand medium mb-16">
-            <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
-              <path
-                d="M12 9.44l1.76-1.744a2.505 2.505 0 013.52 0 2.451 2.451 0 010 3.488L12 16.417l-5.28-5.232a2.451 2.451 0 010-3.49 2.505 2.505 0 013.52 0v.001L12 9.44zm-6.684 3.143l.003.004 6.322 6.266a.508.508 0 00.718 0l6.322-6.266.003-.004.004-.003a4.412 4.412 0 000-6.28 4.509 4.509 0 00-6.336 0l-.003.004-.004.003L12 6.65l-.345-.342-.004-.003-.003-.003a4.509 4.509 0 00-6.336 0 4.412 4.412 0 000 6.279l.004.003z"
-                fill="currentColor" fill-rule="evenodd"></path>
-            </svg>
-          </div>
-          Values
-        </h5>
-        <p class="paragraph-text">Our values reflect the spirit with which an Atlassian works to fulfill our
-          promise.</p>
-      </div>
-    </div>
-  </div>
+  <router-outlet style="display: none;"></router-outlet>
 </div>

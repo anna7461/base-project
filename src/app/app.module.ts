@@ -24,6 +24,11 @@ import { IconographyComponent } from './foundations/iconography/iconography.comp
 import { IllustrationsComponent } from './foundations/illustrations/illustrations.component';
 import { LogosComponent } from './foundations/logos/logos.component';
 import { TypographyComponent } from './foundations/typography/typography.component';
+import { MissionComponent } from './brand/mission/mission.component';
+import { PersonalityComponent } from './brand/personality/personality.component';
+import { PromiseComponent } from './brand/promise/promise.component';
+import { ValuesComponent } from './brand/values/values.component';
+import { BrandLayoutComponent } from './brand/brand-layout/brand-layout.component';
 
 
 @NgModule({
@@ -48,6 +53,11 @@ import { TypographyComponent } from './foundations/typography/typography.compone
     IllustrationsComponent,
     LogosComponent,
     TypographyComponent,
+    MissionComponent,
+    PersonalityComponent,
+    PromiseComponent,
+    ValuesComponent,
+    BrandLayoutComponent,
   ],
   imports: [
     BrowserModule,

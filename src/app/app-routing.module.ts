@@ -16,6 +16,11 @@ import {IconographyComponent} from './foundations/iconography/iconography.compon
 import {IllustrationsComponent} from './foundations/illustrations/illustrations.component';
 import {LogosComponent} from './foundations/logos/logos.component';
 import {TypographyComponent} from './foundations/typography/typography.component';
+import {BrandLayoutComponent} from './brand/brand-layout/brand-layout.component';
+import {MissionComponent} from './brand/mission/mission.component';
+import {PersonalityComponent} from './brand/personality/personality.component';
+import {PromiseComponent} from './brand/promise/promise.component';
+import {ValuesComponent} from './brand/values/values.component';
 
 const routes: Routes = [
   {
@@ -25,7 +30,35 @@ const routes: Routes = [
     path: 'components', component: ComponentsComponent
   },
   {
-    path: 'brand', component: BrandComponent
+    path: 'brand',
+    component: BrandComponent,
+    children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        component: BrandLayoutComponent
+      },
+      {
+        path: 'mission',
+        pathMatch: 'full',
+        component: MissionComponent
+      },
+      {
+        path: 'personality',
+        pathMatch: 'full',
+        component: PersonalityComponent
+      },
+      {
+        path: 'promise',
+        pathMatch: 'full',
+        component: PromiseComponent
+      },
+      {
+        path: 'values',
+        pathMatch: 'full',
+        component: ValuesComponent
+      },
+    ],
   },
   {
     path: 'foundations',
