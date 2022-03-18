@@ -9,9 +9,16 @@
 .sidebar-menu-link {
   padding: 8px 20px 8px 32px;
   transition: background-color 0.15s ease-in;
+  width: 100%;
 
   &:hover {
     background-color: #F4F5F7;
     text-decoration: none;
+  }
+}
+
+.sidebar-menu-inner.lvl-2 {
+  .sidebar-menu-link {
+    padding-left: 48px;
   }
 }

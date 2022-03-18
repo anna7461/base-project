@@ -29,6 +29,22 @@ import { PersonalityComponent } from './brand/personality/personality.component'
 import { PromiseComponent } from './brand/promise/promise.component';
 import { ValuesComponent } from './brand/values/values.component';
 import { BrandLayoutComponent } from './brand/brand-layout/brand-layout.component';
+import { InclusiveLanguageComponent } from './content/inclusive-language/inclusive-language.component';
+import { ContentLayoutComponent } from './content/content-layout/content-layout.component';
+import { LanguageAndGrammarComponent } from './content/language-and-grammar/language-and-grammar.component';
+import { VocabularyComponent } from './content/vocabulary/vocabulary.component';
+import { VoiceAndTonePrinciplesComponent } from './content/voice-and-tone-principles/voice-and-tone-principles.component';
+import { WritingStyleComponent } from './content/writing-style/writing-style.component';
+import { WritingGuidelinesComponent } from './content/writing-guidelines/writing-guidelines.component';
+import { DateAndTimeComponent } from './content/writing-guidelines/date-and-time/date-and-time.component';
+import { EmptyStateComponent } from './content/writing-guidelines/empty-state/empty-state.component';
+import { ErrorMessageComponent } from './content/writing-guidelines/error-message/error-message.component';
+import { FeatureDiscoveryComponent } from './content/writing-guidelines/feature-discovery/feature-discovery.component';
+import { InfoMessagesComponent } from './content/writing-guidelines/info-messages/info-messages.component';
+import { SuccessMessageComponent } from './content/writing-guidelines/success-message/success-message.component';
+import { WarningMessageComponent } from './content/writing-guidelines/warning-message/warning-message.component';
+import { WritingGuidelinesLayoutComponent } from './content/writing-guidelines/writing-guidelines-layout/writing-guidelines-layout.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -58,6 +74,22 @@ import { BrandLayoutComponent } from './brand/brand-layout/brand-layout.componen
     PromiseComponent,
     ValuesComponent,
     BrandLayoutComponent,
+    InclusiveLanguageComponent,
+    ContentLayoutComponent,
+    LanguageAndGrammarComponent,
+    VocabularyComponent,
+    VoiceAndTonePrinciplesComponent,
+    WritingStyleComponent,
+    WritingGuidelinesComponent,
+    DateAndTimeComponent,
+    EmptyStateComponent,
+    ErrorMessageComponent,
+    FeatureDiscoveryComponent,
+    InfoMessagesComponent,
+    SuccessMessageComponent,
+    WarningMessageComponent,
+    WritingGuidelinesLayoutComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,

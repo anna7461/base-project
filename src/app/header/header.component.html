@@ -1,12 +1,12 @@
 <!--1. header navigation-->
 <header class="header">
   <div class="section-inner-container">
-    <a routerLink="home" class="navigation-link">Home</a>
-    <a routerLink="brand" class="navigation-link">Brand</a>
-    <a routerLink="foundations" class="navigation-link">Foundations</a>
-    <a routerLink="content" class="navigation-link">Content</a>
-    <a routerLink="components" class="navigation-link">Components</a>
-    <a routerLink="patterns" class="navigation-link">Patterns</a>
-    <a routerLink="resources" class="navigation-link">Resources</a>
+    <a [routerLink]="'/'" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact:true}" class="navigation-link">Home</a>
+    <a [routerLink]="'/brand'" [routerLinkActive]="'active'" class="navigation-link">Brand</a>
+    <a [routerLink]="'foundations'" [routerLinkActive]="'active'" class="navigation-link">Foundations</a>
+    <a [routerLink]="'content'" [routerLinkActive]="'active'" class="navigation-link">Content</a>
+    <a [routerLink]="'components'" [routerLinkActive]="'active'" class="navigation-link">Components</a>
+    <a [routerLink]="'patterns'" [routerLinkActive]="'active'" class="navigation-link">Patterns</a>
+    <a [routerLink]="'resources'" [routerLinkActive]="'active'" class="navigation-link">Resources</a>
   </div>
 </header>

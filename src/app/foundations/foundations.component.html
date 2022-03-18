@@ -2,13 +2,13 @@
   <!--1. components sidebar menu-->
 
   <div class="sidebar-menu display-flex flex-direction-column pt-40">
-    <a routerLink="accessibility" class="sidebar-menu-link text-dark-grey">Accessibility</a>
-    <a routerLink="color" class="sidebar-menu-link text-dark-grey">Color</a>
-    <a routerLink="grid" class="sidebar-menu-link text-dark-grey">Grid</a>
-    <a routerLink="iconography" class="sidebar-menu-link text-dark-grey">Iconography</a>
-    <a routerLink="illustrations" class="sidebar-menu-link text-dark-grey">Illustrations</a>
-    <a routerLink="logos" class="sidebar-menu-link text-dark-grey">Logos</a>
-    <a routerLink="typography" class="sidebar-menu-link text-dark-grey">Typography</a>
+    <a [routerLink]="'accessibility'" [routerLinkActive]="'active'" class="sidebar-menu-link text-dark-grey">Accessibility</a>
+    <a [routerLink]="'color'" [routerLinkActive]="'active'" class="sidebar-menu-link text-dark-grey">Color</a>
+    <a [routerLink]="'grid'" [routerLinkActive]="'active'" class="sidebar-menu-link text-dark-grey">Grid</a>
+    <a [routerLink]="'iconography'" [routerLinkActive]="'active'" class="sidebar-menu-link text-dark-grey">Iconography</a>
+    <a [routerLink]="'illustrations'" [routerLinkActive]="'active'" class="sidebar-menu-link text-dark-grey">Illustrations</a>
+    <a [routerLink]="'logos'" [routerLinkActive]="'active'" class="sidebar-menu-link text-dark-grey">Logos</a>
+    <a [routerLink]="'typography'" [routerLinkActive]="'active'" class="sidebar-menu-link text-dark-grey">Typography</a>
   </div>
 
   <router-outlet style="display: none;"></router-outlet>

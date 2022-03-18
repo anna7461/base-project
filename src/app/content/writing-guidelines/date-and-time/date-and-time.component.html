@@ -1,0 +1,510 @@
+<app-page-banner
+  [bannerTitle]="'Date and time'"
+  [bannerDescription]="'Communicating date and time in a clear, consistent, unambiguous way helps reduce confusion for our global customers.'"
+></app-page-banner>
+
+<div class="page-content">
+  <h4 class="heading-4 mb-20 pt-48">A note for Content Designers</h4>
+
+  <p class="paragraph-text mb-16">When you're working with engineers, all they need is the time and date format length,
+    and the i18n library API will format the date accordingly based on the locale signals Atlassian provides.</p>
+
+  <p class="paragraph-text mb-16">Each programming language has an i18n library that automatically localizes time and
+    date strings based on a user's locale settings/preferences. Date and time formatters are used to convert dates and
+    times from their internal representations to textual form and back again in a language-independent manner.</p>
+
+  <p class="paragraph-text mb-16">Time and date strings should never be localized manually by a translator as time and
+    date strings should be tied to a user's locale (country and language) not their language. Hardcoding time and date
+    content is bad practice and created a bad international customer experience.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Abbreviating days and months</h4>
+
+  <p class="paragraph-text mb-16">Use abbreviations when space is limited. Be clear about which months or days you are
+    referring to.</p>
+
+  <p class="paragraph-text mb-16">Use these abbreviations for the days of the week:</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Monday - Mon</p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">Tuesday - Tue</p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">Wednesday - Wed</p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">Thursday - Thu</p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">Friday - Fri</p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">Saturday - Sat</p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">Sunday - Sun</p>
+    </li>
+  </ul>
+
+  <p class="paragraph-text mb-16">Use these abbreviations for the months:</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">January - Jan</p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">February - Feb</p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">March - Mar</p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">April - Apr</p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">May - leave it as May</p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">June - Jun</p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">July - Jul</p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">August - Aug</p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">September - Sep</p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">October - Oct</p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">November - Nov</p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">December - Dec</p>
+    </li>
+  </ul>
+
+  <app-do-dont
+    [doText]="'Be consistent when using abbreviations'"
+    [dontText]="'Don\'t use the shortest form of days and months - F, M, N, etc. If there isn\'t room to designate the month, work on redesigning.'"
+  ></app-do-dont>
+
+  <h4 class="heading-4 mb-20 pt-48">The date format in American English</h4>
+
+  <p class="paragraph-text mb-16">Usually, the month comes before the day, then followed by the year. On the 8th day of
+    the month of January, in the year 2020, then the date in American English can be written as:</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Jan 8</p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">January 8</p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">January 8, 2020</p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">Monday, January 8, 2020</p>
+    </li>
+  </ul>
+
+  <p class="paragraph-text mb-16">Atlassian uses American English when writing in English. The formats above are broken
+    down below to help when writing absolute values are required. Choose patterns that are appropriate for your
+    context.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Long date</h5>
+
+  <p class="paragraph-text mb-16">Use full date in cards, bylines, and anywhere else space or your design allows for
+    it:</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Use numerals for the day </p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">Spell out the month and day of the week in words </p>
+    </li>
+    <li>
+      <p class="paragraph-text mb-8">Give the full four-digit year, not a two-digit abbreviation</p>
+    </li>
+  </ul>
+
+  <p class="paragraph-text mb-16">Don’t use ordinal numbers, for example, 1st, 2nd, 3rd, etc. </p>
+
+  <app-do-dont
+    [doText]="'Tuesday, April 12, 1952'"
+    [dontText]="'Tuesday 12th April 1952'"
+  ></app-do-dont>
+
+  <h5 class="heading-5 mb-20 pt-32">Medium date</h5>
+
+  <p class="paragraph-text mb-16">You can also use a shorter format. Here spell out the month and use numberals for the
+    day and year:</p>
+
+  <app-do-dont
+    [doText]="'April 12, 1952'"
+  ></app-do-dont>
+
+  <h5 class="heading-5 mb-20 pt-32">Short date</h5>
+
+  <p class="paragraph-text mb-16">When space is limited shorten dates further, for example in listsm tables, charts, and
+    comments.</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Spell out the month using abbreviations</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Use numerals for the day and the year</p>
+    </li>
+  </ul>
+
+  <app-do-dont
+    [doText]="'Sep 14, 2006'"
+  ></app-do-dont>
+
+  <p class="paragraph-text mb-16">When you need to leave out either the day or year, where possible, spell out the month
+    in full.</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">October 22 or July 2019</p>
+    </li>
+  </ul>
+
+  <h4 class="heading-4 mb-20 pt-48">Numerical dates</h4>
+
+  <p class="paragraph-text mb-16">Writing dates entirely in numbers has disadvantages when it comes to readability and
+    usability. This is because parts of the world use the date in a different order for numeric dates. Avoid doing this
+    if it's possible because it often also has large UX implications. Instead, we recommend using any of the other date
+    formats above.</p>
+
+  <p class="paragraph-text mb-16">If it’s absolutely necessary to express a date in numerical date format, use the
+    format YYYY-MM-DD, and separate the elements by using hyphens. This conforms to <a
+      href="https://en.wikipedia.org/wiki/ISO_8601" target="_blank">ISO 8601 international standards</a> for
+    numerical date format.</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">2021-05-23</p>
+    </li>
+  </ul>
+
+  <p class="paragraph-text mb-16">In a content draft or design spec if you’re adding a fictional date, choose a day
+    greater than 12. This will help to clearly differentiate the day from the month. </p>
+
+  <h4 class="heading-4 mb-20 pt-48">Grammar and punctuation</h4>
+
+  <p class="paragraph-text mb-16">Punctuation is a localization issue and should be localized wherever possible. Avoid
+    if possible, defaulting to no punctuation.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Hyphens</h5>
+
+  <p class="paragraph-text mb-16">When writing as numerals separate the numbers with an unspaced hyphen, using the
+    format above.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Apostrophes</h5>
+
+  <p class="paragraph-text mb-16">Avoid using apostrophes. In more casual writing, you can use expressions such as ‘the
+    seventies’ or 'the '70s' - using contractions for the missing numerals in the year.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Capital and lower case</h5>
+
+  <p class="paragraph-text mb-16">Months and days are proper nouns and start with a capital letter. Specific days, times
+    of the year or periods in history are all proper nouns. Use capitals for all proper nouns.</p>
+
+  <p class="paragraph-text mb-16">Use initial capitals for all institutional holidays, religious days, and public
+    events:</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">New Year’s Day</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Good Friday</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Ramadan</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Yom Kippur</p>
+    </li>
+  </ul>
+
+  <h4 class="heading-4 mb-20 pt-48">Using 'to' and 'from'</h4>
+
+  <p class="paragraph-text mb-16">Use ‘to’ if a number range is preceded by ‘from’ in a phrase. Use ‘and’ if a range is
+    preceded by ‘between’. Avoid using hyphens and en dashes in spans of dates.</p>
+
+  <app-do-dont
+    [doText]="'From 2015 to 2019'"
+    [dontText]="'2014 - 2015'"
+  ></app-do-dont>
+
+  <p class="paragraph-text mb-16">When this isn't possible, for example:</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">financial years</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">or when information is in parentheses, such as terms of office and years of birth
+        and death.</p>
+    </li>
+  </ul>
+
+  <p class="paragraph-text mb-16">For these, use a hyphen without any spaces on either side:</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">FY2008-09</p>
+    </li>
+  </ul>
+
+  <h4 class="heading-4 mb-20 pt-48">Divisions of the year</h4>
+
+  <p class="paragraph-text mb-16">Spring in the northern hemisphere is autumn (fall) in the southern hemisphere. Avoid
+    talking about seasons. Instead, use months or quarters.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Time</h4>
+
+  <p class="paragraph-text mb-16">In most cases, especially when you need to be precise, use numbers to give a clearer
+    expression of time. Use a colon between the hours and minutes with no spaces on either side.</p>
+
+  <app-do-dont
+    [doText]="'3:30:42 p.m. PST'"
+  ></app-do-dont>
+
+  <p class="paragraph-text mb-16">If it’s an exact hour, no “:00″ is required. For timestamps, labels on graphs,
+    durations, and more avoid using zeros. Only show minutes if it’s not on the hour.</p>
+
+  <app-do-dont
+    [doText]="'8 a.m.'"
+    [dontText]="'8:00am'"
+  ></app-do-dont>
+
+  <h4 class="heading-4 mb-20 pt-48">Using 'a.m' and 'p.m'</h4>
+
+  <p class="paragraph-text mb-16">As with American English in most cases, we use rules set by the AP style guide.</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Lowercase a.m. and p.m., with periods.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Use numerals, with a space between the time and the a.m. or p.m., for example, 6:30
+        a.m.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">If a time range is entirely in the morning or evening, use a.m. or p.m. only once:
+        "6:30-10p.m.". If it goes from the morning into the evening (or vice versa), you need both: "10 a.m. -
+        2p.m."</p>
+    </li>
+  </ul>
+
+  <h4 class="heading-4 mb-20 pt-48">Noon, midday, and midnight</h4>
+
+  <p class="paragraph-text mb-16">Where possible use ‘noon’, ‘midday’ or ‘midnight’ instead of ‘12 a.m.’ or ‘12 p.m.’ to
+    make it easier for people.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">The 24-hour system</h4>
+
+  <p class="paragraph-text mb-16">Use the 24-hour system if it helps people understand your content. But it’s important
+    to understand that many times this is system-driven.
+    This is important if you’re referring to time in the context of more serious communications, for example, in case of
+    outages and in security comms.</p>
+
+  <p class="paragraph-text mb-16">The 24-hour system numbers hours from 00:00 hours (midnight) to 23:59 and always uses
+    at least 4 digits. If seconds are included use 6 digits. </p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">The first 2 digits are the hours</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">The nect 2 digits are the minutes/p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">The last 2 digits are the seconds</p>
+    </li>
+  </ul>
+
+  <p class="paragraph-text mb-16">Use a colon to separate the hours, minutes, and seconds.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Talking about time</h4>
+
+  <p class="paragraph-text mb-16">Avoid using the prefix ‘bi’ to mean either 2 or twice. It can be confusing.</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">'Bimonthly' cab mean either every 2 months or twice a month.'</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">'Biannual' means twice a year.</p>
+    </li>
+  </ul>
+
+  <p class="paragraph-text mb-16">Instead, use fortnightly or the phrase ‘every 2’.</p>
+
+  <app-do-dont
+    [doText]="'Your x will repeat every 2 weeks'"
+    [dontText]="'Your x will repeat bi-monthly'"
+  ></app-do-dont>
+
+  <h4 class="heading-4 mb-20 pt-48">Using date and time together</h4>
+
+  <p class="paragraph-text mb-16">This is used when displaying both the date and the time of day. For example, in
+    historical versions of pages. To do this use the following formats.</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">MMM dd, yyyy HH:mm</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">dd, HH:mm</p>
+    </li>
+  </ul>
+
+  <h4 class="heading-4 mb-20 pt-48">Relative date and time</h4>
+
+  <p class="paragraph-text mb-16">It’s important that you express date and time information as you would speak in
+    conversation when the situation allows for it.</p>
+
+  <p class="paragraph-text mb-16">In some cases, the easiest way to describe something that happened very recently is
+    using the ‘ago’ format. Use this when the exact date is less important. For future and past events, use approximate
+    time by rounding down to the largest or most recent date or time.</p>
+
+  <p class="paragraph-text mb-16">You should always provide a way for people to see the actual timestamp, usually via a
+    tooltip.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Past</h5>
+
+  <div class="display-grid col-3-layout paragraph-text">
+    <p><strong>Description</strong></p>
+    <p><strong>Display</strong></p>
+    <p><strong>Display when limited space</strong></p>
+
+    <p>Within the last few seconds</p>
+    <p>just now</p>
+    <p>now</p>
+
+    <p>Within the last minute</p>
+    <p>a minute ago</p>
+    <p>1m</p>
+
+    <p>Within 59 minutes</p>
+    <p>x minutes ago</p>
+    <p>X m</p>
+
+    <p>60 minutes ago</p>
+    <p>1 hour ago</p>
+    <p>1h</p>
+
+    <p>x hours ago</p>
+    <p>x hours ago</p>
+    <p>X h</p>
+
+    <p>1 day ago</p>
+    <p>yesterday</p>
+    <p>1d</p>
+
+    <p>1 day ago (with time)</p>
+    <p>yesterday at 5:05 pm</p>
+    <p>n/a</p>
+
+    <p>2 days ago < 7 days</p>
+    <p>x days ago</p>
+    <p>Use the truncated date (Aug 8)</p>
+
+    <p>7 days ago</p>
+    <p>1 week ago</p>
+    <p>Use the truncated date (Aug 8)</p>
+
+    <p>< 7 days ago/p>
+    <p>Date stamp: "August 8, 2018"</p>
+    <p>Use the truncated date (Aug 8)</p>
+  </div>
+
+  <h5 class="heading-5 mb-20 pt-32">Future</h5>
+
+  <div class="display-grid col-3-layout paragraph-text">
+    <p><strong>Description</strong></p>
+    <p><strong>Display</strong></p>
+    <p><strong>Display when limited space</strong></p>
+
+    <p>Within the next few seconds</p>
+    <p>shortly</p>
+    <p>now</p>
+
+    <p>In the next minute</p>
+    <p>In 1 minute</p>
+    <p>in 1 m</p>
+
+    <p>In the next 60 minutes</p>
+    <p>In x minutes</p>
+    <p>in X m</p>
+
+    <p>In 60 minutes</p>
+    <p>In 1 hour</p>
+    <p>in 1 h</p>
+
+    <p>In x hours</p>
+    <p>In x hours</p>
+    <p>in X hr</p>
+
+    <p>In 1 day (by date, not hours)</p>
+    <p>tomorrow</p>
+    <p>Use the truncated date (Aug 8)</p>
+
+    <p>In 2 to 7 days</p>
+    <p>In x days</p>
+    <p></p>
+
+    <p>In 8 days</p>
+    <p>In 1 week</p>
+    <p></p>
+
+    <p>In > 7 days</p>
+    <p>Date stamp: "August 8, 2018)</p>
+    <p></p>
+
+    <p>< 7 days ago</p>
+    <p>Date stamp: "August 8, 2018</p>
+    <p></p>
+  </div>
+
+  <h4 class="heading-4 mb-20 pt-48">Writing for languages other than English and internationalization</h4>
+
+  <p class="paragraph-text mb-16">Date and time formatting differs greatly from country to country, and even within
+    regions of a country, such as Canada and Switzerland.</p>
+
+  <p class="paragraph-text mb-16">The Product Internationalization team is responsible for creating product UI content
+    in non-English languages by localizing externalized code strings provided by our Product Engineers.</p>
+
+  <p class="paragraph-text mb-16">In order to accurately localize date and time formatting for different locales
+    (country and language), we require Engineers to ensure that all content containing the date and time references are
+    not hardcoded and reference built-in i18n libraries/APIs for automatic format.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Best practices for beginners</h4>
+
+  <p class="paragraph-text mb-16">The best practice for Internationalization is for Engineers not to hardcode time and
+    date strings and to reference the programming i18n library API which will automatically format time and date strings
+    as per the detected or selected locale.</p>
+</div>
