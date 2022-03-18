@@ -3,4 +3,221 @@
   [bannerDescription]="'An error message alerts people of a problem that has occured and informs them what to do next.'"
 ></app-page-banner>
 
-<div class="page-content"></div>
+<div class="page-content">
+  <p class="paragraph-text mb-16">An error message, different from a warning message, appears after someone has taken an
+    action. The message draws their attention to what has happened and what the consequences are, and what people need
+    to do to move forward. Optionally, they can also include why something happened and whether the problem will occur
+    again. </p>
+
+  <p class="paragraph-text mb-16">When crafting an error message, remember that most people scan text instead of reading
+    everything. Make every word count and avoid irrelevant details.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Writing best practices</h4>
+
+  <h5 class="heading-5 mb-20 pt-32">Title</h5>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Titles are optional depending on the component you choose.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Include an informative, scannable title. Try and imagine people trying to
+        understand what’s happening by reading the title on its own.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Avoid explaining what to do.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Limit titles to three to four words where possible, excluding “an”, “a”, or “the”.
+        The character count will depend on the component you choose.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Write in sentence case with appropriate punctuation.</p>
+    </li>
+  </ul>
+
+
+  <h5 class="heading-5 mb-20 pt-32">Body</h5>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Include: the reason for the error and the problem, how someone should act and what
+        happens if they don’t act. </p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">If you don’t know the reason for an error, don’t make one up – just say that
+        something’s gone wrong and offer a solution for what people can do. </p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Avoid repeating content from the title.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Keep messages to 1 to 2 sentences. </p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Avoid putting technical information in the message or having people look in another
+        location. If it can't be avoided, use a “Learn more” link.</p>
+    </li>
+  </ul>
+
+  <app-do-dont
+    [media]="true"
+    [doMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/6kqEuCuKRdzzAERujM5e3y/3379cfc7a920721685e1bea0c325dcde/error-messages-08-do.png'"
+    [dontMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/3pnAJ8GwEG3uD0QbWLVbbP/acc39d03f6f15752e26f27c3b44d2ae9/error-messages-08-dont.png'"
+  ></app-do-dont>
+
+  <h5 class="heading-5 mb-20 pt-32">Call to action (CTA)</h5>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">When an error message invokes a choice, use imperative verbs such as “Save”,
+        “Remove” or “Create”, in the CTA to describe what action people will be making instead of vague terms such as
+        “OK”. </p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">An option to dismiss or cancel lets people feel reassured that they can opt
+        out.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Limit your CTA to 1 or 2 words.</p>
+    </li>
+  </ul>
+
+  <h4 class="heading-4 mb-20 pt-48">Voice and tone</h4>
+
+  <p class="paragraph-text mb-16">Errors are high-stakes situations. They can be frustrating at a minimum, or
+    catastrophic at their worst – especially when they involve work. </p>
+
+  <p class="paragraph-text mb-16">You want to leave people feeling supported and reassured. Convey an error message with
+    empathy and tact. The correct level of urgency will let people understand how to respond. Follow some of the
+    following Atlassian Voice and Tone principles to build your message:</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Inform to build trust</h5>
+
+  <p class="paragraph-text mb-16">Be open and clear about what people are experiencing in our products. Be cognizant of
+    them being new or confused, and tone down the boldness by being more prescriptive. </p>
+
+  <app-do-dont
+    [media]="true"
+    [doMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/5z3itGQhgxWVH7h1ancjcG/26673f1c00b2b9d992a0877a81bd1d59/error-messages-05-do.png'"
+    [dontMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/NTkw3BXCldVOgYme2rHpz/ae6af9e418b2f88fe6fd57e3d0d3343e/error-messages-05-dont.png'"
+  ></app-do-dont>
+
+  <p class="paragraph-text mb-16">Treat errors as an opportunity to educate people. Help them understand why they’re
+    experiencing something and how they can avoid similar issues in the future. You may even be able to teach them
+    something that can help them understand and manage the technology they use beyond our immediate products.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Encourage people along the path</h5>
+
+  <p class="paragraph-text mb-16">Be consistent and dependable. Avoid messaging that focuses on the problem without
+    offering a solution or way forward. Focus on next steps where possible and stay away from negative words or
+    phrases. </p>
+
+  <app-do-dont
+    [media]="true"
+    [doMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/2JZ6Z2e1lReiRuZBI51vqC/b086acd5cde9974093b4b498afd55459/error-messages-02-do.png'"
+    [dontMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/2RXDn1tfWBMnXiHTs0MvkV/e1e83b665027d86090098c13208d80d5/error-messages-02-dont.png'"
+  ></app-do-dont>
+
+  <p class="paragraph-text mb-16">Use we instead of you, as emphasizing the relationship between the person and the
+    problem could make them feel like they’re being held responsible. </p>
+
+  <h5 class="heading-5 mb-20 pt-32">Satisfy by meeting expectations</h5>
+
+  <p class="paragraph-text mb-16">Provide quick and thorough answers, guidance, actions, and instructions. Give them the
+    information they need then get out of their way. </p>
+
+  <app-do-dont
+    [media]="true"
+    [doMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/3pupCkopmjISfgfv3NODBM/8d699d4a42fdf1dd9b5665d7fa331492/error-messages-04-do.png'"
+    [dontMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/6D30ibqCtAvYhdRKNKOwvg/267df611c9bbbaee47cfaad72a7103eb/error-messages-04-dont.png'"
+  ></app-do-dont>
+
+  <p class="paragraph-text mb-16">Avoid using “please” and “sorry”. Saying "sorry" in error messages can make the
+    situation worse by causing errors to appear more severe than they actually are. Similarly, saying "please" can
+    undermine the authority and credibility of your message and lead people to think a required step is optional. Unless
+    the error has severe and irreparable consequences, avoid these kinds of niceties.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Patterns and UX strategies</h4>
+
+  <p class="paragraph-text mb-16">If the error has more than one potential cause or solution, try one of the following
+    writing strategies.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">A warning message vs. an error message</h5>
+
+  <p class="paragraph-text mb-16">An error message alerts people of a problem that has already occurred. By contrast, a
+    warning message alerts people of a condition that might cause a problem in the future. </p>
+
+  <p class="paragraph-text mb-16">Use text, design elements, and visual clues to differentiate the difference between
+    where people are in their journeys. </p>
+
+  <h5 class="heading-5 mb-20 pt-32">Offer a backup solution</h5>
+
+  <p class="paragraph-text mb-16">Stick to the most likely cause or the simplest solution in the first sentence of the
+    error message and offer an alternative backup solution in the second sentence in case the error keeps occurring (for
+    example, contacting support). Try and refrain from the error as an opportunity to inspire trust and confidence.</p>
+
+  <app-do-dont
+    [media]="true"
+    [doMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/6kqEuCuKRdzzAERujM5e3y/3379cfc7a920721685e1bea0c325dcde/error-messages-08-do.png'"
+    [dontMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/3LeNT1ptflfKeao7c8XgOE/4d59bc6001ff6caadf2a1ad2cc50e47c/error-messages-06-dont.png'"
+  ></app-do-dont>
+
+  <h5 class="heading-5 mb-20 pt-32">Reveal additional information gradually</h5>
+
+  <p class="paragraph-text mb-16">For dead ends, start with something short but kind, and add context or other details
+    only if the error will reoccur.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Related components</h4>
+
+  <p class="paragraph-text mb-24">Use error messages in the following components:</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8"><a href="#">Flag</a></p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><a href="#">Inline message</a></p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><a href="#">Modal dialog</a></p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><a href="#">Section message</a></p>
+    </li>
+  </ul>
+
+
+  <h4 class="heading-4 mb-20 pt-48">Accessibility</h4>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Use alternative text for illustrations and symbols in your messages</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Avoid jargon and use simple language</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Make links as descriptive as possible</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Make text easily scannable to highlight key information.</p>
+    </li>
+  </ul>
+</div>
