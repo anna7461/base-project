@@ -3,4 +3,227 @@
   [bannerDescription]="'A warning message is an advanced notice of a potential change that may result in loss of data or an error state.'"
 ></app-page-banner>
 
-<div class="page-content"></div>
+<div class="page-content">
+  <p class="paragraph-text mb-16">A warning message, different from error messages, appears <strong>before</strong>
+    someone takes an action to indicate a significant change or potential loss of data. It draws their attention to a
+    potential problem that may or may not require an action on the user's part.</p>
+
+  <p class="paragraph-text mb-16">When crafting warning messages, remember that most people scan etxt instead of reading
+    everything. Make every word count and avoid irrelevant details.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Writing best practices</h4>
+
+  <h5 class="heading-5 mb-20 pt-32">Titles</h5>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Titles are optional depending on the component you choose.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Include an informative, scannable title. Try and imagine people trying to
+        understand what's happening by reading the title on its own.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Avoid explaining what to do.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Limit titles to three to four words where possible, excluding "an", "a", or "the".
+        The character count will depend on the component you choose.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Write in sentence case with appropriate punctuation.</p>
+    </li>
+  </ul>
+
+  <app-do-dont
+    [media]="true"
+    [doMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/5R5KjC16HYNAgHxum46qO9/e617aa7801ec8030f87010ee01cb711f/titles_do.png'"
+    [doText]="'Do: Warning bill increase'"
+    [dontMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/GpvWFGfMNgqC17pXOHvWY/43f354c0ea8163bb5f19d2b2162cfefb/titles_dont.png'"
+    [dontText]="'Dont: Warning bill increase'"
+  ></app-do-dont>
+
+  <p class="paragraph-text mb-16">By giving people this warning before they add extra members to their team you're
+    giving them a chance to reconsider their options after having all the information. Avoid using a wink in instances
+    where there could be a problem for people.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Body copy</h5>
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Include: the reason for the warning and the potential problem, how someone should
+        act, and what happens if they don't act.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">If you don't know the reason for a warning, don't make one up - just say that
+        something's gone wrong and offer a solution for what they can do.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Avoid repeating content from the title.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Keep messages to 1 to 2 sentences.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Avoid people having to look in another location for more information. If this can't
+        be avoided, use a "Learn more" link.</p>
+    </li>
+  </ul>
+
+  <app-do-dont
+    [media]="true"
+    [doMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/1RICAZgmOHrpqT5biRNHcF/6431995dc894ae1a3fb403a23520c483/body_do.png'"
+    [doText]="'Do: Warning trouble connecting'"
+    [dontMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/3oPSqqAI9fGMe0ZblZ8UiA/3da091d9ea634c55dd0110709e3ed3c0/body_dont.png'"
+    [dontText]="'Dont: Warning trouble connecting'"
+  ></app-do-dont>
+
+  <p class="paragraph-text mb-16">Use 'we're' instead of 'you're' to avoid blaming users for issues they may be facing
+    with the products.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Call to action (CTA)</h5>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">When a warning message invokes a choice, use imperative verbs such as "Save",
+        "Remove" or "Create", in the CTA to describe what action people will be making instead of vague terms such as
+        "Done".</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">An option to dismiss or cancel lets people feel reassured that they can
+        opt-out.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Limit your CTA to 1 or 2 words.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Always give people an option to dismiss the message.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Limit your CTA to 1 to 2 words.</p>
+    </li>
+  </ul>
+
+  <h4 class="heading-4 mb-20 pt-48">Voice and tone</h4>
+
+  <p class="paragraph-text mb-16">You want to leave people feeling informed, supported and reassured. Convey the correct
+    level of urgency and make sure they understand how to respond. Follow some of the following
+    <a href="#">Atlassian Voice and Tone principles</a> to build your message:</p>
+
+  <p class="paragraph-text mb-16"><strong>Inform to build trust</strong></p>
+
+  <p class="paragraph-text mb-16">Inform, but don't alarm. If the warning comes before an action, clearly communicate
+    what will happen if the action is taken.</p>
+
+  <p class="paragraph-text mb-16"><strong>Encourage them along the path</strong></p>
+
+  <p class="paragraph-text mb-16">Give clear, concise advice on which path to take and describe and provide alternatives
+    if possible.</p>
+
+  <p class="paragraph-text mb-16"><strong>Satisfy by meeting expectations</strong></p>
+
+  <p class="paragraph-text mb-16">Satisfy language that sounds and feels human, is natural and accessible. Explains the
+    situation clearly and without assuming they have any advanced knowledge.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Patterns and UX strategies</h4>
+
+  <p class="paragraph-text mb-16">Consider the context in which the message appears. The type of warning message
+    required will change depending on the risk, consequences, and immediacy of the problem.</p>
+
+  <p class="paragraph-text mb-16"><strong>Raise awareness</strong></p>
+
+  <p class="paragraph-text mb-16">Warning messages make people aware of a condition or potential problem, even if they
+    don't have to take immediate action.</p>
+
+  <app-do-dont
+    [media]="true"
+    [doMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/6lwqnEP4e8Ccuzsr9S4lMM/2af2896aed177f22a4cf4b63c0c9c1bd/Multiple_page_items_do-1.png'"
+    [doText]="'Payment details needed'"
+    [dontMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/6ctDvkuZ0wYmaRufCbLWFT/bae4b8218ba2d4abbe3d591c3683d340/Multiple_page_items_do.png'"
+    [dontText]="'Payment details needed'"
+  ></app-do-dont>
+
+  <p class="paragraph-text mb-16">This message describes the condition or problem, the implications and their
+    importance, and offers a button to dismiss the message.</p>
+
+  <p class="paragraph-text mb-16"><strong>Highlight an imminent problem</strong></p>
+
+  <p class="paragraph-text mb-16">This is when someone needs to act immediately to prevent an issue.</p>
+
+  <p class="paragraph-text mb-16">Here the message describes what people need to do, explains the condition and why it's
+    important, and offers a button for each of the options.</p>
+
+  <p class="paragraph-text mb-16">It's important to give a timeline in which to make a certain change. You don't want to
+    create panic and rush people into making changes.</p>
+
+  <p class="paragraph-text mb-16"><strong>Confirm a risky action</strong></p>
+
+  <p class="paragraph-text mb-16">This message should ask people whether they want to proced, explain any reasons why
+    they may not wish to proceed, and offer commit buttons for proceeding or canceling an action. You should also inform
+    them whether any actions they take can be easily undone.</p>
+
+  <app-do-dont
+    [media]="true"
+    [doMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/3tAcIVtsijrCe3eC3lVgch/744814dc6cc3a417c04c3846817e4ea2/Risky_action_do.png'"
+    [doText]="'Confirm a risky action'"
+    [dontMedia]="'https://images.ctfassets.net/8j5aqoy0ts8s/2qxJ5xbGU7Nr1mRSub7Okv/bd93918a9c71c517501dfd4e81b27fd8/Risky_action_dont.png'"
+    [dontText]="'Risky action'"
+  ></app-do-dont>
+
+  <h4 class="heading-4 mb-20 pt-48">Related components</h4>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8"><a href="#">Banner</a></p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><a href="#">Flag</a></p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><a href="#">Inline message</a></p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><a href="#">Modal dialog</a></p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><a href="#">Section message</a></p>
+    </li>
+  </ul>
+
+  <p class="paragraph-text mb-16">Use warning messages in the following components:</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Accessibility</h4>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Use alternative text for illustrations and symbols in your messages.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Avoid jargon and use simple language.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Make links as descriptive as possible.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Make text easily scannable to highlight key information.</p>
+    </li>
+  </ul>
+</div>
