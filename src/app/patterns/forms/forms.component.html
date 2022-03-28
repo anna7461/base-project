@@ -2,3 +2,172 @@
   [bannerTitle]="'Forms'"
   [bannerDescription]="'Use forms to allow people to enter data for use by the application, or to configure options.'">
 </app-page-banner>
+
+<div class="page-content">
+  <p class="paragraph-text mb-16">Forms are used to get information and guide people with minimal fuss. Designing forms
+    well requires making decisions about structure, sequence, interface elements, field labels, help and feedback.</p>
+  <p class="paragraph-text mb-16">Autofocus the first by default. This allows users to tab through elements in the form
+    in a logical way.</p>
+
+  <div class="media-wrapper mb-16">
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/Z59t7eRM5qUCiTwUYlGyY/b7add208f398b4a03d8ec1aadcef6328/forms-anatomy.png"
+      alt="">
+  </div>
+
+  <ol class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8"><strong>Labels</strong>: Standard label alignment is left-aligned with the field
+        underneath. For the placeholder text, use sentence case and left-align.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Required field label</strong>: Mark required fields with an asterisk(*). If
+        all fields in the form are mandatory, this isn't necessary.</p>
+    </li>
+
+    <li><p class="paragraph-text mb-8"><strong>Disabled fields</strong>: Show disabled fields if users need to know what
+      controls might be available to them.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Field length</strong>: The length of the field should reflect the intended
+        length of content. Available lengths are 75px, 150px, 250px, 350px and 500px.</p>
+    </li>
+  </ol>
+
+  <h4 class="heading-4 mb-20 pt-48">Style</h4>
+
+  <h5 class="heading-5 mb-20 pt-32">Accessibility</h5>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Autofocus the first field by default. This allows users to tab through elements in
+        the form ina logical way.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Never disable a submit button, even if all of the required fields aren't filled in.
+        Instead, describe what needs to be done by using<a href="#">validation and error messages</a>.</p>
+    </li>
+  </ul>
+
+  <h5 class="heading-5 mb-20 pt-32">Layout</h5>
+
+  <p class="paragraph-text mb-16">Common form components include <a href="#">text fields</a>, <a href="#">checkboxes</a>,<a
+    href="#">radio buttons</a>, <a href="#">selects</a>, <a href="#">date pickers</a>, <a href="#">toggles</a>, <a
+    href="#">buttons</a>.</p>
+
+  <div class="media-wrapper mb-16">
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/2yGoinGGpnILSbfSetovcX/df7cc2db33b8df187be5ea5c76b76381/forms-anatomy-layout.png"
+      alt="">
+  </div>
+
+  <ol class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8"><strong>Title</strong>: Describes the form. If the form is the main item on a page,
+        use an h2 tag, otherwise use h3 and adjust the rest of the page hierarchy accordingly. Follow the title with a
+        short
+        description.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Group headline</strong>: Describes a group of controls and fields within a
+        form. These should be grouped to help users understand what is requred of them in a logical way. Try to make the
+        headline concise and informative, but, if you need to, you can add a short paragraph of text to explain the
+        group.
+      </p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Buttons</strong>: Use a primary button for the main action, and a link
+        button
+        to cancel. The primary button should be left-aligned along with the left side of the form, then any standard
+        buttons, then the link button. The only exception is a multi-step form where the 'Back' standard button sits at
+        the
+        very left, while the rest of the buttons are aligned to the left.</p>
+    </li>
+  </ol>
+
+  <h4 class="heading-4 mb-20 pt-48">Buttons positioning</h4>
+
+  <p class="paragraph-text mb-16">Buttons are sorted by importance from the right to left, with the most important
+    button (primary) on the right.</p>
+
+  <div class="media-wrapper mb-16">
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/5kHnnoVbFNsOACnesylEKy/3a03a80941fed5ab1978e5ebdf568f7e/forms-variations-modalSimple.jpg"
+      alt="">
+
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/1nvFsHM6lhNsT6lF9Q0LRK/ea0149fffe6d8e16de9e2ca418925af8/forms-variations-focusedTask.jpg"
+      alt="">
+  </div>
+
+  <p class="paragraph-text mb-16">Exceptions to this are single-page forms, flags, cards and section messages where
+    buttons are left aligned; with the primary button to the left.</p>
+
+  <div class="media-wrapper mb-16">
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/2KcVwIet74zSFwObxMWyEv/0015da58c35f8b3738dcc4ff24d12fdd/forms-variations-singlePage.jpg"
+      alt="">
+  </div>
+
+  <h4 class="heading-4 mb-20 pt-48">Long forms</h4>
+
+  <p class="paragraph-text mb-16">When users access a form, it can be daunting to be shown a large number of fields that
+    need to be filled out. The threshold for when a form is considered <em>too long</em> depends on the audience and the
+    context. There are various techniques for lessening the impact of long forms.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Multi-step forms</h5>
+
+  <p class="paragraph-text mb-16">Make sure people know their status at each step of a form. This approach can be used
+    to spread form fields across more than one screen with a<a href="#">progress tracker</a>. When using this patterm,
+    each screen should show fields that logically belong toghether. This pattern is also good for saving form progress
+    along the way.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Progressive disclosure</h5>
+
+  <p class="paragraph-text mb-16">A form can reveal more content as users go through the form and use its fields and
+    controls. This technique can be used when it is not necessary to see all controls unless users have made specific
+    decisions, for example, if they ticked a particular checkbox additional information would be revealed.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Behavior</h4>
+
+  <h5 class="heading-5 mb-20 pt-32">Validation and error messages</h5>
+
+  <p class="paragraph-text mb-16">Use validation and error messages to indicate when a form or field submission fails of
+    requires additional information to be shown.</p>
+
+  <div class="media-wrapper mb-16">
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/79TYeFWCHfuOnfqVeqNCsO/c7293f4db1f7c7ef46ed38d3959a081e/forms-validation.png"
+      alt="">
+  </div>
+
+  <ol class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Unfocused text field</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Error message and icon</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Focused text field</p>
+    </li>
+  </ol>
+
+  <p class="paragraph-text mb-16">When a user selects the text-field and starts typing or changing content, the focus
+    color changes to blue.</p>
+
+  <p class="paragraph-text mb-16">When validating text fields in real-time, message icons will switch depending on the
+    message type. For example, helper text changes in to an error message when the content being input doesn't fit the
+    criteria. Error and warning messages disappear when the criteria is met.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Server</h4>
+
+  <p class="paragraph-text mb-16">Primary buttons are left adjusted in <a href="#">AUI forms</a>.</p>
+</div>
