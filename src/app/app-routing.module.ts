@@ -37,6 +37,9 @@ import {SuccessMessageComponent} from './content/writing-guidelines/success-mess
 import {WarningMessageComponent} from './content/writing-guidelines/warning-message/warning-message.component';
 import {WritingGuidelinesLayoutComponent} from './content/writing-guidelines/writing-guidelines-layout/writing-guidelines-layout.component';
 import {NotFoundComponent} from './not-found/not-found.component';
+import {FirstImpressionsComponent} from './patterns/first-impressions/first-impressions.component';
+import {FormsComponent} from './patterns/forms/forms.component';
+import {MessagesComponent} from './patterns/messages/messages.component';
 
 const routes: Routes = [
   {
@@ -204,7 +207,25 @@ const routes: Routes = [
     ]
   },
   {
-    path: 'patterns', component: PatternsComponent
+    path: 'patterns',
+    component: PatternsComponent,
+    children: [
+      {
+        path: 'first-impressions',
+        pathMatch: 'full',
+        component: FirstImpressionsComponent
+      },
+      {
+        path: 'forms',
+        pathMatch: 'full',
+        component: FormsComponent
+      },
+      {
+        path: 'messages',
+        pathMatch: 'full',
+        component: MessagesComponent
+      },
+    ]
   },
   {
     path: 'resources', component: ResourcesComponent

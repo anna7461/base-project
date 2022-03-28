@@ -45,6 +45,10 @@ import { SuccessMessageComponent } from './content/writing-guidelines/success-me
 import { WarningMessageComponent } from './content/writing-guidelines/warning-message/warning-message.component';
 import { WritingGuidelinesLayoutComponent } from './content/writing-guidelines/writing-guidelines-layout/writing-guidelines-layout.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { FormsComponent } from './patterns/forms/forms.component';
+import { MessagesComponent } from './patterns/messages/messages.component';
+import { FirstImpressionsComponent } from './patterns/first-impressions/first-impressions.component';
+import { PatternsLayoutComponent } from './patterns/patterns-layout/patterns-layout.component';
 
 
 @NgModule({
@@ -90,6 +94,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
     WarningMessageComponent,
     WritingGuidelinesLayoutComponent,
     NotFoundComponent,
+    FormsComponent,
+    MessagesComponent,
+    FirstImpressionsComponent,
+    PatternsLayoutComponent,
   ],
   imports: [
     BrowserModule,

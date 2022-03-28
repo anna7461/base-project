@@ -1,0 +1,134 @@
+<app-page-banner
+  [bannerTitle]="'Messages'"
+  [bannerDescription]="'Use messages to communicate conditions, indicate an event, or show responses to user actions.'">
+</app-page-banner>
+
+<div class="page-content">
+  <p class="paragraph-text mb-16">Message content can include authentication, information, confirmation, warnings, and
+    error messages. it is important to specify which type of content the message falls under in order to choose the
+    relevant color and correct <a href="#">icon</a>.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Message types</h4>
+
+  <h5 class="heading-5 mb-20 pt-32">Banners</h5>
+
+  <p class="paragraph-text mb-16">Banners appear at the top of the screen and shift the content below it. They should
+    only be used for critical system-level messaging (warnings and errors) about loss of data or functionality. Learn
+    more about<a href="#">Banners</a>.</p>
+
+  <div class="media-wrapper mb-16">
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/6GV5U9I9WZJD5UGdjugy0O/fe793955ffedeab86e385cbb81553801/messages-banner.png"
+      alt="">
+  </div>
+
+  <h5 class="heading-5 mb-20 pt-32">Inline dialogs</h5>
+
+  <p class="paragraph-text mb-16">Inline dialogs consist of an icon and a message that's revealed when a usere hovers
+    over the icon. Use inline dialogs to alert people to a requred action or imprtant information. Learn more about
+    inline dialogs.</p>
+
+  <div class="media-wrapper mb-16">
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/5ZNvTTJH2hWM9Iblvfpxgr/862dd6839521b395ece0f95efc53ce4b/messages-inline-dialog.jpg"
+      alt="">
+  </div>
+
+  <h5 class="heading-5 mb-20 pt-32">Flags</h5>
+
+  <p class="paragraph-text mb-16">Flags are used for confirmations, alerts, and acknowledgements that requre minimal
+    user interaction. These event-driven messages appear by overlaying content at the bottom left of the screen,
+    emerging from the navigation sidebar. Learn more about flags.</p>
+
+  <div class="media-wrapper mb-16">
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/6lPCFa7TGnr0AI4q3iJHae/fd92b6750725dc736d9ff94137280277/messages-flag.jpg"
+      alt="">
+  </div>
+
+  <h5 class="heading-5 mb-20 pt-32">Section messages</h5>
+
+  <p class="paragraph-text mb-16">Section messages are used to alert the user of something that has happened in a
+    specific section of the screen. They appear above the affected area (for example, Issue experience in Jira). Learn
+    more about section messages.</p>
+
+  <div class="media-wrapper mb-16">
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/7ioCUDKgyGgCVt69sZ3j0S/bc5fefdf010e555f92e8e430c1c2c5f4/messages-section-messages.png"
+      alt="">
+  </div>
+
+  <h4 class="heading-4 mb-20 pt-48">Colors</h4>
+
+  <p class="paragraph-text mb-16">Message types are assigned appropriate colors and icons to help indicate content and
+    urgency. The available message types are authentication, confirmation, warning, error and information. Setting the
+    right color and icon for a message ensures people understand the nature of the message at a glance, and that they
+    take appropriate action.</p>
+
+  <div class="media-wrapper mb-16">
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/2HKRkRD7wZbObdZkywSESS/2233b3da6b883702278560dae9868084/messages-color.png"
+      alt="">
+  </div>
+
+  <ol class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8"><strong>Authentication (B400)</strong>: Allows the user to verify their identity.
+      </p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Confirmation (G300)</strong>: Provides a positive response to user actions.
+      </p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Warning (Y300)</strong>: Used to help users avoid situations. Consists of a
+        description of potential errors. It should provide a recommended next step, and an option to be reminded at a
+        later date.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Error (R300)</strong>: Shown when somethings goes wrong, or when the user
+        is denied access. This should also provide recommended next steps, or a path forward.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Information (P300)</strong>: Conveys information to help the user
+        understand minor contextual or state changes. These are typically not in response to a user action.</p>
+    </li>
+  </ol>
+
+  <h4 class="heading-4 mb-20 pt-48">Icons</h4>
+
+  <p class="paragraph-text mb-16">The appearance of icons changes depending on the current state. This visual indicator
+    makes it easier for people to interpret the message.</p>
+
+  <div class="media-wrapper mb-16">
+    <img
+      src="https://images.ctfassets.net/8j5aqoy0ts8s/145XTzfP2NgEZ1UZeNTn8V/dc37906d92185bac710c3ec02c48b1ff/messages-icons.png"
+      alt="">
+  </div>
+
+  <ol class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8"><strong>Resting</strong></p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Hover</strong></p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Selected</strong></p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Active</strong></p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Focus</strong></p>
+    </li>
+  </ol>
+</div>
