@@ -40,6 +40,16 @@ import {NotFoundComponent} from './not-found/not-found.component';
 import {FirstImpressionsComponent} from './patterns/first-impressions/first-impressions.component';
 import {FormsComponent} from './patterns/forms/forms.component';
 import {MessagesComponent} from './patterns/messages/messages.component';
+import {ColorPalettesComponent} from './resources/color-palettes/color-palettes.component';
+import {ContributionComponent} from './resources/contribution/contribution.component';
+import {DesignPrinciplesComponent} from './resources/design-principles/design-principles.component';
+import {FigmaLibraryComponent} from './resources/figma-library/figma-library.component';
+import {FontsComponent} from './resources/fonts/fonts.component';
+import {IllustrationLibraryComponent} from './resources/illustration-library/illustration-library.component';
+import {LogoLibraryComponent} from './resources/logo-library/logo-library.component';
+import {PresentationKitComponent} from './resources/presentation-kit/presentation-kit.component';
+import {TemplatesComponent} from './resources/templates/templates.component';
+import {ValuesAndPrinciplesComponent} from './resources/values-and-principles/values-and-principles.component';
 
 const routes: Routes = [
   {
@@ -228,7 +238,60 @@ const routes: Routes = [
     ]
   },
   {
-    path: 'resources', component: ResourcesComponent
+    path: 'resources',
+    component: ResourcesComponent,
+    children: [
+      {
+        path: 'color-palettes',
+        pathMatch: 'full',
+        component: ColorPalettesComponent
+      },
+      {
+        path: 'contribution',
+        pathMatch: 'full',
+        component: ContributionComponent
+      },
+      {
+        path: 'design-principles',
+        pathMatch: 'full',
+        component: DesignPrinciplesComponent
+      },
+      {
+        path: 'figma-library',
+        pathMatch: 'full',
+        component: FigmaLibraryComponent
+      },
+      {
+        path: 'fonts',
+        pathMatch: 'full',
+        component: FontsComponent
+      },
+      {
+        path: 'illustration-library',
+        pathMatch: 'full',
+        component: IllustrationLibraryComponent
+      },
+      {
+        path: 'logo-library',
+        pathMatch: 'full',
+        component: LogoLibraryComponent
+      },
+      {
+        path: 'presentation-kit',
+        pathMatch: 'full',
+        component: PresentationKitComponent
+      },
+      {
+        path: 'templates',
+        pathMatch: 'full',
+        component: TemplatesComponent
+      },
+      {
+        path: 'values-and-principles',
+        pathMatch: 'full',
+        component: ValuesAndPrinciplesComponent
+      },
+    ]
   },
   {
     path: '**',

@@ -49,6 +49,17 @@ import { FormsComponent } from './patterns/forms/forms.component';
 import { MessagesComponent } from './patterns/messages/messages.component';
 import { FirstImpressionsComponent } from './patterns/first-impressions/first-impressions.component';
 import { PatternsLayoutComponent } from './patterns/patterns-layout/patterns-layout.component';
+import { ColorPalettesComponent } from './resources/color-palettes/color-palettes.component';
+import { ContributionComponent } from './resources/contribution/contribution.component';
+import { DesignPrinciplesComponent } from './resources/design-principles/design-principles.component';
+import { FigmaLibraryComponent } from './resources/figma-library/figma-library.component';
+import { FontsComponent } from './resources/fonts/fonts.component';
+import { IllustrationLibraryComponent } from './resources/illustration-library/illustration-library.component';
+import { LogoLibraryComponent } from './resources/logo-library/logo-library.component';
+import { PresentationKitComponent } from './resources/presentation-kit/presentation-kit.component';
+import { TemplatesComponent } from './resources/templates/templates.component';
+import { ValuesAndPrinciplesComponent } from './resources/values-and-principles/values-and-principles.component';
+import { ResourcesLayoutComponent } from './resources/resources-layout/resources-layout.component';
 
 
 @NgModule({
@@ -98,6 +109,17 @@ import { PatternsLayoutComponent } from './patterns/patterns-layout/patterns-lay
     MessagesComponent,
     FirstImpressionsComponent,
     PatternsLayoutComponent,
+    ColorPalettesComponent,
+    ContributionComponent,
+    DesignPrinciplesComponent,
+    FigmaLibraryComponent,
+    FontsComponent,
+    IllustrationLibraryComponent,
+    LogoLibraryComponent,
+    PresentationKitComponent,
+    TemplatesComponent,
+    ValuesAndPrinciplesComponent,
+    ResourcesLayoutComponent,
   ],
   imports: [
     BrowserModule,
