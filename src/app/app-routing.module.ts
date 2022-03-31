@@ -182,7 +182,7 @@ const routes: Routes = [
       {
         path: '',
         pathMatch: 'full',
-        component: ContentComponent
+        component: ContentLayoutComponent
       },
       {
         path: 'inclusive-language',
@@ -209,11 +209,11 @@ const routes: Routes = [
         pathMatch: 'full',
         component: WritingGuidelinesComponent,
       },
-      {
-        path: '',
-        pathMatch: 'full',
-        component: WritingGuidelinesLayoutComponent,
-      },
+      // {
+      //   path: '',
+      //   pathMatch: 'full',
+      //   component: WritingGuidelinesLayoutComponent,
+      // },
       {
         path: 'date-and-time',
         pathMatch: 'full',
