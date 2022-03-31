@@ -98,9 +98,6 @@ const routes: Routes = [
     path: '', component: HomeComponent
   },
   {
-    path: 'components', component: ComponentsComponent
-  },
-  {
     path: 'brand',
     component: BrandComponent,
     children: [
