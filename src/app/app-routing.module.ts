@@ -52,6 +52,46 @@ import {TemplatesComponent} from './resources/templates/templates.component';
 import {ValuesAndPrinciplesComponent} from './resources/values-and-principles/values-and-principles.component';
 import {PatternsLayoutComponent} from './patterns/patterns-layout/patterns-layout.component';
 import {ResourcesLayoutComponent} from './resources/resources-layout/resources-layout.component';
+import {ComponentsLayoutComponent} from './components/components-layout/components-layout.component';
+import {AvatarComponent} from './components/avatar/avatar.component';
+import {AvatarGroupComponent} from './components/avatar-group/avatar-group.component';
+import {BadgeComponent} from './components/badge/badge.component';
+import {BannerComponent} from './components/banner/banner.component';
+import {BreadcrumbsComponent} from './components/breadcrumbs/breadcrumbs.component';
+import {ButtonComponent} from './components/button/button.component';
+import {CheckboxComponent} from './components/checkbox/checkbox.component';
+import {CodeComponent} from './components/avatar/code/code.component';
+import {DateTimePickerComponent} from './components/date-time-picker/date-time-picker.component';
+import {DropdownMenuComponent} from './components/dropdown-menu/dropdown-menu.component';
+import {DynamicTableComponent} from './components/dynamic-table/dynamic-table.component';
+import {FlagComponent} from './components/flag/flag.component';
+import {FormComponent} from './components/form/form.component';
+import {IconComponent} from './components/icon/icon.component';
+import {IconObjectComponent} from './components/icon-object/icon-object.component';
+import {InlineDialogComponent} from './components/inline-dialog/inline-dialog.component';
+import {InlineEditComponent} from './components/inline-edit/inline-edit.component';
+import {InlineMessageComponent} from './components/inline-message/inline-message.component';
+import {LogoComponent} from './components/logo/logo.component';
+import {LozengeComponent} from './components/lozenge/lozenge.component';
+import {ModalDialogComponent} from './components/modal-dialog/modal-dialog.component';
+import {OnboardingComponent} from './components/onboarding/onboarding.component';
+import {PageHeaderComponent} from './components/page-header/page-header.component';
+import {PaginationComponent} from './components/pagination/pagination.component';
+import {ProgressBarComponent} from './components/progress-bar/progress-bar.component';
+import {ProgressIndicatorComponent} from './components/progress-indicator/progress-indicator.component';
+import {ProgressTrackerComponent} from './components/progress-tracker/progress-tracker.component';
+import {RadioComponent} from './components/radio/radio.component';
+import {RangeComponent} from './components/range/range.component';
+import {SectionMessageComponent} from './components/section-message/section-message.component';
+import {SelectComponent} from './components/select/select.component';
+import {SpinnerComponent} from './components/spinner/spinner.component';
+import {TabsComponent} from './components/tabs/tabs.component';
+import {TagComponent} from './components/tag/tag.component';
+import {TagGroupComponent} from './components/tag-group/tag-group.component';
+import {TextAreaComponent} from './components/text-area/text-area.component';
+import {TextFieldComponent} from './components/text-field/text-field.component';
+import {ToggleComponent} from './components/toggle/toggle.component';
+import {TooltipComponent} from './components/tooltip/tooltip.component';
 
 const routes: Routes = [
   {
@@ -216,6 +256,217 @@ const routes: Routes = [
         pathMatch: 'full',
         component: WritingStyleComponent
       }
+    ]
+  },
+  {
+    path: 'components',
+    component: ComponentsComponent,
+    children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        component: ComponentsLayoutComponent
+      },
+      {
+        path: 'avatar',
+        pathMatch: 'full',
+        component: AvatarComponent
+      },
+      {
+        path: 'avatar-group',
+        pathMatch: 'full',
+        component: AvatarGroupComponent
+      },
+      {
+        path: 'badge',
+        pathMatch: 'full',
+        component: BadgeComponent
+      },
+      {
+        path: 'banner',
+        pathMatch: 'full',
+        component: BannerComponent
+      },
+      {
+        path: 'breadcrumbs',
+        pathMatch: 'full',
+        component: BreadcrumbsComponent
+      },
+      {
+        path: 'button',
+        pathMatch: 'full',
+        component: ButtonComponent
+      },
+      {
+        path: 'checkbox',
+        pathMatch: 'full',
+        component: CheckboxComponent
+      },
+      {
+        path: 'code',
+        pathMatch: 'full',
+        component: CodeComponent
+      },
+      {
+        path: 'date-time-picker',
+        pathMatch: 'full',
+        component: DateTimePickerComponent
+      },
+      {
+        path: 'dropdown-menu',
+        pathMatch: 'full',
+        component: DropdownMenuComponent
+      },
+      {
+        path: 'dynamic-table',
+        pathMatch: 'full',
+        component: DynamicTableComponent
+      },
+      {
+        path: 'empty-state',
+        pathMatch: 'full',
+        component: EmptyStateComponent
+      },
+      {
+        path: 'flag',
+        pathMatch: 'full',
+        component: FlagComponent
+      },
+      {
+        path: 'form',
+        pathMatch: 'full',
+        component: FormComponent
+      },
+      {
+        path: 'icon',
+        pathMatch: 'full',
+        component: IconComponent
+      },
+      {
+        path: 'icon-object',
+        pathMatch: 'full',
+        component: IconObjectComponent
+      },
+      {
+        path: 'inline-dialog',
+        pathMatch: 'full',
+        component: InlineDialogComponent
+      },
+      {
+        path: 'inline-edit',
+        pathMatch: 'full',
+        component: InlineEditComponent
+      },
+      {
+        path: 'inline-message',
+        pathMatch: 'full',
+        component: InlineMessageComponent
+      },
+      {
+        path: 'logo',
+        pathMatch: 'full',
+        component: LogoComponent
+      },
+      {
+        path: 'lozenge',
+        pathMatch: 'full',
+        component: LozengeComponent
+      },
+      {
+        path: 'modal-dialog',
+        pathMatch: 'full',
+        component: ModalDialogComponent
+      },
+      {
+        path: 'onboarding',
+        pathMatch: 'full',
+        component: OnboardingComponent
+      },
+      {
+        path: 'page-header',
+        pathMatch: 'full',
+        component: PageHeaderComponent
+      },
+      {
+        path: 'pagination',
+        pathMatch: 'full',
+        component: PaginationComponent
+      },
+      {
+        path: 'progress-bar',
+        pathMatch: 'full',
+        component: ProgressBarComponent
+      },
+      {
+        path: 'progress-indicator',
+        pathMatch: 'full',
+        component: ProgressIndicatorComponent
+      },
+      {
+        path: 'progress-tracker',
+        pathMatch: 'full',
+        component: ProgressTrackerComponent
+      },
+      {
+        path: 'radio',
+        pathMatch: 'full',
+        component: RadioComponent
+      },
+      {
+        path: 'range',
+        pathMatch: 'full',
+        component: RangeComponent
+      },
+      {
+        path: 'section-message',
+        pathMatch: 'full',
+        component: SectionMessageComponent
+      },
+      {
+        path: 'select',
+        pathMatch: 'full',
+        component: SelectComponent
+      },
+      {
+        path: 'spinner',
+        pathMatch: 'full',
+        component: SpinnerComponent
+      },
+      {
+        path: 'tabs',
+        pathMatch: 'full',
+        component: TabsComponent
+      },
+      {
+        path: 'tag',
+        pathMatch: 'full',
+        component: TagComponent
+      },
+      {
+        path: 'tag-group',
+        pathMatch: 'full',
+        component: TagGroupComponent
+      },
+      {
+        path: 'text-area',
+        pathMatch: 'full',
+        component: TextAreaComponent
+      },
+      {
+        path: 'text-field',
+        pathMatch: 'full',
+        component: TextFieldComponent
+      },
+      {
+        path: 'toggle',
+        pathMatch: 'full',
+        component: ToggleComponent
+      },
+      {
+        path: 'tooltip',
+        pathMatch: 'full',
+        component: TooltipComponent
+      },
     ]
   },
   {
