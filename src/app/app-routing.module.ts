@@ -50,6 +50,8 @@ import {LogoLibraryComponent} from './resources/logo-library/logo-library.compon
 import {PresentationKitComponent} from './resources/presentation-kit/presentation-kit.component';
 import {TemplatesComponent} from './resources/templates/templates.component';
 import {ValuesAndPrinciplesComponent} from './resources/values-and-principles/values-and-principles.component';
+import {PatternsLayoutComponent} from './patterns/patterns-layout/patterns-layout.component';
+import {ResourcesLayoutComponent} from './resources/resources-layout/resources-layout.component';
 
 const routes: Routes = [
   {
@@ -221,6 +223,11 @@ const routes: Routes = [
     component: PatternsComponent,
     children: [
       {
+        path: '',
+        pathMatch: 'full',
+        component: PatternsLayoutComponent
+      },
+      {
         path: 'first-impressions',
         pathMatch: 'full',
         component: FirstImpressionsComponent
@@ -241,6 +248,11 @@ const routes: Routes = [
     path: 'resources',
     component: ResourcesComponent,
     children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        component: ResourcesLayoutComponent
+      },
       {
         path: 'color-palettes',
         pathMatch: 'full',
