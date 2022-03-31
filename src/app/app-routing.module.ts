@@ -92,6 +92,7 @@ import {TextAreaComponent} from './components/text-area/text-area.component';
 import {TextFieldComponent} from './components/text-field/text-field.component';
 import {ToggleComponent} from './components/toggle/toggle.component';
 import {TooltipComponent} from './components/tooltip/tooltip.component';
+import {AvatarItemComponent} from './components/avatar/avatar-item/avatar-item.component';
 
 const routes: Routes = [
   {
@@ -266,8 +267,14 @@ const routes: Routes = [
       },
       {
         path: 'avatar',
-        pathMatch: 'full',
-        component: AvatarComponent
+        component: AvatarComponent,
+        children: [
+          {
+            path: 'avatar-item',
+            pathMatch: 'full',
+            component: AvatarItemComponent
+          }
+        ]
       },
       {
         path: 'avatar-group',
