@@ -2,3 +2,151 @@
   [bannerTitle]="'Icon'"
   [bannerDescription]="'An icon is a visual representation of a command, device, directory, or common action.'">
 </app-page-banner>
+
+<div class="page-content">
+  <h4 class="heading-4 mb-20 pt-48">Usage</h4>
+
+  <p class="paragraph-text mb-16">Icons should be used intentionally to maximize comprehension and reduce cognitive
+    load. Use it to call attention to a particular action, command, or section. If you’re questioning an icon’s use, it
+    probably doesn’t need to be used.</p>
+
+  <p class="paragraph-text mb-16">To search through all the icons we have in our system, have a look at our <a
+    href="#">icon explorer</a>.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Anatomy</h4>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/882207a17ad9a3f1642ee6e47a43e8d4/anatomy.png" alt="">
+  </div>
+
+  <ol class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8"><strong>Canvas area</strong>: The full boundary of an exported icon – includes
+        <strong>grid area</strong> and <strong>icon</strong>.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Icon</strong></p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Grid area</strong>: The boundaries that an icon can be placed within.</p>
+    </li>
+  </ol>
+
+  <h4 class="heading-4 mb-20 pt-48">Behavior</h4>
+
+  <h5 class="heading-5 mb-20 pt-32">Icon grid</h5>
+
+  <p class="paragraph-text mb-16">Regular icons are designed on a 20px grid and exported on a 24px canvas.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Shapes</h5>
+
+  <p class="paragraph-text mb-16">Icons on the grid use basic foundational shapes. These include circle, square and
+    rectangles (horizontal and vertical). Sticking to these shapes in the grid keeps consistent proportions throughout
+    the icon set.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Style</h5>
+
+  <p class="paragraph-text mb-16">Filled v.s. outlined</p>
+
+  <p class="paragraph-text mb-16">Use outlined icons unless the required context necessitates a filled icon.</p>
+
+  <p class="paragraph-text mb-16">An example of necessary filled icon is a watch icon. A filled watch icon demonstrated
+    the page is being watched. The outlined icon indicates that the page is not watched. If necessary, a filled icon
+    could be used to indicate that something is "on", while an outlines icon could indicate that something is "off".
+    Avoid this behavior altogether when icons are contained within the navigation panel.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Color</h5>
+
+  <p class="paragraph-text mb-16">Our icons are available to use as a single color. Dark neutrals help with contrast
+    while maintaining its prominence as a supportive element.</p>
+
+  <p class="paragraph-text mb-16">For components containing confirmations, alerts, information, and acknowledgements,
+    follow the guidelines associated with the component and use-case.</p>
+
+  <p class="paragraph-text mb-16">Using icons with a text label and high-contrast color will enhance the usability and
+    accessibility to all users.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Best practices</h4>
+
+  <p class="paragraph-text mb-16">Use an icon that currently exists in our iconography set whenever possible.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Support icons with text</h5>
+
+  <p class="paragraph-text mb-16">Use icons in combination with meaningful text to support people progressing through
+    the product
+    <a href="#">an accessible manner</a>. Most icons are not widely recognized, so whenever possible, use a label or
+    supporting text to ensure its meaning is understood.</p>
+
+  <p class="paragraph-text mb-16">To help increase usability, our icon color has at least an <a href="#">AA standard
+    color contrast ratio</a>.</p>
+
+  <p class="paragraph-text mb-16">Coupling icons and text</p>
+
+  <p class="paragraph-text mb-16">The icon you choose should be clearly coupled to the text label to prevent confusion
+    about what step people need to take.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Icons are more than decorations</h5>
+
+  <p class="paragraph-text mb-16">Avoid using icons solely for decoration or visual interest as it detracts from their
+    intention elsewhere. Consider the surrounding context of icons too; if icons are cluttered and aren’t spaced out, it
+    can lead to more visual noise and confusion.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Icons can convey a specific meaning</h5>
+
+  <p class="paragraph-text mb-16">Icons can represent a single concept or be thematic in nature. For example, + almost
+    always represents add, while ☆ might represent favorite, like, or star. Using an icon appropriately allows people to
+    create a connection to a concept, so don’t over-extend what an icon represents.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Content guidelines</h4>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Use actionable language examples, punctuation rules and reusable content
+        recommendations for consistency.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Use do's and don’ts to support guidelines</p>
+    </li>
+  </ul>
+
+  <h4 class="heading-4 mb-20 pt-48">Accessibility guidelines</h4>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Use icons in combination with meaningful UI text to ensure comprehension and
+        accessibility.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">For icons with no accompanying UI text, also include an aria-label for the icon.
+        There are very few widely recognized icons, so try to avoid this when possible./p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Learn more about meaningful text labels in <a href="#">accessibility guidelines</a>.
+      </p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Icons must have an tooltip attached unless it has text that communicates what the
+        icon is conveying. Use tooltips to let the user know what happens when the tab is selected. When writing
+        tooltips, be short and concise and follow the ADG <a href="#">writing guidelines</a>.</p>
+    </li>
+  </ul>
+
+  <h4 class="heading-4 mb-20 pt-48">Server</h4>
+
+  <p class="paragraph-text mb-16"><a href="#">AUI icons</a> use different sizing and certain icons may not be available.
+  </p>
+
+  <h4 class="heading-4 mb-20 pt-48">Related</h4>
+
+  <p class="paragraph-text mb-16">We also have object icons which are grouped and color-coded by use case, and are
+    derived from this iconography foundation. See <a href="#">object icon guidelines</a>.</p>
+
+  <p class="paragraph-text mb-16">If you’re looking to show other messages, see <a href="#">inline message
+    guidelines</a>.</p>
+</div>
