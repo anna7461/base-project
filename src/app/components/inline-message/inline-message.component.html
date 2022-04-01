@@ -2,3 +2,124 @@
   [bannerTitle]="'Inline message'"
   [bannerDescription]="'An inline message lets users know when important information is available or when an action is required.'">
 </app-page-banner>
+
+<div class="page-content">
+  <h4 class="heading-4 mb-20 pt-48">Usage</h4>
+
+  <p class="paragraph-text mb-16">To reveal an inline message, users click the icon or secondary text. When a message is
+    triggered, an <a href="#">inline dialog</a> appears providing a summary of the issue and links to information or
+    actions.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Anatomy</h4>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/8004ad784cbcb72a6296cad8a444b4b1/inline-message-anatomy.png" alt="">
+  </div>
+
+  <ol class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8"><strong>Icon</strong>: Indicates the status of the message. The icon's color and
+        symbol give a quick visual indicator of the type and urgency of the message.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Title (optional)</strong>: Should be concise and bolded when in use.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Message</strong>: Use regular text for the message body. The message is
+        restricted to five lines in length. If the text overflows, the message body will be truncated with an ellipsis.
+      </p>
+    </li>
+  </ol>
+
+  <h4 class="heading-4 mb-20 pt-48">Content guidelines</h4>
+
+  <h5 class="heading-5 mb-20 pt-32">Warning</h5>
+
+  <p class="paragraph-text mb-16">Have empathy for the user. Inform, but don't alarm. If the warning comes before an
+    action, clearly communicate what will happen if the they proceed, and provide an alternative where possible.</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Put yourself in the user's shoes.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Make sure you're not talking about something that has already occurred (this should
+        be an error message instead).</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">For authentication messages include a link that describes the appropriate action if
+        available. Keep the message short and only include relevant information.</p>
+    </li>
+  </ul>
+
+  <h5 class="heading-5 mb-20 pt-32">Error</h5>
+
+  <p class="paragraph-text mb-16">Explain the problem and provide the user with a next step or an alternative. Keep the
+    message simple and direct, and avoid confusing the user with technical details. If it's our fault, own up to it.</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Avoid blame and accept if something is our fault - "we're having trouble
+        connecting" rather than "you're having connection issues."</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Let the user know what's causing the error, rather than writing a general error
+        message that works for a number of things.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Be clear and conversational by thinking about how you might explain a technical
+        error to your non-technical friends.</p>
+    </li>
+  </ul>
+
+  <h5 class="heading-5 mb-20 pt-32">Confirmation</h5>
+
+  <p class="paragraph-text mb-16">For these messages, it's best to reaffirm the outcome and get out of the user's way.
+    If they have just created something, give them an option to view it.</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Messages that appear more frequently should have less wink and be more concise.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Messages that appear after a bigger or more infrequent action can be more
+        playful.</p>
+    </li>
+  </ul>
+
+  <h5 class="heading-5 mb-20 pt-32">Info</h5>
+
+  <p class="paragraph-text mb-16">Include a link to the appropriate action if available. Keep the message short and only
+    include relevant information.</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Let the user know what will happen when they select the link.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Get right to the point.</p>
+    </li>
+  </ul>
+
+  <h4 class="heading-4 mb-20 pt-48">Related</h4>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">For confirmations, alerts, and acknowledgments that require minimal user
+        interaction use a <a href="#">flag</a>.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">For critical system-level messaging (warnings and errors) about loss of data or
+        functionality use a <a href="#">banner</a>.</p>
+    </li>
+  </ul>
+</div>
