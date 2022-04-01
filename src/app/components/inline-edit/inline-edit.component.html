@@ -2,3 +2,79 @@
   [bannerTitle]="'Inline edit'"
   [bannerDescription]="'An inline edit displays a custom input component that switches between reading and editing on the same page.'">
 </app-page-banner>
+
+<div class="page-content">
+  <h4 class="heading-4 mb-20 pt-48">Usage</h4>
+
+  <p class="paragraph-text mb-16">Use inline edit on screens where information needs to be updated often, such as a view
+    issue page. Users can toggle between read view and edit view without leaving the page.</p>
+
+  <p class="paragraph-text mb-16">Use this instead of a <a href="#">form</a> when you have information that may already
+    exist that will
+    need to be edited.</p>
+
+  <p class="paragraph-text mb-16">Inline edit can use but is not limited to a <a href="#">text field</a>, <a
+    href="#">select</a> and <a href="#">datetime picker</a>.
+    The appearance of the inline edit will vary depending on which components it is used with.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Anatomy</h4>
+
+  <h5 class="heading-5 mb-20 pt-32">Read view</h5>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/06d3caef5b981fa1cb0ef207471d791b/inline-edit-anatomy-read.png" alt="">
+  </div>
+
+  <ol class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8"><strong>Label</strong>: Labels are sentence case and as short as possible, while
+        clearly describing the content of the field.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Field</strong>: When in read view, the field is hidden and aligned with the
+        label. When in an empty state, this field text can be customized.</p>
+    </li>
+  </ol>
+
+  <h5 class="heading-5 mb-20 pt-32">Edit view</h5>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/41a2445a6f5476bdc264881ef00cecbd/inline-edit-anatomy-edit.png" alt="">
+  </div>
+
+  <ol class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8"><strong>Label</strong>: Labels are sentence case and as short as possible, while
+        clearly describing the content of the field.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Field</strong>: When in edit view, the field snaps to the width of the
+        column and the text remains aligned with the label.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Controls</strong>: Always appear to the right of the text field.</p>
+    </li>
+  </ol>
+
+  <h4 class="heading-4 mb-20 pt-48">Behavior</h4>
+
+  <p class="paragraph-text mb-16">Inline edit wraps around any standard text field. Any styling of the text field
+    component is handled outside of this component. If you are placing a custom inline edit on a component like a
+    header, ensure that the font and box size line up properly.</p>
+
+  <p class="paragraph-text mb-16">Since inline edit is used when entering content, it is optimized for use with keyboard
+    inputs (use return to save and esc to cancel). When using a mouse, controls should always display on the bottom
+    right of the field.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Best practices</h4>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Use inline edit for an editable field that is not part of a form. Do not use inline
+        edit inside of a form.</p>
+    </li>
+  </ul>
+</div>
