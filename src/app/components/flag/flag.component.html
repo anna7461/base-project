@@ -2,3 +2,177 @@
   [bannerTitle]="'Flag'"
   [bannerDescription]="'A flag is used for confirmations, alerts, and acknowledgements that require minimal user interaction, often displayed using a flag group.'">
 </app-page-banner>
+
+<div class="page-content">
+  <h4 class="heading-4 mb-20 pt-48">Usage</h4>
+
+  <p class="paragraph-text mb-16">Flags appear at the bottom left of the screen and overlay any content.</p>
+
+  <p class="paragraph-text mb-16">There are two types of flags: default and bold.</p>
+
+  <p class="paragraph-text mb-16">Default flags are for general, event-driven messages that are dismissible. For
+    example, as notifications for recent activity. One common use case for default flags is as a notification about
+    recent activity. This allows people to easily jump into a conversation or activity feed to get a quick update. In
+    these cases, an avatar is used instead of the icon.</p>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/526fcab495f843fd40f71d3f1dacb078/flag-avatar-attachment.png" alt="">
+  </div>
+
+  <p class="paragraph-text mb-16">Bold flags are not dismissible and use color to reinforce the severity or importance
+    of a message. They are reserved for messages about success, loading, warnings, and errors. They can't be dismissed
+    until the issue is resolved or the message has expired (in the case of a success message). A collapsed and expanded
+    state exists so additional information can be shared.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Anatomy</h4>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/726593368826220621482aa3fae59bb3/button-anatomy.png" alt="">
+  </div>
+
+  <ol class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8"><strong>Icon (or avatar) and title</strong>: Flags should always contain a concise
+        title and an appropriate <a href="#">icon</a>, <a href="#">color</a> (or user avatar).</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Message (optional)</strong>: Flag descriptions are restricted to five lines
+        in length. If the text overflows, it truncates using an ellipsis.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Actions (optional)</strong>: A maximum of two links that enable users to
+        act on the flag's content.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Dismiss</strong>: Use to close the flag. This is for default flags only.
+      </p>
+    </li>
+  </ol>
+
+  <h4 class="heading-4 mb-20 pt-48">Best practices</h4>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Use the <a href="#">color system</a> for the usage of flags, and keep a consistent
+        visual
+        language.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">When there are multiple flags, they will stack on top of one another with the most
+        recent flag on top. When a user dismisses a flag, any older flags below will come to the top. Careful
+        consideration should be taken to take into account the ordering and priority of flags in the stack.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Never use dismissible and non-dismissible flags in a stack. Flags that
+        automatically dismiss will no longer be visible to users.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">When a modal is active, flags should always be visible above the modal.</p>
+    </li>
+  </ul>
+
+  <h4 class="heading-4 mb-20 pt-48">Content guidelines</h4>
+
+  <h5 class="heading-5 mb-20 pt-32">Information</h5>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Say why it's important.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Get right to the point.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Based on the situation, you can add more "wink" to your message, but keep it clear
+        and concise.</p>
+    </li>
+  </ul>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/7d948696229dc9abff3ac53f0f76b1bb/flag-bold-info-expanded.png" alt="">
+  </div>
+
+  <h5 class="heading-5 mb-20 pt-32">Warning</h5>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Put yourself in the user's shoes.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Make sure you're not talking about something that has already occured (this should
+        be an error message nstead).</p>
+    </li>
+  </ul>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/a9c1e8a7fd4c2988ea80129ea208985b/flag-bold-warning-expanded.png" alt="">
+  </div>
+
+  <h5 class="heading-5 mb-20 pt-32">Error</h5>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Avoid blame and accept if something is our fault - "we're having trouble
+        connecting" rather than "you're having connection issues."</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Let the user know what's causing the error, rather than writing a general error
+        message that works for a number of things.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Be clear and conversational by thinking about how you might explain a technical
+        error to your non-technical friends.</p>
+    </li>
+  </ul>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/b77e7a5c9929568e5fe2dac8a90560b1/flag-bold-error-expanded.png" alt="">
+  </div>
+
+  <h5 class="heading-5 mb-20 pt-32">Success</h5>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Messages that appear more frequently should have less wink and be more concise.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Messages that appear after a bigger or more infrequent action can be more
+        playful.</p>
+    </li>
+  </ul>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/f70b63e4b0b9a05ebaecd8b531cf95a3/flag-bold-success-expanded.png" alt="">
+  </div>
+
+  <h4 class="heading-4 mb-20 pt-48">Server</h4>
+
+  <p class="paragraph-text mb-16">Consult <a href="#">AUI</a> for implementation details.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Related</h4>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">For critical messaging about loss of data or functionality use <a
+        href="#">banners</a>.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">To alert users that important information is available or an action is required use
+        an
+        <a href="#">inline message</a>.</p>
+    </li>
+  </ul>
+</div>
