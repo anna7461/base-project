@@ -2,3 +2,231 @@
   [bannerTitle]="'Button'"
   [bannerDescription]="'A button triggers an event or action. They let users know what will happen next.'">
 </app-page-banner>
+
+<div class="page-content">
+  <h4 class="heading-4 mb-20 pt-48">Usage</h4>
+
+  <p class="paragraph-text mb-16">Buttons are triggers for events or actions. They're commonly used as part of larger
+    components or patterns sucha s
+    <a href="#">forms</a> or <a href="#">modal dialogs</a>.</p>
+
+  <p class="paragraph-text mb-16">Buttons:</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">move users through a sequence of screens</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">act as calls to action (CTAs)</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">with an icon to convey meaning quicker</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">with a badge indicate a value</p>
+    </li>
+  </ul>
+
+  <h4 class="heading-4 mb-20 pt-48">Anatomy</h4>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/726593368826220621482aa3fae59bb3/button-anatomy.png" alt="">
+  </div>
+
+  <ol class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8"><strong>Icon</strong>: Use an icon to convey more meaning.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Label</strong>: Text that indicates the result of selecting the button.</p>
+    </li>
+  </ol>
+
+  <h4 class="heading-4 mb-20 pt-48">Behavior</h4>
+
+  <p class="paragraph-text mb-16">Each button variation (<code>Button</code>, <code>LoadingButton</code> and <code>CustomThemeButton</code>)
+    will render out a <code>< button > </code> element, an <code> < a></code> element if a <code>href</code> prop is
+    supplied, or render any other element type by using the component prop (for example, <code>component="span"</code>).
+    Each button element blocks and behaves similarly, regardless of element tag, as it is guided by the native <code> <
+      button></code> behavior.</p>
+
+  <p class="paragraph-text mb-16">A <code>role</code> prop is inferred from the element type or you can pass in a role
+    if you need to.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Focus behavior</h4>
+
+  <p class="paragraph-text mb-16"><code>tabIndex=0}</code> is added by default so the button element can get browser
+    focus regardless of the element type used.</p>
+
+  <p class="paragraph-text mb-16">On a <code>mousedown</code>, <code>event.preventDefault()</code> is always called to
+    prevent the button from getting focus. This is questionable behavior that we hope to change in future.</p>
+
+  <p class="paragraph-text mb-16">When a native <code>< button></code> is disabled, it loses browser focus and cannot be
+    focused. We replicate this behavior by setting <code>tabIndex=-1}</code> on the button element and calling <code>element.blur()</code>
+    when a button becomes disabled (<code>isDisabled</code> prop is set to true).</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Best practices</h4>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Use a primary button to indicate the main action of a group button set.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Subtle or secondary buttons should use a less dominant color.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Button size matters - make sure the size of the button is large enough to interact
+        with on web or other device but not too large so as to be visually overwhelming.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Use action verbs or phrases to tell the user what will happen next.</p>
+    </li>
+  </ul>
+
+  <h4 class="heading-4 mb-20 pt-48">Alignment</h4>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8"><strong>Right align</strong> the primary button to visually support navigation when
+        using buttons to prompt a user to move through a sequence of screens (e.g. getting started guides).</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Center align</strong> buttons for <a href="#">benefits modals</a> and other
+        modals, with the primary button on the right.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Left align</strong> buttons for single-page forms and focused tasks, and
+        sort by importance from left to right.</p>
+    </li>
+  </ul>
+
+  <h4 class="heading-4 mb-20 pt-48">Content guidelines</h4>
+
+  <p class="paragraph-text mb-16">Buttons labels should be concise and clear enough to indicate the next action to the
+    user.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Disabled buttons</h4>
+
+  <p class="paragraph-text mb-16">A disabled <code>< button></code> is a native HTML concept, but disabled is not a
+    native concept for other element types such as <code>< a></code> and <code>< span></code>.</p>
+
+  <p class="paragraph-text mb-16">The behavior of a disabled <code>< button></code> is imitated as much as possible
+    regardless of element type.</p>
+
+  <p class="paragraph-text mb-16">A disabled <code>< button></code> will not fire any user events. We imitate this by:
+  </p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Applying <code>pointer-events: none</code> to all children elements of the button
+        element. This prevents inner elements publishing events.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Calling <code>event.preventDefault()</code> and
+        <code>event.stopPropagation()</code> in the
+        <a href="#">capture phase</a> for the following events: <br> <code>'mousedown'</code>, <code>'mouseup'</code>,
+        <code>'keydown'</code>, <code>'keyup'</code>, <code>'touchstart'</code>, <code>'touchend'</code>, <code>'pointerdown'</code>,
+        <code>'click'</code>. This prevents the event performing its default browser behavior and stops the event
+        proceeding to the bubble phase.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Not calling provided bubble and capture event listeners.</p>
+    </li>
+  </ul>
+
+  <p class="paragraph-text mb-16">For a disabled button we also set <code>tabIndex=-1}</code>, and if the element has
+    focus, we call <code>element.blur()</code>.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Buttons with an overlay</h4>
+
+  <p class="paragraph-text mb-16">Buttons support an overlay element, which is used to display a spinner for <code>LoadingButton
+    > isLoading</code>. When there is an overlay the normal button content fades out and the button is non-interactive
+    but not disabled.</p>
+
+  <p class="paragraph-text mb-16">A <code>< button></code> with an overlay:</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">will block events as if it is disabled</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">won't lose focus automatically when the overlay is shown (unline when it is
+        disabled, where the focus is lost)</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">allows focus to be given and removed from the element</p>
+    </li>
+  </ul>
+
+  <p class="paragraph-text mb-16">The button will not show <code>:active</code> and <code>:hover</code> styles and
+    otherwise keeps the same visual and cursor experience as if it did not have an overlay.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Adding event listeners</h4>
+
+  <p class="paragraph-text mb-16">For the most consistent behavior across elements, it's safest to use bubble phase
+    listeners on the button element and parent elements, for example, use <code>onClick</code> rather than <code>onClickCapture</code>.
+    Although, event listeners <em>can</em> be added in wither the capture or bubble phase on the button element.</p>
+
+  <p class="paragraph-text mb-16">Bubble and capture event listeners will not be called when the button component is
+    disabled.</p>
+
+  <p class="paragraph-text mb-16">For elements that are parents of a button you need to bind on the bubble phase (for
+    example, <code>onClick</code>) since button does not abort the event until the capture phase. So as the event goes
+    down the DOM tree in the capture phase, it's not aborted until it reaches the button element. This means you will
+    get a click event from a button on parents in the capture phase. A workaround is to add evenets to the window when
+    disabled and stop the event a bit earlier, but that's a bit heavy.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Accessibility</h4>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Include alternative text using the aria-label prop when using icon buttons.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">When using an icon alongside text, do not add a label to the icon. Doind so will
+        confuse people using screen readers.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Avoid using disabled buttons, especially in forms. Disabled buttons provide no
+        feedback, making it hard to know why the button isn't usable. Instead, use validation and errors to show what
+        needs to be done.</p>
+    </li>
+  </ul>
+
+  <h4 class="heading-4 mb-20 pt-48">Server</h4>
+
+  <p class="paragraph-text mb-16">Consult <a href="#">AUI</a> for implementation details.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Related</h4>
+
+  <p class="paragraph-text mb-16">A button is commonly used in:</p>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8"><a href="#">forms</a></p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><a href="#">modal dialogs</a></p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><a href="#">dropdown menus</a></p>
+    </li>
+  </ul>
+</div>
