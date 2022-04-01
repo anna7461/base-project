@@ -2,3 +2,170 @@
   [bannerTitle]="'Form'"
   [bannerDescription]="'A form allows users to input information.'">
 </app-page-banner>
+
+<div class="page-content">
+  <h4 class="heading-4 mb-20 pt-48">Usage</h4>
+
+  <p class="paragraph-text mb-16">Use forms when user input is required to complete some action. Forms direct users to
+    provide and submit relevant information such as changing personal settings or creating a Jira issue.</p>
+
+  <p class="paragraph-text mb-16">Common form components include <a href="#">text fields</a>, <a href="#">selects</a>,
+    <a href="#">radio buttons</a>, <a href="#">checkboxes</a>, <a href="#">date pickers</a>, <a href="#">toggles</a>,
+    and
+    <a href="#">buttons</a>.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Anatomy</h4>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/7a49d76e59f4ebf2945dd62dfc5426d1/form-anatomy.png" alt="">
+  </div>
+
+  <ol class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8"><strong>Title</strong>: Use a concise form title. This helps the user understand
+        the form’s context.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Labels</strong>: Standard label alignment is left-aligned with the field
+        underneath. Use a combination of a concise label and supportive helper text for clarification of field input.
+      </p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Placeholder text</strong>: Clearly communicate fields that are required.
+        Don’t rely on asterisks only to communicate which fields are required. Don’t use placeholder text to communicate
+        that a field is required.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Required field</strong>: Clearly communicate fields that are required.
+        Don’t rely on asterisks only to communicate which fields are required. Don’t use placeholder text to communicate
+        that a field is required.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Form section</strong>: Group information logically into form sections.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Disabled fields</strong>: Show disabled fields if users need to know what
+        controls might not be available to them.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Form footer</strong>: Always use a submit button and distinguish primary
+        and secondary buttons.</p>
+    </li>
+  </ol>
+
+  <h4 class="heading-4 mb-20 pt-48">Best practices</h4>
+
+  <h5 class="heading-5 mb-20 pt-32">General</h5>
+
+  <p class="paragraph-text mb-16">Persist forms on refresh so that user data isn’t lost.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Layout</h5>
+
+  <p class="paragraph-text mb-16">Group related sections into logical sets to allow users to understand the information
+    they need to enter.</p>
+
+  <p class="paragraph-text mb-16">Use one form column to enable fast field comprehension.</p>
+
+  <p class="paragraph-text mb-16">Max-width: <strong>624px</strong>, recommended by the <a href="#">cozy grid</a>. In
+    other cases, assume that the width typically follows where the form lives in (Modal, focused task, page, etc.)</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Fields and labels</h5>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Reduce the number of fields in your form to avoid a large cognitive load on users
+        (or to help users submit the form faster).</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Avoid optional fields by only asking users for relevant information.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Avoid using default values or instead, use smart defaults (e.g. preselect user's
+        country based on location data).</p>
+    </li>
+  </ul>
+
+  <p class="paragraph-text mb-16">Use input masks to help users understand correct field formats.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Buttons</h5>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">State the action that the buttons perform when clicked.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Avoid multiple action buttons and avoid a reset button. This will reduce confusion
+        about how to submit the form.</p>
+    </li>
+  </ul>
+
+  <p class="paragraph-text mb-16">Ensure the primary action button provides feedback that the form is being
+    submitted.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Button positioning</h5>
+
+  <p class="paragraph-text mb-16">Buttons are sorted by importance from right to left, with the most important button
+    (primary) on the right.</p>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/e8f62a0ccbe21f6f69d6eab15b467520/button-positioning-1.png" alt="">
+
+    <img src="https://atlassian.design/ff29374a438a61f59f42555265909ba7/button-positioning-2.png" alt="">
+  </div>
+
+  <p class="paragraph-text mb-16">Exceptions to this are single-page forms, flags, and section messages where buttons
+    are left aligned with the primary button on the left.</p>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/73b1420bfab66e821f5d66a388c82fb1/button-positioning-3.png" alt="">
+  </div>
+
+  <h4 class="heading-4 mb-20 pt-48">Accessibility</h4>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Autofocus the first field by default. This allows users to tab through elements in
+        the form in a logical way.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Never disable a submit button, even if all of the required fields aren't filled in.
+        Instead, describe what needs to be done using <a href="#">validation and error messages</a>.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Match keyboard to input on mobile.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Use autocompletion to limit typing for users.</p>
+    </li>
+  </ul>
+
+  <h4 class="heading-4 mb-20 pt-48">Related</h4>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">To find more guidance on buttons, see the <a href="#">button component</a>.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">To understand different form types and when to use them, see the <a href="#">forms
+        pattern</a>.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Other fields which can be used in forms include <a href="#">text field</a>, <a
+        href="#">text area</a>, <a href="#">checkbox</a>, and <a href="#">range</a>.</p>
+    </li>
+  </ul>
+</div>
