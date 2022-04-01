@@ -2,3 +2,94 @@
   [bannerTitle]="'Date time picker'"
   [bannerDescription]="'A date time picker allows the user to select an associated date and time.'">
 </app-page-banner>
+
+<div class="page-content">
+  <h4 class="heading-4 mb-20 pt-48">Usage</h4>
+
+  <p class="paragraph-text mb-16">Date time pickers help users navigate past, present, and future dates as well as
+    specific times. Users may select a particaluar date and time via their respective fields.</p>
+
+  <p class="paragraph-text mb-16">Date time picker is commonly used in <a href="#">forms</a>.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Anatomy</h4>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/b96ad1c7443c4848cd3f6593512c94ee/date-time-picker-anatomy.png" alt="">
+
+    <img src="https://atlassian.design/b7d74b9dfdf5a88febe293eb7d3b7139/date-time-picker-open-date-anatomy.png" alt="">
+
+    <img src="https://atlassian.design/5178d1fc7afc11c1f27258840ba0494c/date-time-picker-open-time-anatomy.png" alt="">
+  </div>
+
+  <ol class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8"><strong>Label</strong>: Labels should indicate what information the field requires.
+        The label is left-aligned above the input area.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Date input field</strong>: Selecting this field opens the calendar
+        component. Users can also input dates into the field. Once a date is selected, the oprion will be shown in the
+        text input. This example shows date formatted in 'dd/mm/yyyy' but this can be customized using the <code>dateFormat</code>
+        prop.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Time input field</strong>: Selecting this field opens the select menu
+        showing available times on the selected date. Once a time is selected, the option will be shown in the text
+        input. This example shows time formatted in AM/PM but this can be customized using the <code>timeFormat</code>
+        prop.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Calendar (open)</strong>: Contains the list of all dates. Selecting the
+        previous or next arrows moves the calendar through months. The selected date area is highlighted by a different
+        color fill.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Time dropdown (open)</strong>: Contains the list of all selectable times
+        relating to the selected date. This example shows time increments of 30 minutes but can be customized using the
+        times prop.</p>
+    </li>
+  </ol>
+
+  <h4 class="heading-4 mb-20 pt-48">Content guidelines</h4>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Ensure that locale is appropriately set so that users see dates and times in a
+        familiar format.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">If helper text is necessary, place helper text above the input (below the area
+        label).</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Use a concise label to indicate what the date and time selections refer to.</p>
+    </li>
+  </ul>
+
+  <h4 class="heading-4 mb-20 pt-48">Accessibility</h4>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Label attributes for screen readers should be included for users who use screen
+        readers to understand what the date time picker relates to.</p>
+    </li>
+  </ul>
+
+  <p class="paragraph-text mb-16">Follow the <a href="#">accessibility</a> foundations for more guidance on accessible
+    design.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Related</h4>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">If you need to specify date or time only, see <a href="#">date picker</a> or <a
+        href="#">time picker</a>.</p>
+    </li>
+  </ul>
+</div>
