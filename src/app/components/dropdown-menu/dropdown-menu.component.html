@@ -2,3 +2,156 @@
   [bannerTitle]="'Dropdown menu'"
   [bannerDescription]="'A dropdown menu displays a list of actions or options to a user.'">
 </app-page-banner>
+
+<div class="page-content">
+  <h4 class="heading-4 mb-20 pt-48">Usage</h4>
+
+  <p class="paragraph-text mb-16">Dropdown menus are typically used when you have 5-15 items to choose from. They're
+    used for navigation or command menus, where an action is initiated based on the selection.</p>
+
+  <p class="paragraph-text mb-16">Menu items can include both <a href="#">radio buttons</a> and <a
+    href="#">checkboxes</a>.</p>
+
+  <p class="paragraph-text mb-16">Some other uses for dropdown menus:</p>
+
+  <p class="paragraph-text mb-16">A "more" menu, where the control contains an icon.</p>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/759ebfb2c1dbe1d204e1d3c0c603398a/dropdown-menu-icon.png" alt="">
+  </div>
+
+  <p class="paragraph-text mb-16">For user profiles, where the control is an <a href="#">avatar</a>.</p>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/90d87763c33e880cb4babb6b62989c81/dropdown-menu-avatar.png" alt="">
+  </div>
+
+  <h4 class="heading-4 mb-20 pt-48">Anatomy</h4>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/872e75b27d53943473c0dc13e9884cb7/dropdown-menu.png" alt="">
+  </div>
+
+  <ol class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8"><strong>Control</strong>: A button that may contain an icon, or be labeled with
+        text.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Trigger</strong>: Used if the button is labeled with text.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Menu</strong>: Container for links and action items.</p>
+    </li>
+  </ol>
+
+  <h4 class="heading-4 mb-20 pt-48">Behavior</h4>
+
+  <p class="paragraph-text mb-16">In cases where a menu item is longer than the button's text label, the menu will grow
+    to the width of the longest item listed. However, there is a maximum width specified by the component. If the menu
+    item exceeds the maximum width it will be truncated.</p>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/f8bc8566beda3913b3fdb4bebdd76ebb/dropdown-menu-behavior.png" alt="">
+  </div>
+
+  <h4 class="heading-4 mb-20 pt-48">Best practices</h4>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">A number of components can be used to give people the ability to select options.
+        See the list of related components below for advice on choosing the right one.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">When organizing dropdown menu items, sort the list in a logical order by putting
+        the most selected option at the top, if known. Test and refine over time to re-evaluate if all menu items are
+        needed.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">For long lists, group related menu items. If including radio buttons and checkboxes
+        as menu items, try grouping related actions.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Grouped items are separated by a short, uppercase title that describes the options
+        in that sub-category.</p>
+    </li>
+  </ul>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/1b6501d0774f2d1b3ebb12bed324a67d/dropdown-menu-grouping.png" alt="">
+  </div>
+
+  <h4 class="heading-4 mb-20 pt-48">Alignment</h4>
+
+  <ol class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Group title (not selectable)</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Grouped menu items</p>
+    </li>
+  </ol>
+
+  <h4 class="heading-4 mb-20 pt-48">Content guidelines</h4>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">People navigate menus and choose menu items based on their labels, so it’s
+        important that they're accurate and informative.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">In general, use sentence case and write concise labels that clearly indicate the
+        purpose of the selection.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">For action menu items, use verbs and verb phrases to describe the action that
+        occurs when the item is chosen. For example, “Move”, “Log time”, or “Hide epic labels”.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">In most cases, links should be nouns. For example, Profile or Keyboard
+        shortcuts.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Exclude articles in menu items. For example, use "Add flag" instead of "Add a
+        flag".</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Keep menu items to a single line of text.</p>
+    </li>
+  </ul>
+
+  <h4 class="heading-4 mb-20 pt-48">Server</h4>
+
+  <p class="paragraph-text mb-16">Consult <a href="#">AUI</a> for implementation details.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Related</h4>
+
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">To allow users to search and select one or more options from a list, use the <a
+        href="#">select</a> component.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">To collect user input from a related list of items use <a href="#">checkboxes</a>.
+      </p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">To allow users to make a single selection from a short list, use <a href="#">radio
+        buttons</a>.</p>
+    </li>
+  </ul>
+</div>
