@@ -2,3 +2,112 @@
   [bannerTitle]="'Dynamic table'"
   [bannerDescription]="'A dynamic table displays rows of data with built-in pagination, sorting, and re-ordering.'">
 </app-page-banner>
+
+<div class="page-content">
+  <h4 class="heading-4 mb-20 pt-48">Usage</h4>
+
+  <p class="paragraph-text mb-16">Dynamic tables display data in rows and columns. They order information so that people
+    can easily scan and analyse data.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Anatomy</h4>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/d378ff5d98ea2c58feddd66bc936b84c/dynamic-table-anatomy.png" alt="">
+  </div>
+
+  <ol class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8"><strong>Header label</strong>: Indicates the type of information that is in each
+        column.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Row</strong>: Displays a relationship between separate table cells.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8"><strong>Pagination</strong>: Indicates the amount of data presented in the table.
+      </p>
+    </li>
+  </ol>
+
+  <h4 class="heading-4 mb-20 pt-48">Best practices</h4>
+
+  <h5 class="heading-5 mb-20 pt-32">Editing row content</h5>
+
+  <p class="paragraph-text mb-16">On simple tables, where there's only a single type of content to display, an edit
+    button is not required. In more complex tables where there are multiple types of content displayed, you may want to
+    add an edit link to the more actions button. If your table is complex, with a large number of input fields, you
+    should consider using a modal dialog or dedicated page for entering content instead of a dynamic table.</p>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/c67bdc930342ec8d46d5ff6232653542/editing-row-content.png" alt="">
+  </div>
+
+  <h5 class="heading-5 mb-20 pt-32">Removing a row</h5>
+
+  <p class="paragraph-text mb-16">Use either a delete action in the "more" menu (if multiple user actions are available)
+    or an "x" icon to allow users to delete a row. Once the row is deleted, both the content rows and input row will
+    shift upwards.</p>
+
+  <h5 class="heading-5 mb-20 pt-32">Error state</h5>
+
+  <p class="paragraph-text mb-16">If an error occurs, the affected row or text input should be highlighted with a
+    supporting error icon.</p>
+
+  <div class="media-wrapper mb-16">
+    <img src="https://atlassian.design/4aabb9525ef10e5c20482def5c13015c/error-state.png" alt="">
+  </div>
+
+  <h4 class="heading-4 mb-20 pt-48">Content guidelines</h4>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">Use tables to make content easier to read.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Use only relevant text or data so that it’s easy to understand.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Clearly label columns with simple language. This makes it easier to understand and
+        eases screen reader navigation.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">Provide a description for complex tables. This helps the user gain context about
+        the data. It also helps people with screen readers have an overview of the table.</p>
+    </li>
+  </ul>
+
+  <h4 class="heading-4 mb-20 pt-48">Accessibility</h4>
+
+  <p class="paragraph-text mb-16">This component has accessibility issues. This is something we are aware of and are
+    working on. If this is a direct blocker for usage of the component we'd recommend seeking alternative solutions in
+    the interim.</p>
+
+  <h4 class="heading-4 mb-20 pt-48">Related</h4>
+
+  <ul class="mb-24 pl-48">
+    <li>
+      <p class="paragraph-text mb-8">If you’re looking for more empty state guidance, check out our <a href="#">Empty
+        state component guidelines</a>.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">If you’re after more pagination guidance, see our <a href="#">Pagination component
+        guidelines</a>.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">For more guidance about how to show contextual information, see <a href="#">Modal
+        dialog component guidelines</a>.</p>
+    </li>
+
+    <li>
+      <p class="paragraph-text mb-8">For more information on interactive table components see <a href="#">Select</a>, <a
+        href="#">Dropdown</a>, <a href="#">Avatar</a> guidelines.</p>
+    </li>
+  </ul>
+</div>
